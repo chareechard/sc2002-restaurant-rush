@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "date_singapore": "2026-10-29",
+  "branch": "codex/wesley-stage-1",
+  "source_commit": "991700154456e333083d8f2201f5504f6e519e4f",
+  "tool": "Visual Paradigm Standard 18.0 (academic license), public Open API",
+  "native_project_reopened": true,
+  "native_sqlite_quick_check": "ok",
+  "modeled_type_count": 21,
+  "diagrams": [
+    {
+      "name": "Stage 1 - Class Diagram - Wesley Review",
+      "class_shapes": 21,
+      "connectors": 19
+    }
+  ],
+  "verified_selected_members": {
+    "fields": 50,
+    "methods": 50,
+    "enum_literals": 20
+  },
+  "game_checks": 106,
+  "ordinary_final_value_classes": [
+    "MenuItem",
+    "Receipt",
+    "GameStats"
+  ],
+  "record_stereotypes": 0,
+  "course_cleanup": "Scanner/PrintStream console, nullable Receipt, double average with hasAverageSatisfaction, ordinary immutable value classes.",
+  "no_overlapping_class_shapes": true,
+  "visual_review": "Native PNG exports visually inspected; PDF awaits refreshed source checkpoint annotation.",
+  "png_pixels": {
+    "Restaurant_Rush_Stage1_Wesley_Draft": [
+      2325,
+      1822
+    ]
+  },
+  "artifact_sha256": {
+    "Restaurant_Rush_Stage1_Wesley_Draft.vpp": "9313fefb1ee82803117d826e2cc7b53eba8d1b8a1ca8306d2640f3d1fe32a350",
+    "Restaurant_Rush_Stage1_Wesley_Draft.svg": "862cc09db1172505ef55e7deb87c2a2dd5bc436724be04106d45fa8105ca9141",
+    "Restaurant_Rush_Stage1_Wesley_Draft.png": "7c5b6f4e2b1eb97600c445a5ef624f0b01cd2b447d640cf2e9f279adef24d756",
+    "model-xml/project.xml": "44987066f50f41ff4cec0db6f76f801851f375dca53167506af9a52e1e939436",
+    "model-xml/data.zip": "88229578ffbaf8cbae3176c2170a3e2381058f60d21f98d9a6fee0f3e34b442e",
+    "Restaurant_Rush_Stage1_Wesley_Draft.pdf": "de7686c985fb5ed8f24386b2ec073b433980414631a9d8c00748c808e864af80"
+  },
+  "selected_relationships": 19,
+  "relationship_breakdown": {
+    "composition": 11,
+    "association": 4,
+    "dependency": 3,
+    "generalization": 1
+  },
+  "pin_only_refresh_preserved_members_relationships_and_bounds": true,
+  "pdf": {
+    "file": "Restaurant_Rush_Stage1_Wesley_Draft.pdf",
+    "pages": 1,
+    "source": "Native Visual Paradigm SVG, rendered with ReportLab and svglib",
+    "visual_review": "Rendered PDF inspected; no clipped members, missing glyphs or overlapping class boxes. Abstract and bold notation preserved."
+  }
+}
