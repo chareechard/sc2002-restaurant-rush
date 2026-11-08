@@ -1,0 +1,3 @@
+# Intentionally decline every staff task. EOF supplies wait until turn 18.
+wait
+wait
