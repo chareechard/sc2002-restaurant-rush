@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "date_singapore": "2026-11-14",
+  "source_commit": "02f5c5a46320fc3dc5bb4b5507b1dde5c2437bac",
+  "tool": "Visual Paradigm Standard 18.0 (academic license), public Open API",
+  "native_project_reopened": false,
+  "native_sqlite_quick_check": "ok",
+  "modeled_type_count": 21,
+  "diagrams": [
+    {
+      "name": "Stage 1 - Class Diagram - Wesley Review",
+      "class_shapes": 21,
+      "connectors": 19
+    }
+  ],
+  "verified_selected_members": {
+    "fields": 50,
+    "methods": 50,
+    "enum_literals": 20
+  },
+  "game_checks": 106,
+  "ordinary_final_value_classes": [
+    "MenuItem",
+    "Receipt",
+    "GameStats"
+  ],
+  "record_stereotypes": 0,
+  "course_cleanup": "Scanner/PrintStream console, nullable Receipt, double average with hasAverageSatisfaction, ordinary immutable value classes.",
+  "no_overlapping_class_shapes": true,
+  "png_pixels": {
+    "Restaurant_Rush_Stage1_Wesley_Draft": [
+      2325,
+      1822
+    ]
+  },
+  "artifact_sha256": {
+    "Restaurant_Rush_Stage1_Wesley_Draft.vpp": "df39914f66a0a4d97663de3f6d74b018982e5089c4dded9ef7db60bb5b8da7a7",
+    "Restaurant_Rush_Stage1_Wesley_Draft.svg": "ba78071a0ca26abc3219cb67f57509b31a733c0d9717bc52ffbadc5a0878b490",
+    "Restaurant_Rush_Stage1_Wesley_Draft.png": "d4d4bfe0c6ff67fa2aa6727bc19a1b69bb4a2daa167b54ad8c3fb81bc7f31db6",
+    "model-xml/project.xml": "24e85cf1f6c66e61115ea2a26c69e71653ac8ae5556c478d7e705f7320abc487",
+    "model-xml/data.zip": "88229578ffbaf8cbae3176c2170a3e2381058f60d21f98d9a6fee0f3e34b442e",
+    "Restaurant_Rush_Stage1_Wesley_Draft.pdf": "4bfadf584d8f2d8b4c49224b56b02847bfbe7ab3da3e4685efbf987c081a309e"
+  },
+  "selected_relationships": 19,
+  "relationship_breakdown": {
+    "composition": 11,
+    "association": 4,
+    "dependency": 3,
+    "generalization": 1
+  },
+  "pin_only_refresh_preserved_members_relationships_and_bounds": true,
+  "pdf": {
+    "file": "Restaurant_Rush_Stage1_Wesley_Draft.pdf",
+    "pages": 1,
+    "source": "Synchronized SVG rendered as vector PDF with headless Chromium.",
+    "visual_review": "2026-11-14: rendered page inspected after the source subtitle refresh."
+  },
+  "source_branch": "work/stage-1",
+  "source_files_sha256": "5c44aea3a68d0cfe9e03a2da894ad3b83b6d4fc3f713d48fe07b9e18b72a8c62",
+  "native_gui_review": {
+    "status": "pending",
+    "reason": "Structured provenance refresh; Visual Paradigm GUI reopen was not performed."
+  },
+  "verification_status": "Historical snapshot sanitized during history cleanup; use the cleaned branch tip for current verification.",
+  "member_descriptor": "source/stage1-model.xml",
+  "validation_command": "python tools/verify-uml.py",
+  "provenance_refresh": {
+    "method": "Structured SQLite field updates and compaction; matching XML annotations refreshed.",
+    "model_rows_preserved_after_annotation_normalization": true,
+    "graphics": "Stage 1/2 SVG subtitles synchronized; PNG and PDF views regenerated. Other diagram geometry retained. No fresh native GUI export claimed."
+  },
+  "source_signatures_checked_against_compiled_java": true,
+  "text_hashes": "LF normalized"
+}
