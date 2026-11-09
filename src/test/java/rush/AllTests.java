@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Scanner;
 import rush.cli.ConsoleApp;
 import rush.domain.Customer;
+import rush.domain.CriticCustomer;
 import rush.domain.CustomerStatus;
 import rush.domain.Menu;
 import rush.domain.MenuItem;
@@ -19,6 +20,7 @@ import rush.domain.Receipt;
 import rush.domain.RegularCustomer;
 import rush.domain.RuleViolation;
 import rush.domain.Table;
+import rush.domain.VIPCustomer;
 import rush.game.GameEngine;
 import rush.game.GameResult;
 import rush.game.Scenario;
@@ -36,11 +38,12 @@ public final class AllTests {
         abandonmentAndRevenue();
         cashierOrderAndLimit();
         independentDomains();
+        customerPolymorphism();
         setupValidation();
         fullRuns();
         cliInput();
         defensiveCopies();
-        System.out.println("PASS: " + checks + " checks (Stage 1)");
+        System.out.println("PASS: " + checks + " checks (Stage 2)");
     }
 
     private static void pastaTimeline() {
@@ -373,9 +376,9 @@ public final class AllTests {
         GameEngine win = replay("victory");
         eq(GameResult.VICTORY, win.stats().result(), "victory replay");
         eq(18, win.turn(), "victory runs all turns");
-        eq(5, win.stats().paidCount(), "five paid");
-        eq(7500L, win.stats().revenueCents(), "victory revenue");
-        eq(74.4, win.stats().averageSatisfaction(), "victory average");
+        eq(4, win.stats().paidCount(), "four paid");
+        eq(6750L, win.stats().revenueCents(), "victory revenue");
+        eq(70.25, win.stats().averageSatisfaction(), "victory average");
         eq(6, win.customers().size(), "six total customers");
         check(win.customer(6).status() != CustomerStatus.PAID, "turn 16 arrival cannot pay by 18");
         try {
@@ -389,6 +392,22 @@ public final class AllTests {
         eq(18, lose.turn(), "defeat runs all turns");
         eq(0, lose.stats().paidCount(), "no unearned paid customers");
         eq(2, lose.stats().unhappyDepartures(), "waiting customers abandon");
+    }
+
+    private static void customerPolymorphism() {
+        Customer vip = new VIPCustomer(2, 4);
+        Customer critic = new CriticCustomer(3, 7);
+        Customer regular = new RegularCustomer(3, 7);
+        vip.losePatience(); critic.losePatience(); regular.losePatience();
+        eq(95, vip.satisfaction(), "VIP patience via Customer");
+        eq(88, critic.satisfaction(), "Critic patience via Customer");
+        eq(92, regular.satisfaction(), "Regular patience unchanged");
+        eq(1350L, vip.discountedBill(1500), "VIP ten percent discount");
+        eq(1500L, critic.discountedBill(1500), "Critic full price");
+        eq("Pasta", critic.chooseMeal(new Menu()).name(), "Critic preference");
+        eq("Salad", regular.chooseMeal(new Menu()).name(), "same id Regular differs from Critic");
+        eq("VIP", new Scenario().arrival(4).type(), "VIP in base arrivals");
+        eq("Critic", new Scenario().arrival(7).type(), "Critic in base arrivals");
     }
 
     private static void cliInput() {
