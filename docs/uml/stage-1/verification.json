@@ -34,7 +34,7 @@
     ]
   },
   "artifact_sha256": {
-    "Restaurant_Rush_Stage1_Wesley_Draft.vpp": "df39914f66a0a4d97663de3f6d74b018982e5089c4dded9ef7db60bb5b8da7a7",
+    "Restaurant_Rush_Stage1_Wesley_Draft.vpp": "1763c16d4f01f6b64a991978b30ab6643946f5ad447d50e301e627bc73fce298",
     "Restaurant_Rush_Stage1_Wesley_Draft.svg": "ba78071a0ca26abc3219cb67f57509b31a733c0d9717bc52ffbadc5a0878b490",
     "Restaurant_Rush_Stage1_Wesley_Draft.png": "d4d4bfe0c6ff67fa2aa6727bc19a1b69bb4a2daa167b54ad8c3fb81bc7f31db6",
     "model-xml/project.xml": "24e85cf1f6c66e61115ea2a26c69e71653ac8ae5556c478d7e705f7320abc487",
@@ -61,7 +61,7 @@
     "status": "pending",
     "reason": "Structured provenance refresh; Visual Paradigm GUI reopen was not performed."
   },
-  "verification_status": "Historical snapshot sanitized during history cleanup; use the cleaned branch tip for current verification.",
+  "verification_status": "automated checks passed; native GUI reopen pending",
   "member_descriptor": "source/stage1-model.xml",
   "validation_command": "python tools/verify-uml.py",
   "provenance_refresh": {
@@ -70,5 +70,37 @@
     "graphics": "Stage 1/2 SVG subtitles synchronized; PNG and PDF views regenerated. Other diagram geometry retained. No fresh native GUI export claimed."
   },
   "source_signatures_checked_against_compiled_java": true,
+  "current_repository_validation": {
+    "date_singapore": "2026-11-14",
+    "source_commit": "02f5c5a46320fc3dc5bb4b5507b1dde5c2437bac",
+    "selected_members": {
+      "types": 21,
+      "fields": 50,
+      "operations": 50,
+      "enum_literals": 20
+    },
+    "native_export_members": {
+      "types": 21,
+      "fields": 50,
+      "operations": 50,
+      "enum_literals": 20
+    },
+    "native_storage": {
+      "Restaurant_Rush_Stage1_Wesley_Draft.vpp": {
+        "MODEL_ELEMENT": 510,
+        "DIAGRAM": 1,
+        "DIAGRAM_ELEMENT": 54
+      }
+    },
+    "geometry": {
+      "classes": 21,
+      "relationships": 19,
+      "labels_checked": 30,
+      "minimum_parallel_gap": 28,
+      "minimum_arrowhead_gap": 26.0,
+      "issues": []
+    },
+    "scope": "Pinned Java signatures, native XML, SQLite quick_check, available layout checks and artifact checksums. Native GUI reopen not performed."
+  },
   "text_hashes": "LF normalized"
 }
