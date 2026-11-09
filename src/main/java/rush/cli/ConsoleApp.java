@@ -48,7 +48,7 @@ public final class ConsoleApp {
     }
 
     public GameEngine play() {
-        out.println("RESTAURANT RUSH - Stage 1 | Base setting | Offline Java");
+        out.println("RESTAURANT RUSH - Stage 2 | Base setting | Offline Java");
         out.println("Win after 18 turns: >=4 paid, >=$45.00 revenue, >=60 average paid satisfaction.");
         for (MenuItem item : game.menu().items()) {
             out.println(item.name() + " " + Money.format(item.priceCents())
