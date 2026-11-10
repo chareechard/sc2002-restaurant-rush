@@ -34,8 +34,12 @@
     ]
   },
   "artifact_sha256": {
+    "Restaurant_Rush_Stage2.vpp": "80d98f32e6627a42bde660e9de65d0765d62d23a2758d06ea105f5ad95c483f1",
+    "class-diagram.svg": "eef35faa5b27d5f47a3d3297eafb1622ed3b42233040ad0eff545cd3ba39e55f",
+    "class-diagram.png": "2bd7b0b9a96c0881431a4c0c602a0a815eb40acc6e241d4d2860614732717aaa",
     "model-xml/project.xml": "13617a4bdbf0e5fd770aa7435d39ae32f72c0a754e2dabe06d7cf09d3cd50ca8",
-    "model-xml/data.zip": "8bf8040354e58d537e788c34a4516036574dd8e121de8aec2f6f6aeb1053ca85"
+    "model-xml/data.zip": "8bf8040354e58d537e788c34a4516036574dd8e121de8aec2f6f6aeb1053ca85",
+    "class-diagram.pdf": "5812e7b866219a4b070a7078c371fdefb8a15de43b26931c23de56a85c12adcf"
   },
   "selected_relationships": 24,
   "relationship_breakdown": {
