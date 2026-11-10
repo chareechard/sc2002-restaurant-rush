@@ -1,0 +1,70 @@
+{
+  "date_singapore": "2026-11-05",
+  "stage": 2,
+  "source_commit": "adeaf8d5236520d47a6656bc2c42283726033292",
+  "native_application": "Visual Paradigm Standard",
+  "native_version": "18.0",
+  "native_build": "20260521",
+  "native_project_reopened": true,
+  "native_sqlite_quick_check": "ok",
+  "diagram_name": "Stage 2 - Reviewed Class Diagram",
+  "verified_types": 23,
+  "verified_selected_members": {
+    "fields": 50,
+    "operations_including_constructors": 57,
+    "enum_literals": 20
+  },
+  "source_signatures_checked_against_compiled_java": true,
+  "principal_relationships": 21,
+  "relationship_breakdown": {
+    "composition": 11,
+    "association": 4,
+    "generalization": 3,
+    "dependency": 3
+  },
+  "geometry_check": {
+    "classes": 23,
+    "relationships": 21,
+    "labels_checked": 30,
+    "minimum_parallel_gap": 28,
+    "minimum_arrowhead_gap": 26.0,
+    "issues": []
+  },
+  "cross_stage_alignment": {
+    "baseline_stage": 1,
+    "shared_class_bounds_identical": true,
+    "common_connector_paths_and_labels_identical": true,
+    "stages": {
+      "1_to_2": {
+        "shared_classes": 21,
+        "shared_relationships": 19
+      },
+      "1_to_3": {
+        "shared_classes": 21,
+        "shared_relationships": 17
+      },
+      "2_to_3": {
+        "shared_classes": 23,
+        "shared_relationships": 19
+      }
+    }
+  },
+  "desktop_gui_verification": "saved and reopened through Desktop 18.0 public API",
+  "visual_review": "Curated PDF and native PNG reviewed; shared class positions, endpoint labels and routes checked.",
+  "artifact_sha256": {
+    "model-xml/data.zip": "4db90d95bb380a4981d16d55bcbe1b1a02801aac8883bc1b689b14e3ee07202f",
+    "model-xml/project.xml": "06bbcb6c7c5b94ebc07f4c1a00b04599db0af29ba18f22ac94ebe50006c7e5f7",
+    "README.md": "92e5cc864373098302a37c49e0fe58b147677540a38f5cf35654e3e108384a29",
+    "Restaurant_Rush_Stage2_Class.vpp": "3e727ed3a50db574dcc2e1adc9bbc3d4afc060599ea082f08b0d47e93f519ad1",
+    "source/ClassDiagramExportPlugin.java": "6e8087ba4c2782f8e65cdfaf81e056bce89ace04fe8ce04f759537cf1922da42",
+    "source/layout.json": "ce34e737d02f5acab752de3757fd5d622d4967f24018aacf9a3e543fdb9f3fa9",
+    "source/model.xml": "fb888d2c09bd3a38b8c3d340da35db6a9d49164d3894bdd48e8e462d7dfe0dc0",
+    "source/render_svg.py": "4fcba871b706ac092717733618a3863c0efbc54dcd0df48fe5515a8023d30279",
+    "source/validate_layout.py": "f326a70a56fce26bb32482800a4e8eba6c872a30a84df8cf59c151bf868aa900",
+    "source/VerifyPreviewMembers.java": "b7ae2e6bebcb003cb3f45027ad0da765ebb9ff8159c0d51a46b39bca8ce49d43",
+    "Stage_2_Class_Diagram.pdf": "e1c8a5d86367f035ac2129cff0105818f71039c2194ddf7d24eb3d0e2b6038fe",
+    "Stage_2_Class_Diagram.png": "9dda145e9471f6aa8fc6a1e44a2b3bfca29e5351dde7bd431177ff455c1a8fc1",
+    "Stage_2_Class_Diagram.svg": "47cb142b03bf81b6b34c8dfa807803f42dcfd2a542fa341ce148810beff6fc99"
+  },
+  "text_hashes": "LF normalized"
+}
