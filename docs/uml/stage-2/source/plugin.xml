@@ -1,0 +1,1 @@
+<plugin id="rush.richard.stage2" name="Richard Stage 2 UML" description="Native Stage 2 model from verified source" provider="Restaurant Rush" class="rush.vp.StageDiagramPlugin"><runtime><library path="classes" relativePath="true"/></runtime></plugin>

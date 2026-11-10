@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='utf-8'?>
+<projects>
+  <project stage="2" sha="bc769cc38beeccca023c0f71b8b347a425bcf6af" count="23" basename="Restaurant_Rush_Stage2" relationships="24">
+    <classes>
+      <class name="ConsoleApp" kind="class" package="rush.cli" introduced="1" color="#FFFFFF" modified="true" x="60" y="180" width="360" height="210">
+        <attribute name="input" type="Scanner" visibility="private" static="false" readonly="true" />
+        <attribute name="out" type="PrintStream" visibility="private" static="false" readonly="true" />
+        <attribute name="echo" type="boolean" visibility="private" static="false" readonly="true" />
+        <attribute name="view" type="ConsoleView" visibility="private" static="false" readonly="true" />
+        <attribute name="game" type="GameEngine" visibility="private" static="false" readonly="true" />
+        <attribute name="eof" type="boolean" visibility="private" static="false" readonly="false" />
+        <attribute name="printedEvents" type="int" visibility="private" static="false" readonly="false" />
+        <attribute name="firstLine" type="boolean" visibility="private" static="false" readonly="false" />
+        <operation name="main" visibility="public" returns="void" static="true" abstract="false">
+          <parameter name="args" type="String[]" />
+        </operation>
+        <operation name="play" visibility="public" returns="GameEngine" static="false" abstract="false" />
+      </class>
+      <class name="ConsoleView" kind="class" package="rush.cli" introduced="1" color="#FFFFFF" modified="false" x="60" y="500" width="360" height="105">
+        <attribute name="out" type="PrintStream" visibility="private" static="false" readonly="true" />
+        <operation name="state" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="game" type="GameEngine" />
+        </operation>
+        <operation name="summary" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="stats" type="GameStats" />
+        </operation>
+      </class>
+      <class name="GameEngine" kind="class" package="rush.game" introduced="1" color="#FFFFFF" modified="false" x="520" y="180" width="630" height="550">
+        <attribute name="turn" type="int" visibility="private" static="false" readonly="false" />
+        <attribute name="servedCount" type="int" visibility="private" static="false" readonly="false" />
+        <attribute name="unhappyDepartures" type="int" visibility="private" static="false" readonly="false" />
+        <attribute name="phase" type="TurnPhase" visibility="private" static="false" readonly="false" />
+        <operation name="customers" visibility="public" returns="List&lt;Customer&gt;" static="false" abstract="false" />
+        <operation name="tables" visibility="public" returns="List&lt;Table&gt;" static="false" abstract="false" />
+        <operation name="orders" visibility="public" returns="List&lt;Order&gt;" static="false" abstract="false" />
+        <operation name="beginTurn" visibility="public" returns="void" static="false" abstract="false" />
+        <operation name="seatByWaiter" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="customerId" type="int" />
+          <parameter name="tableId" type="int" />
+        </operation>
+        <operation name="takeOrder" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="customerId" type="int" />
+        </operation>
+        <operation name="serve" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="orderId" type="int" />
+        </operation>
+        <operation name="waiterWait" visibility="public" returns="void" static="false" abstract="false" />
+        <operation name="chefWait" visibility="public" returns="void" static="false" abstract="false" />
+        <operation name="prepare" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="orderId" type="int" />
+        </operation>
+        <operation name="finishTurn" visibility="public" returns="void" static="false" abstract="false" />
+        <operation name="stats" visibility="public" returns="GameStats" static="false" abstract="false" />
+        <operation name="waitingQueue" visibility="public" returns="List&lt;Customer&gt;" static="false" abstract="false" />
+      </class>
+      <class name="Scenario" kind="class" package="rush.game" introduced="1" color="#FFFFFF" modified="true" x="1430" y="1160" width="480" height="230">
+        <attribute name="MAX_TURNS" type="int" visibility="public" static="true" readonly="true" />
+        <attribute name="TABLES" type="int" visibility="public" static="true" readonly="true" />
+        <attribute name="MIN_PAID" type="int" visibility="public" static="true" readonly="true" />
+        <attribute name="MIN_REVENUE_CENTS" type="long" visibility="public" static="true" readonly="true" />
+        <attribute name="MIN_SATISFACTION" type="int" visibility="public" static="true" readonly="true" />
+        <operation name="hasArrival" visibility="public" returns="boolean" static="false" abstract="false">
+          <parameter name="turn" type="int" />
+        </operation>
+        <operation name="arrival" visibility="public" returns="Customer" static="false" abstract="false">
+          <parameter name="turn" type="int" />
+        </operation>
+      </class>
+      <class name="Waiter" kind="class" package="rush.staff" introduced="1" color="#FFFFFF" modified="false" x="520" y="870" width="580" height="120">
+        <operation name="seat" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="customer" type="Customer" />
+          <parameter name="table" type="Table" />
+        </operation>
+        <operation name="takeOrder" visibility="public" returns="Order" static="false" abstract="false">
+          <parameter name="customer" type="Customer" />
+          <parameter name="menu" type="Menu" />
+          <parameter name="turn" type="int" />
+        </operation>
+        <operation name="serve" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="order" type="Order" />
+          <parameter name="turn" type="int" />
+        </operation>
+      </class>
+      <class name="Chef" kind="class" package="rush.staff" introduced="1" color="#FFFFFF" modified="false" x="520" y="1050" width="340" height="70">
+        <operation name="prepare" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="order" type="Order" />
+          <parameter name="turn" type="int" />
+        </operation>
+      </class>
+      <class name="Cashier" kind="class" package="rush.staff" introduced="1" color="#FFFFFF" modified="false" x="520" y="1180" width="680" height="75">
+        <operation name="collect" visibility="public" returns="Receipt" static="false" abstract="false">
+          <parameter name="customers" type="List&lt;Customer&gt;" />
+          <parameter name="tables" type="List&lt;Table&gt;" />
+          <parameter name="turn" type="int" />
+        </operation>
+      </class>
+      <class name="Customer" kind="abstract class" package="rush.domain" introduced="1" color="#FFFFFF" modified="false" x="1430" y="180" width="480" height="450">
+        <attribute name="id" type="int" visibility="private" static="false" readonly="true" />
+        <attribute name="satisfaction" type="int" visibility="private" static="false" readonly="false" />
+        <attribute name="status" type="CustomerStatus" visibility="private" static="false" readonly="false" />
+        <attribute name="order" type="Order" visibility="private" static="false" readonly="false" />
+        <attribute name="servedTurn" type="int" visibility="private" static="false" readonly="false" />
+        <attribute name="readyToPayTurn" type="int" visibility="private" static="false" readonly="false" />
+        <operation name="type" visibility="public" returns="String" static="false" abstract="true" />
+        <operation name="waitingLoss" visibility="public" returns="int" static="false" abstract="true" />
+        <operation name="chooseMeal" visibility="public" returns="MenuItem" static="false" abstract="true">
+          <parameter name="menu" type="Menu" />
+        </operation>
+        <operation name="discountedBill" visibility="public" returns="long" static="false" abstract="false">
+          <parameter name="baseCents" type="long" />
+        </operation>
+        <operation name="seat" visibility="public" returns="void" static="false" abstract="false" />
+        <operation name="placeOrder" visibility="public" returns="Order" static="false" abstract="false">
+          <parameter name="menu" type="Menu" />
+          <parameter name="turn" type="int" />
+        </operation>
+        <operation name="serve" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="turn" type="int" />
+        </operation>
+        <operation name="finishEating" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="turn" type="int" />
+        </operation>
+        <operation name="pay" visibility="public" returns="Receipt" static="false" abstract="false">
+          <parameter name="turn" type="int" />
+        </operation>
+        <operation name="losePatience" visibility="public" returns="boolean" static="false" abstract="false" />
+        <attribute name="arrivalTurn" type="int" visibility="private" static="false" readonly="true" />
+        <operation name="isWaitingForService" visibility="public" returns="boolean" static="false" abstract="false" />
+      </class>
+      <class name="RegularCustomer" kind="class" package="rush.domain" introduced="1" color="#FFFFFF" modified="false" x="1280" y="900" width="360" height="100">
+        <operation name="type" visibility="public" returns="String" static="false" abstract="false" />
+        <operation name="waitingLoss" visibility="public" returns="int" static="false" abstract="false" />
+        <operation name="chooseMeal" visibility="public" returns="MenuItem" static="false" abstract="false">
+          <parameter name="menu" type="Menu" />
+        </operation>
+      </class>
+      <class name="Order" kind="class" package="rush.domain" introduced="1" color="#FFFFFF" modified="false" x="2250" y="180" width="410" height="350">
+        <attribute name="id" type="int" visibility="private" static="false" readonly="true" />
+        <attribute name="customer" type="Customer" visibility="private" static="false" readonly="true" />
+        <attribute name="meal" type="MenuItem" visibility="private" static="false" readonly="true" />
+        <attribute name="billCents" type="long" visibility="private" static="false" readonly="true" />
+        <attribute name="placedTurn" type="int" visibility="private" static="false" readonly="true" />
+        <attribute name="completedUnits" type="int" visibility="private" static="false" readonly="false" />
+        <attribute name="readyTurn" type="int" visibility="private" static="false" readonly="false" />
+        <attribute name="status" type="OrderStatus" visibility="private" static="false" readonly="false" />
+        <operation name="prepare" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="turn" type="int" />
+        </operation>
+        <operation name="serve" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="turn" type="int" />
+        </operation>
+        <operation name="markPaid" visibility="public" returns="void" static="false" abstract="false" />
+        <operation name="cancel" visibility="public" returns="void" static="false" abstract="false" />
+      </class>
+      <class name="Table" kind="class" package="rush.domain" introduced="1" color="#FFFFFF" modified="false" x="1280" y="700" width="330" height="150">
+        <attribute name="id" type="int" visibility="private" static="false" readonly="true" />
+        <attribute name="occupant" type="Customer" visibility="private" static="false" readonly="false" />
+        <operation name="isFree" visibility="public" returns="boolean" static="false" abstract="false" />
+        <operation name="seat" visibility="public" returns="void" static="false" abstract="false">
+          <parameter name="customer" type="Customer" />
+        </operation>
+        <operation name="release" visibility="public" returns="void" static="false" abstract="false" />
+      </class>
+      <class name="Menu" kind="class" package="rush.domain" introduced="1" color="#FFFFFF" modified="false" x="2700" y="180" width="330" height="130">
+        <attribute name="items" type="List&lt;MenuItem&gt;" visibility="private" static="false" readonly="true" />
+        <operation name="items" visibility="public" returns="List&lt;MenuItem&gt;" static="false" abstract="false" />
+        <operation name="named" visibility="public" returns="MenuItem" static="false" abstract="false">
+          <parameter name="name" type="String" />
+        </operation>
+      </class>
+      <class name="MenuItem" kind="class" package="rush.domain" introduced="1" color="#FFFFFF" modified="false" x="2700" y="430" width="300" height="140" final="true">
+        <attribute name="name" type="String" visibility="private" static="false" readonly="true" />
+        <attribute name="priceCents" type="long" visibility="private" static="false" readonly="true" />
+        <attribute name="preparationUnits" type="int" visibility="private" static="false" readonly="true" />
+      </class>
+      <class name="Receipt" kind="class" package="rush.domain" introduced="1" color="#FFFFFF" modified="false" x="2250" y="1160" width="310" height="145" final="true">
+        <attribute name="customerId" type="int" visibility="private" static="false" readonly="true" />
+        <attribute name="billCents" type="long" visibility="private" static="false" readonly="true" />
+        <attribute name="satisfaction" type="int" visibility="private" static="false" readonly="true" />
+        <attribute name="paidTurn" type="int" visibility="private" static="false" readonly="true" />
+      </class>
+      <class name="GameStats" kind="class" package="rush.game" introduced="1" color="#FFFFFF" modified="false" x="60" y="1190" width="360" height="200" final="true">
+        <attribute name="turnsUsed" type="int" visibility="private" static="false" readonly="true" />
+        <attribute name="servedCount" type="int" visibility="private" static="false" readonly="true" />
+        <attribute name="paidCount" type="int" visibility="private" static="false" readonly="true" />
+        <attribute name="unhappyDepartures" type="int" visibility="private" static="false" readonly="true" />
+        <attribute name="revenueCents" type="long" visibility="private" static="false" readonly="true" />
+        <attribute name="averageSatisfaction" type="double" visibility="private" static="false" readonly="true" />
+        <attribute name="result" type="GameResult" visibility="private" static="false" readonly="true" />
+        <operation name="hasAverageSatisfaction" visibility="public" returns="boolean" static="false" abstract="false" />
+      </class>
+      <class name="CustomerStatus" kind="enum" package="rush.domain" introduced="1" color="#FFFFFF" modified="false" x="360" y="1560" width="280" height="220">
+        <literal name="WAITING" />
+        <literal name="SEATED" />
+        <literal name="WAITING_FOR_FOOD" />
+        <literal name="EATING" />
+        <literal name="READY_TO_PAY" />
+        <literal name="PAID" />
+        <literal name="LEFT" />
+      </class>
+      <class name="OrderStatus" kind="enum" package="rush.domain" introduced="1" color="#FFFFFF" modified="false" x="750" y="1560" width="230" height="170">
+        <literal name="PREPARING" />
+        <literal name="READY" />
+        <literal name="SERVED" />
+        <literal name="PAID" />
+        <literal name="CANCELLED" />
+      </class>
+      <class name="TurnPhase" kind="enum" package="rush.game" introduced="1" color="#FFFFFF" modified="false" x="60" y="1560" width="240" height="170">
+        <literal name="BETWEEN_TURNS" />
+        <literal name="WAITER" />
+        <literal name="CHEF" />
+        <literal name="END" />
+        <literal name="FINISHED" />
+      </class>
+      <class name="GameResult" kind="enum" package="rush.game" introduced="1" color="#FFFFFF" modified="false" x="1090" y="1560" width="230" height="130">
+        <literal name="IN_PROGRESS" />
+        <literal name="VICTORY" />
+        <literal name="DEFEAT" />
+      </class>
+      <class name="Money" kind="class" package="rush.domain" introduced="1" color="#FFFFFF" modified="false" x="1430" y="1560" width="440" height="110">
+        <operation name="percentage" visibility="public" returns="long" static="true" abstract="false">
+          <parameter name="cents" type="long" />
+          <parameter name="percent" type="int" />
+        </operation>
+        <operation name="format" visibility="public" returns="String" static="true" abstract="false">
+          <parameter name="cents" type="long" />
+        </operation>
+      </class>
+      <class name="RuleViolation" kind="class" package="rush.domain" introduced="1" color="#FFFFFF" modified="false" x="2070" y="1560" width="480" height="110" exception="true">
+        <operation name="require" visibility="public" returns="void" static="true" abstract="false">
+          <parameter name="condition" type="boolean" />
+          <parameter name="message" type="String" />
+        </operation>
+      </class>
+      <class name="VIPCustomer" kind="class" package="rush.domain" introduced="2" color="#D8EAFE" modified="false" x="1750" y="810" width="360" height="160">
+        <operation name="type" visibility="public" returns="String" static="false" abstract="false" />
+        <operation name="waitingLoss" visibility="public" returns="int" static="false" abstract="false" />
+        <operation name="chooseMeal" visibility="public" returns="MenuItem" static="false" abstract="false">
+          <parameter name="menu" type="Menu" />
+        </operation>
+        <operation name="discountedBill" visibility="public" returns="long" static="false" abstract="false">
+          <parameter name="baseCents" type="long" />
+        </operation>
+      </class>
+      <class name="CriticCustomer" kind="class" package="rush.domain" introduced="2" color="#D8EAFE" modified="false" x="2220" y="810" width="360" height="140">
+        <operation name="type" visibility="public" returns="String" static="false" abstract="false" />
+        <operation name="waitingLoss" visibility="public" returns="int" static="false" abstract="false" />
+        <operation name="chooseMeal" visibility="public" returns="MenuItem" static="false" abstract="false">
+          <parameter name="menu" type="Menu" />
+        </operation>
+      </class>
+    </classes>
+    <relationships>
+      <relationship kind="composition" source="ConsoleApp" target="GameEngine" sourceMultiplicity="1" targetMultiplicity="1" name="" />
+      <relationship kind="composition" source="ConsoleApp" target="ConsoleView" sourceMultiplicity="1" targetMultiplicity="1" name="" />
+      <relationship kind="composition" source="GameEngine" target="Scenario" sourceMultiplicity="1" targetMultiplicity="1" name="" />
+      <relationship kind="composition" source="GameEngine" target="Menu" sourceMultiplicity="1" targetMultiplicity="1" name="" />
+      <relationship kind="composition" source="GameEngine" target="Waiter" sourceMultiplicity="1" targetMultiplicity="1" name="" />
+      <relationship kind="composition" source="GameEngine" target="Chef" sourceMultiplicity="1" targetMultiplicity="1" name="" />
+      <relationship kind="composition" source="GameEngine" target="Cashier" sourceMultiplicity="1" targetMultiplicity="1" name="" />
+      <relationship kind="composition" source="GameEngine" target="Table" sourceMultiplicity="1" targetMultiplicity="2" name="" />
+      <relationship kind="composition" source="GameEngine" target="Customer" sourceMultiplicity="1" targetMultiplicity="0..6" name="" />
+      <relationship kind="association" source="GameEngine" target="Order" sourceMultiplicity="1" targetMultiplicity="0..6" name="" />
+      <relationship kind="association" source="GameEngine" target="Receipt" sourceMultiplicity="1" targetMultiplicity="0..5" name="" />
+      <relationship kind="composition" source="Customer" target="Order" sourceMultiplicity="1" targetMultiplicity="0..1" name="" />
+      <relationship kind="association" source="Table" target="Customer" sourceMultiplicity="0..1" targetMultiplicity="0..1" name="occupant" />
+      <relationship kind="generalization" source="RegularCustomer" target="Customer" sourceMultiplicity="" targetMultiplicity="" name="" />
+      <relationship kind="dependency" source="Waiter" target="Customer" sourceMultiplicity="" targetMultiplicity="" name="" />
+      <relationship kind="dependency" source="Chef" target="Order" sourceMultiplicity="" targetMultiplicity="" name="" />
+      <relationship kind="dependency" source="Cashier" target="Customer" sourceMultiplicity="" targetMultiplicity="" name="" />
+      <relationship kind="composition" source="Menu" target="MenuItem" sourceMultiplicity="1" targetMultiplicity="3" name="" />
+      <relationship kind="association" source="Order" target="MenuItem" sourceMultiplicity="0..*" targetMultiplicity="1" name="meal" />
+      <relationship kind="generalization" source="VIPCustomer" target="Customer" sourceMultiplicity="" targetMultiplicity="" name="" />
+      <relationship kind="generalization" source="CriticCustomer" target="Customer" sourceMultiplicity="" targetMultiplicity="" name="" />
+      <relationship kind="dependency" source="Scenario" target="RegularCustomer" sourceMultiplicity="" targetMultiplicity="" name="" />
+      <relationship kind="dependency" source="Scenario" target="VIPCustomer" sourceMultiplicity="" targetMultiplicity="" name="" />
+      <relationship kind="dependency" source="Scenario" target="CriticCustomer" sourceMultiplicity="" targetMultiplicity="" name="" />
+    </relationships>
+  </project>
+</projects>
