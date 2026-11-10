@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "date_singapore": "2026-10-29",
+  "branch": "codex/richard-stage-2",
+  "source_commit": "bc769cc38beeccca023c0f71b8b347a425bcf6af",
+  "tool": "Visual Paradigm Standard 18.0 (academic license), public Open API",
+  "native_project_reopened": true,
+  "native_sqlite_quick_check": "ok",
+  "modeled_type_count": 23,
+  "diagrams": [
+    {
+      "name": "Stage 2 - Class Diagram - Richard Draft",
+      "class_shapes": 23,
+      "connectors": 24
+    }
+  ],
+  "verified_selected_members": {
+    "fields": 50,
+    "methods": 58,
+    "enum_literals": 20
+  },
+  "game_checks": 115,
+  "ordinary_final_value_classes": [
+    "MenuItem",
+    "Receipt",
+    "GameStats"
+  ],
+  "record_stereotypes": 0,
+  "course_cleanup": "Scanner/PrintStream console, nullable Receipt, double average with hasAverageSatisfaction, ordinary immutable value classes.",
+  "no_overlapping_class_shapes": true,
+  "visual_review": "Native PNG exports visually inspected; PDF awaits refreshed source checkpoint annotation.",
+  "png_pixels": {
+    "class-diagram": [
+      2979,
+      2028
+    ]
+  },
+  "artifact_sha256": {
+    "Restaurant_Rush_Stage2.vpp": "a2f79b5e1c7f3e08fce4669ce8f98bc18805eed319437bcd5b8ad1f3329adeed",
+    "class-diagram.svg": "14e5b8396c8569e501b40b75dec65c7c394cfdbdb57eb051b50da30a8cb419e5",
+    "class-diagram.png": "9e0fb26822e943ba1ab06a0b5a255de3d818e209e1d71a2a31b71ba31605d258",
+    "model-xml/project.xml": "0a3fe4b2e7c42e0333cf9d7cab8d57a928c6785c29921de9d644b057baf8688d",
+    "model-xml/data.zip": "8bf8040354e58d537e788c34a4516036574dd8e121de8aec2f6f6aeb1053ca85",
+    "class-diagram.pdf": "31fd69959fa716aad6b91a7c525a39316a2624c117e10559549cda2df1860134"
+  },
+  "selected_relationships": 24,
+  "relationship_breakdown": {
+    "composition": 11,
+    "association": 4,
+    "dependency": 6,
+    "generalization": 3
+  },
+  "pin_only_refresh_preserved_members_relationships_and_bounds": true,
+  "pdf": {
+    "file": "class-diagram.pdf",
+    "pages": 1,
+    "source": "Native Visual Paradigm SVG, rendered with ReportLab and svglib",
+    "visual_review": "Rendered PDF inspected; no clipped members, missing glyphs or overlapping class boxes. Abstract and bold notation preserved."
+  }
+}
