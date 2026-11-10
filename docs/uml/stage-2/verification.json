@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "date_singapore": "2026-11-14",
+  "source_commit": "c6e3c3f9ffe7e79e6dae1c2bb8b9436df7ec2b33",
+  "tool": "Visual Paradigm Standard 18.0 (academic license), public Open API",
+  "native_project_reopened": false,
+  "native_sqlite_quick_check": "ok",
+  "modeled_type_count": 23,
+  "diagrams": [
+    {
+      "name": "Stage 2 - Class Diagram - Richard Draft",
+      "class_shapes": 23,
+      "connectors": 24
+    }
+  ],
+  "verified_selected_members": {
+    "fields": 50,
+    "methods": 58,
+    "enum_literals": 20
+  },
+  "game_checks": 115,
+  "ordinary_final_value_classes": [
+    "MenuItem",
+    "Receipt",
+    "GameStats"
+  ],
+  "record_stereotypes": 0,
+  "course_cleanup": "Scanner/PrintStream console, nullable Receipt, double average with hasAverageSatisfaction, ordinary immutable value classes.",
+  "no_overlapping_class_shapes": true,
+  "png_pixels": {
+    "class-diagram": [
+      2979,
+      2028
+    ]
+  },
+  "artifact_sha256": {
+    "model-xml/project.xml": "13617a4bdbf0e5fd770aa7435d39ae32f72c0a754e2dabe06d7cf09d3cd50ca8",
+    "model-xml/data.zip": "8bf8040354e58d537e788c34a4516036574dd8e121de8aec2f6f6aeb1053ca85"
+  },
+  "selected_relationships": 24,
+  "relationship_breakdown": {
+    "composition": 11,
+    "association": 4,
+    "dependency": 6,
+    "generalization": 3
+  },
+  "pin_only_refresh_preserved_members_relationships_and_bounds": true,
+  "pdf": {
+    "file": "class-diagram.pdf",
+    "pages": 1,
+    "source": "Synchronized SVG rendered as vector PDF with headless Chromium.",
+    "visual_review": "2026-11-14: rendered page inspected after the source subtitle refresh."
+  },
+  "source_branch": "work/stage-2",
+  "source_files_sha256": "7ec4aa8a3a4f84bd8dead407854546a48bbe405b5fd9ff2a7a528fa92d6cf364",
+  "native_gui_review": {
+    "status": "pending",
+    "reason": "Structured provenance refresh; Visual Paradigm GUI reopen was not performed."
+  },
+  "verification_status": "Historical snapshot sanitized during history cleanup; use the cleaned branch tip for current verification.",
+  "member_descriptor": "source/stage2-model.xml",
+  "validation_command": "python tools/verify-uml.py",
+  "provenance_refresh": {
+    "method": "Structured SQLite field updates and compaction; matching XML annotations refreshed.",
+    "model_rows_preserved_after_annotation_normalization": true,
+    "graphics": "Stage 1/2 SVG subtitles synchronized; PNG and PDF views regenerated. Other diagram geometry retained. No fresh native GUI export claimed."
+  },
+  "source_signatures_checked_against_compiled_java": true,
+  "text_hashes": "LF normalized"
+}

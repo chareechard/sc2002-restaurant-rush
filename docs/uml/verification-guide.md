@@ -7,6 +7,7 @@ which avoids a verification record referring to the commit that must contain tha
 | Stage | Source commit | Source branch |
 | --- | --- | --- |
 | 1 | `02f5c5a46320fc3dc5bb4b5507b1dde5c2437bac` | `work/stage-1` |
+| 2 | `c6e3c3f9ffe7e79e6dae1c2bb8b9436df7ec2b33` | `work/stage-2` |
 
 `source_files_sha256` hashes sorted source paths, a zero byte, file content and another zero byte
 for each file under `src/main/java/`. It identifies the production content independently of commit names.
