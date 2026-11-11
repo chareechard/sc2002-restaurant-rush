@@ -8,7 +8,7 @@ import rush.domain.RuleViolation;
 import rush.domain.Table;
 
 public final class Cashier {
-    /** Returns the collected receipt, or null when no customer can pay this turn. */
+    /** Returns the receipt, or null when no customer can pay this turn. */
     public Receipt collect(List<Customer> customers, List<Table> tables, int turn) {
         Customer next = null;
         for (Customer customer : customers) {

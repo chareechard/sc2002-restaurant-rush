@@ -12,6 +12,7 @@ import rush.domain.RuleViolation;
 import rush.domain.Table;
 import rush.staff.Cashier;
 import rush.staff.Chef;
+import rush.staff.Host;
 import rush.staff.Waiter;
 
 /** Runs each turn. Customers, orders and tables handle their own rules. */
@@ -21,6 +22,8 @@ public final class GameEngine {
     private final Waiter waiter = new Waiter();
     private final Chef chef = new Chef();
     private final Cashier cashier = new Cashier();
+    private final Host host = new Host();
+    private final HappyHour happyHour = new HappyHour();
     private final List<Customer> customers = new ArrayList<Customer>();
     private final List<Table> tables = new ArrayList<Table>();
     private final List<Order> orders = new ArrayList<Order>();
@@ -39,55 +42,62 @@ public final class GameEngine {
 
     public int turn() { return turn; }
     public TurnPhase phase() { return phase; }
+    public boolean happyHourUsed() { return happyHour.used(); }
+    public int happyHourRemaining() { return happyHour.remainingTurns(); }
     public Menu menu() { return menu; }
-    public List<Customer> customers() {
-        List<Customer> copy = new ArrayList<Customer>();
+    public List<CustomerView> customers() {
+        List<CustomerView> snapshots = new ArrayList<CustomerView>();
         for (Customer customer : customers) {
-            copy.add(customer);
+            snapshots.add(CustomerView.from(customer));
         }
-        return copy;
+        return snapshots;
     }
 
-    public List<Customer> waitingQueue() {
-        List<Customer> waiting = new ArrayList<Customer>();
+    public List<CustomerView> waitingQueue() {
+        List<CustomerView> waiting = new ArrayList<CustomerView>();
         for (Customer customer : customers) {
             if (customer.status() == CustomerStatus.WAITING) {
-                waiting.add(customer);
+                waiting.add(CustomerView.from(customer));
             }
         }
         return waiting;
     }
 
-    public List<Table> tables() {
-        List<Table> copy = new ArrayList<Table>();
+    public List<TableView> tables() {
+        List<TableView> snapshots = new ArrayList<TableView>();
         for (Table table : tables) {
-            copy.add(table);
+            snapshots.add(TableView.from(table));
         }
-        return copy;
-    }
-    public List<Order> orders() {
-        List<Order> copy = new ArrayList<Order>();
-        for (Order order : orders) {
-            copy.add(order);
-        }
-        return copy;
-    }
-    public List<Receipt> receipts() {
-        List<Receipt> copy = new ArrayList<Receipt>();
-        for (Receipt receipt : receipts) {
-            copy.add(receipt);
-        }
-        return copy;
-    }
-    public List<String> events() {
-        List<String> copy = new ArrayList<String>();
-        for (String event : events) {
-            copy.add(event);
-        }
-        return copy;
+        return snapshots;
     }
 
-    public Customer customer(int id) {
+    public List<OrderView> orders() {
+        List<OrderView> snapshots = new ArrayList<OrderView>();
+        for (Order order : orders) {
+            snapshots.add(OrderView.from(order));
+        }
+        return snapshots;
+    }
+    public List<Receipt> receipts() {
+        List<Receipt> copies = new ArrayList<Receipt>();
+        for (Receipt receipt : receipts) {
+            copies.add(receipt);
+        }
+        return copies;
+    }
+    public List<String> events() {
+        List<String> copies = new ArrayList<String>();
+        for (String event : events) {
+            copies.add(event);
+        }
+        return copies;
+    }
+
+    public CustomerView customer(int id) { return CustomerView.from(findCustomer(id)); }
+    public OrderView order(int id) { return OrderView.from(findOrder(id)); }
+    public TableView table(int id) { return TableView.from(findTable(id)); }
+
+    private Customer findCustomer(int id) {
         for (Customer customer : customers) {
             if (customer.id() == id) {
                 return customer;
@@ -96,7 +106,7 @@ public final class GameEngine {
         throw new RuleViolation("Unknown customer C" + id + ".");
     }
 
-    public Order order(int id) {
+    private Order findOrder(int id) {
         for (Order order : orders) {
             if (order.id() == id) {
                 return order;
@@ -105,7 +115,7 @@ public final class GameEngine {
         throw new RuleViolation("Unknown order O" + id + ".");
     }
 
-    public Table table(int id) {
+    private Table findTable(int id) {
         for (Table table : tables) {
             if (table.id() == id) {
                 return table;
@@ -115,7 +125,13 @@ public final class GameEngine {
     }
 
     public void beginTurn() {
+        beginTurn(false);
+    }
+
+    public void beginTurn(boolean activateHappyHour) {
         requirePhase(TurnPhase.BETWEEN_TURNS);
+        // Validate activation before committing arrivals or advancing the game turn.
+        happyHour.startTurn(turn + 1, activateHappyHour);
         turn++;
         events.clear();
         if (scenario.hasArrival(turn)) {
@@ -123,19 +139,35 @@ public final class GameEngine {
             customers.add(arrival);
             events.add("C" + arrival.id() + " arrives (" + arrival.type() + ", satisfaction 100).");
         }
+        if (happyHour.active()) {
+            for (Customer customer : customers) {
+                customer.recoverSatisfaction(15);
+            }
+            events.add("Happy Hour: " + happyHour.remainingTurns()
+                + " active turn(s) including this one; waiting customers recover up to 15 satisfaction.");
+        }
+        phase = TurnPhase.HOST;
+    }
+
+    public void seatByHost(int customerId, int tableId) {
+        requirePhase(TurnPhase.HOST);
+        host.seat(findCustomer(customerId), findTable(tableId));
+        events.add("Host seats C" + customerId + " at T" + tableId + ".");
         phase = TurnPhase.WAITER;
     }
 
+    public void hostWait() { requirePhase(TurnPhase.HOST); phase = TurnPhase.WAITER; }
+
     public void seatByWaiter(int customerId, int tableId) {
         requirePhase(TurnPhase.WAITER);
-        waiter.seat(customer(customerId), table(tableId));
+        waiter.seat(findCustomer(customerId), findTable(tableId));
         events.add("Waiter seats C" + customerId + " at T" + tableId + ".");
         phase = TurnPhase.CHEF;
     }
 
     public void takeOrder(int customerId) {
         requirePhase(TurnPhase.WAITER);
-        Order order = waiter.takeOrder(customer(customerId), menu, turn);
+        Order order = waiter.takeOrder(findCustomer(customerId), menu, happyHour, turn);
         orders.add(order);
         events.add("C" + customerId + " chooses " + order.meal().name() + "; O" + order.id()
             + " bill locked at " + Money.format(order.billCents()) + ".");
@@ -144,7 +176,7 @@ public final class GameEngine {
 
     public void serve(int orderId) {
         requirePhase(TurnPhase.WAITER);
-        waiter.serve(order(orderId), turn);
+        waiter.serve(findOrder(orderId), turn);
         servedCount++;
         events.add("Waiter serves O" + orderId + ": SERVED. Customer begins eating.");
         phase = TurnPhase.CHEF;
@@ -162,7 +194,7 @@ public final class GameEngine {
 
     public void prepare(int orderId) {
         requirePhase(TurnPhase.CHEF);
-        Order order = order(orderId);
+        Order order = findOrder(orderId);
         chef.prepare(order, turn);
         events.add("Chef advances O" + orderId + " to " + order.completedUnits() + "/"
             + order.meal().preparationUnits() + " units: " + order.status() + ".");
@@ -219,9 +251,7 @@ public final class GameEngine {
 
         GameResult result = GameResult.IN_PROGRESS;
         if (phase == TurnPhase.FINISHED) {
-            if (receipts.size() >= Scenario.MIN_PAID
-                    && revenue >= Scenario.MIN_REVENUE_CENTS
-                    && average >= Scenario.MIN_SATISFACTION) {
+            if (Scenario.targetsMet(receipts.size(), revenue, satisfactionTotal)) {
                 result = GameResult.VICTORY;
             } else {
                 result = GameResult.DEFEAT;

@@ -5,5 +5,5 @@ public final class CriticCustomer extends Customer {
     public CriticCustomer(int id, int arrivalTurn) { super(id, arrivalTurn); }
     @Override public String type() { return "Critic"; }
     @Override public int waitingLoss() { return 12; }
-    @Override public MenuItem chooseMeal(Menu menu) { return menu.named("Pasta"); }
+    @Override public Dish chooseMeal(Menu menu) { return menu.named("Pasta"); }
 }

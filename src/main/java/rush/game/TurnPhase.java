@@ -1,3 +1,3 @@
 package rush.game;
 
-public enum TurnPhase { BETWEEN_TURNS, WAITER, CHEF, END, FINISHED }
+public enum TurnPhase { BETWEEN_TURNS, HOST, WAITER, CHEF, END, FINISHED }

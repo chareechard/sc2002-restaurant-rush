@@ -4,7 +4,8 @@ public final class RegularCustomer extends Customer {
     public RegularCustomer(int id, int arrivalTurn) { super(id, arrivalTurn); }
     @Override public String type() { return "Regular"; }
     @Override public int waitingLoss() { return 8; }
-    @Override public MenuItem chooseMeal(Menu menu) {
+    @Override public Dish chooseMeal(Menu menu) {
+        if (id() % 4 == 0) { return menu.named("Salad + Pasta Combo"); }
         switch (id() % 3) {
             case 1:
                 return menu.named("Pasta");
