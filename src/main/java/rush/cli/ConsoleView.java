@@ -3,13 +3,13 @@ package rush.cli;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
-import rush.domain.Customer;
 import rush.domain.Money;
-import rush.domain.Order;
-import rush.domain.Table;
+import rush.game.CustomerView;
 import rush.game.GameEngine;
 import rush.game.GameStats;
+import rush.game.OrderView;
 import rush.game.Scenario;
+import rush.game.TableView;
 import rush.game.TurnPhase;
 
 /** Read-only rendering: no game state is changed here. */
@@ -20,29 +20,31 @@ public final class ConsoleView {
     public void state(GameEngine game) {
         out.println("\n=== TURN " + game.turn() + "/" + Scenario.MAX_TURNS + " ===");
         summary(game.stats());
+        out.println("Happy Hour: " + game.happyHourRemaining() + " active turn(s) including this turn; "
+            + (game.happyHourUsed() ? "activation used" : "activation available at the start of a turn"));
         List<String> waitingIds = new ArrayList<String>();
-        for (Customer customer : game.waitingQueue()) {
+        for (CustomerView customer : game.waitingQueue()) {
             waitingIds.add("C" + customer.id());
         }
         out.println("Waiting queue: " + waitingIds);
-        for (Table table : game.tables()) {
-            out.println("T" + table.id() + ": " + (table.isFree() ? "free" : "C" + table.occupant().id()));
+        for (TableView table : game.tables()) {
+            out.println("T" + table.id() + ": " + (table.isFree() ? "free" : "C" + table.customerId()));
         }
-        for (Customer customer : game.customers()) {
+        for (CustomerView customer : game.customers()) {
             out.println("C" + customer.id() + " " + customer.type() + " | satisfaction="
                 + customer.satisfaction() + " | " + customer.status());
         }
-        for (Order order : game.orders()) {
-            out.println("O" + order.id() + " for C" + order.customer().id() + " | " + order.meal().name() + " | "
+        for (OrderView order : game.orders()) {
+            out.println("O" + order.id() + " for C" + order.customerId() + " | " + order.meal().name() + " | "
                 + order.completedUnits() + "/" + order.meal().preparationUnits() + " | " + order.status()
                 + " | locked bill " + Money.format(order.billCents()));
         }
-        boolean waiterAvailable = game.phase() == TurnPhase.WAITER;
-        boolean chefAvailable = game.phase() == TurnPhase.WAITER || game.phase() == TurnPhase.CHEF;
         out.println("Current phase: " + game.phase());
-        out.println("Waiter [seat/order/serve/wait]: " + (waiterAvailable ? "available" : "used/unavailable")
-            + " | Chef [cook/wait]: " + (chefAvailable ? "available" : "used/unavailable")
-            + " | Cashier: automatic (max 1).");
+        boolean host = game.phase() == TurnPhase.HOST;
+        boolean waiter = host || game.phase() == TurnPhase.WAITER;
+        boolean chef = waiter || game.phase() == TurnPhase.CHEF;
+        out.println("Host [seat/wait]: " + availability(host) + " | Waiter [seat/order/serve/wait]: "
+            + availability(waiter) + " | Chef [cook/wait]: " + availability(chef) + " | Cashier: automatic (max 1).");
         out.flush();
     }
 
@@ -50,12 +52,14 @@ public final class ConsoleView {
         String average = "N/A";
         if (stats.hasAverageSatisfaction()) {
             long rounded = (long) (stats.averageSatisfaction() * 100 + 0.5);
-            long remainder = rounded % 100;
-            average = (rounded / 100) + "." + (remainder < 10 ? "0" : "") + remainder;
+            long decimal = rounded % 100;
+            average = (rounded / 100) + "." + (decimal < 10 ? "0" : "") + decimal;
         }
         out.println("Served=" + stats.servedCount() + " | Paid=" + stats.paidCount() + " | Unhappy="
             + stats.unhappyDepartures() + " | Revenue=" + Money.format(stats.revenueCents())
             + " | Average paid satisfaction=" + average + " | Turns=" + stats.turnsUsed());
         out.flush();
     }
+
+    private String availability(boolean available) { return available ? "available" : "used/unavailable"; }
 }

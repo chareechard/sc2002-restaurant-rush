@@ -4,7 +4,7 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import rush.domain.MenuItem;
+import rush.domain.Dish;
 import rush.domain.Money;
 import rush.domain.RuleViolation;
 import rush.game.GameEngine;
@@ -31,7 +31,7 @@ public final class ConsoleApp {
     public static void main(String[] args) {
         if (args.length == 1 && args[0].equals("--help")) {
             System.out.println("Restaurant Rush: java -jar build/restaurant-rush.jar");
-            System.out.println("Enter commands at the prompts, or redirect a replay file to standard input.");
+            System.out.println("Enter commands at the prompts, or redirect a replay text file into standard input.");
             return;
         }
         if (args.length != 0) {
@@ -39,26 +39,28 @@ public final class ConsoleApp {
             System.exit(2);
             return;
         }
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         try {
-            new ConsoleApp(scanner, System.out, false).play();
+            new ConsoleApp(input, System.out, false).play();
         } finally {
-            scanner.close();
+            input.close();
         }
     }
 
     public GameEngine play() {
-        out.println("RESTAURANT RUSH - Stage 2 | Base setting | Offline Java");
+        out.println("RESTAURANT RUSH - Stage 3 | Base setting | Offline Java");
         out.println("Win after 18 turns: >=4 paid, >=$45.00 revenue, >=60 average paid satisfaction.");
-        for (MenuItem item : game.menu().items()) {
+        for (Dish item : game.menu().items()) {
             out.println(item.name() + " " + Money.format(item.priceCents())
                 + " (" + item.preparationUnits() + " preparation units)");
         }
         out.println("Commands use numeric ids (e.g. seat 1 1, order 1, cook 1, serve 1). Type help or status.");
         while (game.phase() != TurnPhase.FINISHED) {
-            game.beginTurn();
+            chooseTurnStart();
             printedEvents = 0;
             view.state(game);
+            printNewEvents();
+            chooseHost();
             printNewEvents();
             chooseWaiter();
             printNewEvents();
@@ -79,6 +81,53 @@ public final class ConsoleApp {
             printedEvents++;
         }
         out.flush();
+    }
+
+    private void chooseTurnStart() {
+        while (game.phase() == TurnPhase.BETWEEN_TURNS) {
+            String[] parts = command("Start turn " + (game.turn() + 1) + " [happy | wait]> ");
+            try {
+                checkArgumentCount(parts, 1);
+                switch (parts[0]) {
+                    case "happy":
+                        game.beginTurn(true);
+                        break;
+                    case "wait":
+                        game.beginTurn();
+                        break;
+                    case "help":
+                    case "status":
+                        view.state(game);
+                        break;
+                    default:
+                        out.println("Invalid start command. Choose happy or wait.");
+                        break;
+                }
+            } catch (IllegalArgumentException ex) { out.println("Invalid choice: " + ex.getMessage()); }
+        }
+    }
+
+    private void chooseHost() {
+        while (game.phase() == TurnPhase.HOST) {
+            String[] parts = command("Host [seat C T | wait]> ");
+            try {
+                switch (parts[0]) {
+                    case "wait":
+                        checkArgumentCount(parts, 1); game.hostWait();
+                        break;
+                    case "seat":
+                        checkArgumentCount(parts, 3); game.seatByHost(id(parts[1]), id(parts[2]));
+                        break;
+                    case "help":
+                    case "status":
+                        view.state(game);
+                        break;
+                    default:
+                        out.println("Invalid Host command. Choose seat or wait.");
+                        break;
+                }
+            } catch (IllegalArgumentException ex) { out.println("Invalid choice: " + ex.getMessage()); }
+        }
     }
 
     private void chooseWaiter() {
@@ -149,10 +198,8 @@ public final class ConsoleApp {
         while (input.hasNextLine()) {
             String line = input.nextLine();
             if (firstLine) {
-                if (line.startsWith("\uFEFF")) {
-                    line = line.substring(1);
-                }
                 firstLine = false;
+                if (line.startsWith("\uFEFF")) { line = line.substring(1); }
             }
             line = line.trim();
             if (line.isEmpty() || line.startsWith("#")) {
@@ -161,23 +208,20 @@ public final class ConsoleApp {
             if (echo) {
                 out.println(line);
             }
-            Scanner tokens = new Scanner(line);
-            List<String> words = new ArrayList<String>();
-            try {
-                while (tokens.hasNext()) {
-                    words.add(tokens.next());
-                }
-            } finally {
-                tokens.close();
+            Scanner words = new Scanner(line);
+            List<String> tokens = new ArrayList<String>();
+            while (words.hasNext()) {
+                tokens.add(words.next());
             }
-            if (words.isEmpty()) {
+            words.close();
+            if (tokens.isEmpty()) {
                 continue;
             }
-            String[] parts = new String[words.size()];
-            for (int i = 0; i < words.size(); i++) {
-                parts[i] = words.get(i);
+            String[] parts = new String[tokens.size()];
+            for (int i = 0; i < tokens.size(); i++) {
+                parts[i] = tokens.get(i);
             }
-            String[] commands = { "wait", "help", "status", "seat", "order", "serve", "cook" };
+            String[] commands = { "happy", "wait", "help", "status", "seat", "order", "serve", "cook" };
             for (String known : commands) {
                 if (parts[0].equalsIgnoreCase(known)) {
                     parts[0] = known;

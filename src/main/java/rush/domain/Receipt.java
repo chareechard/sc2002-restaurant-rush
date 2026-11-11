@@ -1,6 +1,6 @@
 package rush.domain;
 
-/** Stores the bill and satisfaction when a customer pays. */
+/** Stores the bill and satisfaction at payment; these values cannot change. */
 public final class Receipt {
     private final int customerId;
     private final long billCents;

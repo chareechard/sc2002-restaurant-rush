@@ -1,6 +1,6 @@
 package rush.game;
 
-/** Stores the totals displayed after each turn. */
+/** A summary of the game. The average is meaningful only when someone has paid. */
 public final class GameStats {
     private final int turnsUsed;
     private final int servedCount;
@@ -10,8 +10,7 @@ public final class GameStats {
     private final double averageSatisfaction;
     private final GameResult result;
 
-    public GameStats(int turnsUsed, int servedCount, int paidCount, int unhappyDepartures,
-                     long revenueCents, double averageSatisfaction, GameResult result) {
+    public GameStats(int turnsUsed, int servedCount, int paidCount, int unhappyDepartures, long revenueCents, double averageSatisfaction, GameResult result) {
         this.turnsUsed = turnsUsed;
         this.servedCount = servedCount;
         this.paidCount = paidCount;
@@ -26,7 +25,8 @@ public final class GameStats {
     public int paidCount() { return paidCount; }
     public int unhappyDepartures() { return unhappyDepartures; }
     public long revenueCents() { return revenueCents; }
-    public boolean hasAverageSatisfaction() { return paidCount > 0; }
     public double averageSatisfaction() { return averageSatisfaction; }
     public GameResult result() { return result; }
+
+    public boolean hasAverageSatisfaction() { return paidCount > 0; }
 }

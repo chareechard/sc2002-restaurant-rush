@@ -4,24 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class Menu {
-    private final List<MenuItem> items = new ArrayList<MenuItem>();
+    private final List<Dish> items;
 
     public Menu() {
-        items.add(new MenuItem("Salad", 900, 1));
-        items.add(new MenuItem("Burger", 1500, 1));
-        items.add(new MenuItem("Pasta", 1800, 2));
+        MenuItem salad = new MenuItem("Salad", 900, 1);
+        MenuItem burger = new MenuItem("Burger", 1500, 1);
+        MenuItem pasta = new MenuItem("Pasta", 1800, 2);
+        items = new ArrayList<Dish>();
+        items.add(salad);
+        items.add(burger);
+        items.add(pasta);
+        items.add(new ComboMeal(salad, pasta));
     }
 
-    public List<MenuItem> items() {
-        List<MenuItem> copy = new ArrayList<MenuItem>();
-        for (MenuItem item : items) {
-            copy.add(item);
+    public List<Dish> items() {
+        List<Dish> copies = new ArrayList<Dish>();
+        for (Dish item : items) {
+            copies.add(item);
         }
-        return copy;
+        return copies;
     }
 
-    public MenuItem named(String name) {
-        for (MenuItem item : items) {
+    public Dish named(String name) {
+        for (Dish item : items) {
             if (item.name().equals(name)) {
                 return item;
             }

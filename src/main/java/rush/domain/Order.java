@@ -3,14 +3,14 @@ package rush.domain;
 public final class Order {
     private final int id;
     private final Customer customer;
-    private final MenuItem meal;
+    private final Dish meal;
     private final long billCents;
     private final int placedTurn;
     private int completedUnits;
     private int readyTurn;
     private OrderStatus status = OrderStatus.PREPARING;
 
-    public Order(int id, Customer customer, MenuItem meal, long billCents, int placedTurn) {
+    public Order(int id, Customer customer, Dish meal, long billCents, int placedTurn) {
         RuleViolation.require(id > 0 && customer != null && meal != null && billCents >= 0 && placedTurn > 0,
             "Invalid order.");
         this.id = id;
@@ -22,7 +22,7 @@ public final class Order {
 
     public int id() { return id; }
     public Customer customer() { return customer; }
-    public MenuItem meal() { return meal; }
+    public Dish meal() { return meal; }
     public long billCents() { return billCents; }
     public int placedTurn() { return placedTurn; }
     public int completedUnits() { return completedUnits; }
