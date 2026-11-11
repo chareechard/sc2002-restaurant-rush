@@ -1,7 +1,7 @@
-# Stage 1 verification notes
+# Stage 2 verification notes
 
-The current Stage 1 suite contains 106 checks. The pinned source and tests at
-`02f5c5a46320fc3dc5bb4b5507b1dde5c2437bac` match this stage's current tracked Java files.
+The current Stage 2 suite contains 115 checks. The pinned source and tests at
+`c6e3c3f9ffe7e79e6dae1c2bb8b9436df7ec2b33` match this stage's current tracked Java files.
 
 Run `./build.ps1 test` on Windows or `sh build.sh test` on Linux/macOS. Both compile for Java 17
 with UTF-8, all compiler warnings enabled and warnings treated as errors.
@@ -16,7 +16,7 @@ POSIX shells use `java -jar build/restaurant-rush.jar < replays/victory.txt`.
 
 | Replay | Paid | Revenue | Average paid satisfaction |
 | --- | ---: | ---: | ---: |
-| Victory | 5 | $75.00 | 74.40 |
+| Victory | 4 | $67.50 | 70.25 |
 | Defeat | 0 | $0.00 | N/A |
 
 All these replays last 18 turns. The transcripts in `docs/evidence/` record the corresponding
