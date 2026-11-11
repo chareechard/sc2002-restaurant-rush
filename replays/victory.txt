@@ -1,55 +1,91 @@
-# Stage 2: one Waiter command then one Chef command per turn.
+# Stage 3: Start (happy/wait), Host, Waiter, Chef for each turn.
 # Turn 1
-seat 1 1
 wait
-# Turn 2
+seat 1 1
 order 1
+cook 1
+# Turn 2
+wait
+wait
+wait
 cook 1
 # Turn 3
 wait
-cook 1
-# Turn 4
+wait
 serve 1
 wait
-# Turn 5
+# Turn 4
+happy
 seat 2 2
-wait
-# Turn 6
 order 2
 cook 2
-# Turn 7
+# Turn 5
+wait
+wait
 serve 2
 wait
-# Turn 8
-seat 3 1
+# Turn 6
 wait
-# Turn 9
+wait
+wait
+wait
+# Turn 7
+wait
+seat 3 1
 order 3
 cook 3
-# Turn 10
-seat 4 2
+# Turn 8
+wait
+wait
+wait
 cook 3
-# Turn 11
+# Turn 9
+wait
+wait
 serve 3
 wait
-# Turn 12
+# Turn 10
+wait
+seat 4 2
 order 4
+cook 4
+# Turn 11
+wait
+wait
+wait
+cook 4
+# Turn 12
+wait
+wait
+wait
 cook 4
 # Turn 13
 wait
-cook 4
-# Turn 14
+seat 5 1
 serve 4
 wait
-# Turn 15
-seat 5 1
+# Turn 14
 wait
-# Turn 16
+wait
 order 5
 cook 5
-# Turn 17
+# Turn 15
+wait
+wait
 serve 5
 wait
-# Turn 18
+# Turn 16
+wait
 seat 6 2
+order 6
+cook 6
+# Turn 17
+wait
+wait
+serve 6
+wait
+# Turn 18
+wait
+wait
+wait
 wait

@@ -7,5 +7,5 @@ submission/
 __pycache__/
 
 # Visual Paradigm's local locks and automatic backups are not deliverables.
-docs/uml/stage-1/.*.vpp.lck
-docs/uml/stage-1/*.vpp.bak*
+*.vpp.bak*
+.*.vpp.lck
