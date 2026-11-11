@@ -18,7 +18,7 @@ public abstract class Customer {
 
     public abstract String type();
     public abstract int waitingLoss();
-    public abstract MenuItem chooseMeal(Menu menu);
+    public abstract Dish chooseMeal(Menu menu);
     public long discountedBill(long baseCents) { return baseCents; }
 
     public int id() { return id; }
@@ -39,9 +39,13 @@ public abstract class Customer {
     }
 
     public Order placeOrder(Menu menu, int turn) {
+        return placeOrder(menu, PricingPolicy.STANDARD, turn);
+    }
+
+    public Order placeOrder(Menu menu, PricingPolicy pricing, int turn) {
         RuleViolation.require(status == CustomerStatus.SEATED, "Customer must be seated and have no order.");
-        MenuItem meal = chooseMeal(menu);
-        order = new Order(id, this, meal, discountedBill(meal.priceCents()), turn);
+        Dish meal = chooseMeal(menu);
+        order = new Order(id, this, meal, pricing.apply(discountedBill(meal.priceCents())), turn);
         status = CustomerStatus.WAITING_FOR_FOOD;
         return order;
     }
@@ -82,5 +86,10 @@ public abstract class Customer {
         }
         status = CustomerStatus.LEFT;
         return true;
+    }
+
+    public void recoverSatisfaction(int points) {
+        RuleViolation.require(points >= 0, "Recovery cannot be negative.");
+        if (isWaitingForService()) { satisfaction = (int) Math.min(100L, (long) satisfaction + points); }
     }
 }

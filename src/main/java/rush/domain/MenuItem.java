@@ -1,7 +1,7 @@
 package rush.domain;
 
 /** The fixed menu supplies the name, price in cents and required cooking time. */
-public final class MenuItem {
+public final class MenuItem implements Dish {
     private final String name;
     private final long priceCents;
     private final int preparationUnits;
