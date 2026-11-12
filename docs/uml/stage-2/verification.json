@@ -1,7 +1,6 @@
 {
   "schema_version": 2,
   "date_singapore": "2026-10-29",
-  "branch": "codex/richard-stage-2",
   "source_commit": "bc769cc38beeccca023c0f71b8b347a425bcf6af",
   "tool": "Visual Paradigm Standard 18.0 (academic license), public Open API",
   "native_project_reopened": true,
@@ -56,5 +55,15 @@
     "pages": 1,
     "source": "Native Visual Paradigm SVG, rendered with ReportLab and svglib",
     "visual_review": "Rendered PDF inspected; no clipped members, missing glyphs or overlapping class boxes. Abstract and bold notation preserved."
+  },
+  "independent_current_repository_check": {
+    "date_singapore": "2026-11-12",
+    "commit": "c9d4c6b7a8a4dff469b0f285571d6e8e64f0acab",
+    "scope": "All tracked src/main files matched the original checkpoint byte-for-byte; selected model members were checked against compiled target code. This does not replace the original historical record or assert a new native-model visual review.",
+    "game_checks": 115,
+    "selected_model_types": 23,
+    "selected_fields": 50,
+    "selected_methods_or_operations": 58,
+    "enum_literals": 20
   }
 }
