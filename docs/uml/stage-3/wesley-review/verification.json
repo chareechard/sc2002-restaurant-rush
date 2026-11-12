@@ -1,0 +1,90 @@
+{
+  "date_singapore": "2026-11-05",
+  "stage": 3,
+  "source_commit": "310bb2ebfff379eb76bb2076b33d9ab387559296",
+  "native_application": "Visual Paradigm Standard",
+  "native_version": "18.0",
+  "native_build": "20260521",
+  "native_project_reopened": true,
+  "native_sqlite_quick_check": "ok",
+  "diagram_name": "Stage 3 - Reviewed Class Diagram",
+  "verified_types": 31,
+  "verified_selected_members": {
+    "fields": 62,
+    "operations_including_constructors": 76,
+    "enum_literals": 21
+  },
+  "source_signatures_checked_against_compiled_java": true,
+  "principal_relationships": 28,
+  "relationship_breakdown": {
+    "composition": 12,
+    "association": 4,
+    "aggregation": 2,
+    "dependency": 4,
+    "generalization": 3,
+    "realization": 3
+  },
+  "geometry_check": {
+    "classes": 31,
+    "relationships": 28,
+    "labels_checked": 36,
+    "minimum_parallel_gap": 28,
+    "minimum_arrowhead_gap": 24.0,
+    "issues": []
+  },
+  "cross_stage_alignment": {
+    "baseline_stage": 1,
+    "shared_class_bounds_identical": true,
+    "common_connector_paths_and_labels_identical": true,
+    "stages": {
+      "1_to_2": {
+        "shared_classes": 21,
+        "shared_relationships": 19
+      },
+      "1_to_3": {
+        "shared_classes": 21,
+        "shared_relationships": 17
+      },
+      "2_to_3": {
+        "shared_classes": 23,
+        "shared_relationships": 19
+      }
+    }
+  },
+  "desktop_gui_verification": {
+    "application": "Visual Paradigm Standard Desktop 18.0",
+    "build": "20260521",
+    "exact_committed_vpp_opened": true,
+    "class_selected": "GameEngine",
+    "connector_selected": "Chef -> Order dependency",
+    "four_game_engine_end_labels_clear": true,
+    "vpp_sha256": "9d66d717a9b401b18415991c127bba2b09a62ea2bc26b6cdcf6d7e423abf18bc"
+  },
+  "visual_review": "Curated PDF and native PNG reviewed; shared class positions, endpoint labels and routes checked.",
+  "artifact_sha256": {
+    "model-xml/data.zip": "a5321e0d98b7d80ea7de5626e92610fa52073e12945e0ede0a02407fa32d36b6",
+    "model-xml/project.xml": "880d389904847b2c6c9af97f1ece44d55347920d1f62a763922cd9dc7149f458",
+    "README.md": "adee9385b57853a2cdac297d3e725bee7306b64caf239f5c2d8242c5c7d5a276",
+    "Restaurant_Rush_Stage3_Class.vpp": "9d66d717a9b401b18415991c127bba2b09a62ea2bc26b6cdcf6d7e423abf18bc",
+    "source/ClassDiagramExportPlugin.java": "6e8087ba4c2782f8e65cdfaf81e056bce89ace04fe8ce04f759537cf1922da42",
+    "source/layout.json": "2900260c2e25f52438d65da32d2110f5dbbc49ccdefeb73a09820cc21712e01d",
+    "source/model.xml": "8b006dec38678c2763217fe5b84dee805c6d922e71715b33e77b19a860820b23",
+    "source/render_svg.py": "4fcba871b706ac092717733618a3863c0efbc54dcd0df48fe5515a8023d30279",
+    "source/validate_layout.py": "f326a70a56fce26bb32482800a4e8eba6c872a30a84df8cf59c151bf868aa900",
+    "source/VerifyPreviewMembers.java": "b7ae2e6bebcb003cb3f45027ad0da765ebb9ff8159c0d51a46b39bca8ce49d43",
+    "Stage_3_Class_Diagram.pdf": "9dd6a8f48a954f7f8fbc5f2b643f3025b115f52ecf04572c6aa71e53d0126d65",
+    "Stage_3_Class_Diagram.png": "d88fb9ff5a4fda50d6d269c7e60090f16ba4bab85d9676959c37f8d8199cd438",
+    "Stage_3_Class_Diagram.svg": "40043510d2569e9e0a69ce2df69421dd1d5297a260b552fdf41020df939d0a56"
+  },
+  "text_hashes": "LF normalized",
+  "cross_stage_unchanged_member_display": {
+    "stage_1_to_2": {
+      "unchanged_classes_checked": 19,
+      "differences": []
+    },
+    "stage_2_to_3": {
+      "unchanged_classes_checked": 9,
+      "differences": []
+    }
+  }
+}
