@@ -1,11 +1,8 @@
 # Stage 2 class diagram - Richard draft
 
-This diagram represents the complete production type set on
-`work/stage-2` at code checkpoint
+This diagram represents the complete Stage 2 production type set at the historical code checkpoint
 `c6e3c3f9ffe7e79e6dae1c2bb8b9436df7ec2b33`. The course cleanup passes
 **115 checks** and updates the member contracts in Richard's reviewed diagram.
-The original diagram and PR #6 integration remain in Git history; `main` and
-the historical stage tags have not moved.
 
 ## Open and review
 
@@ -39,7 +36,7 @@ turn control and result types are in `rush.game`, entities and value types
 are in `rush.domain`, and staff responsibilities are in `rush.staff`.
 
 - White fill identifies a retained Stage 1 type, including the reviewed
-  readability changes integrated through PR #6.
+  readability changes.
 - Blue fill identifies `VIPCustomer` and `CriticCustomer`, introduced in Stage 2.
 - An orange border identifies an existing class changed for Stage 2:
   `Scenario` creates the mixed customer schedule and `ConsoleApp` changes its
