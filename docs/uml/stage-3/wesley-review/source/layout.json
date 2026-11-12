@@ -1,0 +1,1785 @@
+{
+  "stage": 3,
+  "width": 4470,
+  "height": 2904,
+  "nodes": {
+    "ConsoleApp": {
+      "x": 80,
+      "y": 180,
+      "w": 480,
+      "h": 268,
+      "header": 30,
+      "show_names": true
+    },
+    "ConsoleView": {
+      "x": 80,
+      "y": 570,
+      "w": 480,
+      "h": 114,
+      "header": 30,
+      "show_names": true
+    },
+    "GameEngine": {
+      "x": 1000,
+      "y": 180,
+      "w": 650,
+      "h": 532,
+      "header": 30,
+      "show_names": true
+    },
+    "Scenario": {
+      "x": 80,
+      "y": 820,
+      "w": 560,
+      "h": 224,
+      "header": 30,
+      "show_names": true
+    },
+    "TurnPhase": {
+      "x": 460,
+      "y": 2300,
+      "w": 300,
+      "h": 192,
+      "header": 48,
+      "show_names": true
+    },
+    "CustomerView": {
+      "x": 1000,
+      "y": 1650,
+      "w": 410,
+      "h": 152,
+      "header": 30,
+      "show_names": true
+    },
+    "OrderView": {
+      "x": 1600,
+      "y": 1800,
+      "w": 430,
+      "h": 196,
+      "header": 30,
+      "show_names": true
+    },
+    "TableView": {
+      "x": 2400,
+      "y": 1800,
+      "w": 370,
+      "h": 114,
+      "header": 30,
+      "show_names": true
+    },
+    "GameStats": {
+      "x": 1000,
+      "y": 1250,
+      "w": 460,
+      "h": 224,
+      "header": 30,
+      "show_names": true
+    },
+    "GameResult": {
+      "x": 80,
+      "y": 2300,
+      "w": 250,
+      "h": 126,
+      "header": 48,
+      "show_names": true
+    },
+    "Customer": {
+      "x": 2030,
+      "y": 180,
+      "w": 650,
+      "h": 466,
+      "header": 30,
+      "show_names": true
+    },
+    "RegularCustomer": {
+      "x": 1780,
+      "y": 1050,
+      "w": 390,
+      "h": 108,
+      "header": 30,
+      "show_names": true
+    },
+    "VIPCustomer": {
+      "x": 2450,
+      "y": 1050,
+      "w": 400,
+      "h": 130,
+      "header": 30,
+      "show_names": true
+    },
+    "CriticCustomer": {
+      "x": 2930,
+      "y": 1050,
+      "w": 390,
+      "h": 108,
+      "header": 30,
+      "show_names": true
+    },
+    "Dish": {
+      "x": 3600,
+      "y": 180,
+      "w": 350,
+      "h": 126,
+      "header": 48,
+      "show_names": true
+    },
+    "MenuItem": {
+      "x": 3440,
+      "y": 850,
+      "w": 350,
+      "h": 180,
+      "header": 30,
+      "show_names": true
+    },
+    "ComboMeal": {
+      "x": 3940,
+      "y": 850,
+      "w": 380,
+      "h": 158,
+      "header": 30,
+      "show_names": true
+    },
+    "Menu": {
+      "x": 3600,
+      "y": 520,
+      "w": 380,
+      "h": 114,
+      "header": 30,
+      "show_names": true
+    },
+    "Order": {
+      "x": 2850,
+      "y": 180,
+      "w": 480,
+      "h": 334,
+      "header": 30,
+      "show_names": true
+    },
+    "PricingPolicy": {
+      "x": 3600,
+      "y": 1300,
+      "w": 460,
+      "h": 110,
+      "header": 48,
+      "show_names": true
+    },
+    "HappyHour": {
+      "x": 3600,
+      "y": 1660,
+      "w": 520,
+      "h": 202,
+      "header": 30,
+      "show_names": true
+    },
+    "Waiter": {
+      "x": 80,
+      "y": 1250,
+      "w": 620,
+      "h": 108,
+      "header": 30,
+      "show_names": false
+    },
+    "Money": {
+      "x": 2400,
+      "y": 2300,
+      "w": 510,
+      "h": 86,
+      "header": 30,
+      "show_names": true
+    },
+    "CustomerStatus": {
+      "x": 1180,
+      "y": 2300,
+      "w": 340,
+      "h": 214,
+      "header": 48,
+      "show_names": true
+    },
+    "OrderStatus": {
+      "x": 1700,
+      "y": 2300,
+      "w": 280,
+      "h": 170,
+      "header": 48,
+      "show_names": true
+    },
+    "Host": {
+      "x": 80,
+      "y": 1500,
+      "w": 440,
+      "h": 64,
+      "header": 30,
+      "show_names": true
+    },
+    "Chef": {
+      "x": 80,
+      "y": 1710,
+      "w": 350,
+      "h": 64,
+      "header": 30,
+      "show_names": true
+    },
+    "Cashier": {
+      "x": 80,
+      "y": 1920,
+      "w": 440,
+      "h": 110,
+      "header": 30,
+      "show_names": false
+    },
+    "Table": {
+      "x": 2850,
+      "y": 720,
+      "w": 380,
+      "h": 158,
+      "header": 30,
+      "show_names": true
+    },
+    "Receipt": {
+      "x": 1600,
+      "y": 1450,
+      "w": 320,
+      "h": 132,
+      "header": 30,
+      "show_names": true
+    },
+    "RuleViolation": {
+      "x": 3050,
+      "y": 2300,
+      "w": 480,
+      "h": 82,
+      "header": 48,
+      "show_names": true
+    }
+  },
+  "edges": [
+    {
+      "kind": "composition",
+      "source": "ConsoleApp",
+      "target": "GameEngine",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "1",
+      "source_port": [
+        560,
+        303
+      ],
+      "source_stub": [
+        588,
+        303
+      ],
+      "source_side": "R",
+      "target_port": [
+        1000,
+        367
+      ],
+      "target_stub": [
+        772,
+        367
+      ],
+      "target_side": "L",
+      "points": [
+        [
+          560,
+          303
+        ],
+        [
+          868,
+          303
+        ],
+        [
+          868,
+          367
+        ],
+        [
+          1000,
+          367
+        ]
+      ],
+      "source_label": [
+        564,
+        262,
+        16,
+        22
+      ],
+      "target_label": [
+        980,
+        326,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "composition",
+      "source": "ConsoleApp",
+      "target": "ConsoleView",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "1",
+      "source_port": [
+        320,
+        448
+      ],
+      "source_stub": [
+        320,
+        454
+      ],
+      "source_side": "B",
+      "target_port": [
+        320,
+        570
+      ],
+      "target_stub": [
+        320,
+        542
+      ],
+      "target_side": "T",
+      "points": [
+        [
+          320,
+          448
+        ],
+        [
+          320,
+          570
+        ]
+      ],
+      "source_label": [
+        288,
+        452,
+        16,
+        22
+      ],
+      "target_label": [
+        288,
+        544,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "composition",
+      "source": "GameEngine",
+      "target": "Scenario",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "1",
+      "source_port": [
+        1000,
+        525
+      ],
+      "source_stub": [
+        772,
+        525
+      ],
+      "source_side": "L",
+      "target_port": [
+        360,
+        820
+      ],
+      "target_stub": [
+        360,
+        792
+      ],
+      "target_side": "T",
+      "points": [
+        [
+          1000,
+          525
+        ],
+        [
+          868,
+          525
+        ],
+        [
+          868,
+          792
+        ],
+        [
+          360,
+          792
+        ],
+        [
+          360,
+          820
+        ]
+      ],
+      "source_label": [
+        980,
+        484,
+        16,
+        22
+      ],
+      "target_label": [
+        328,
+        794,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "association",
+      "source": "Order",
+      "target": "Dish",
+      "sourceMultiplicity": "0..*",
+      "targetMultiplicity": "1",
+      "source_port": [
+        3330,
+        347
+      ],
+      "source_stub": [
+        2958,
+        347
+      ],
+      "source_side": "R",
+      "target_port": [
+        3600,
+        243
+      ],
+      "target_stub": [
+        3172,
+        243
+      ],
+      "target_side": "L",
+      "points": [
+        [
+          3330,
+          347
+        ],
+        [
+          3572,
+          347
+        ],
+        [
+          3572,
+          243
+        ],
+        [
+          3600,
+          243
+        ]
+      ],
+      "source_label": [
+        3334,
+        282,
+        29,
+        22
+      ],
+      "target_label": [
+        3580,
+        202,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "aggregation",
+      "source": "Menu",
+      "target": "Dish",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "4",
+      "source_port": [
+        3790,
+        520
+      ],
+      "source_stub": [
+        3390,
+        492
+      ],
+      "source_side": "T",
+      "target_port": [
+        3775,
+        306
+      ],
+      "target_stub": [
+        3375,
+        334
+      ],
+      "target_side": "B",
+      "points": [
+        [
+          3790,
+          520
+        ],
+        [
+          3790,
+          334
+        ],
+        [
+          3775,
+          334
+        ],
+        [
+          3775,
+          306
+        ]
+      ],
+      "source_label": [
+        3758,
+        494,
+        16,
+        22
+      ],
+      "target_label": [
+        3743,
+        310,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "aggregation",
+      "source": "ComboMeal",
+      "target": "MenuItem",
+      "sourceMultiplicity": "0..*",
+      "targetMultiplicity": "2",
+      "source_port": [
+        3940,
+        929
+      ],
+      "source_stub": [
+        3512,
+        929
+      ],
+      "source_side": "L",
+      "target_port": [
+        3790,
+        940
+      ],
+      "target_stub": [
+        3418,
+        940
+      ],
+      "target_side": "R",
+      "points": [
+        [
+          3940,
+          929
+        ],
+        [
+          3818,
+          929
+        ],
+        [
+          3818,
+          940
+        ],
+        [
+          3790,
+          940
+        ]
+      ],
+      "source_label": [
+        3907,
+        888,
+        29,
+        22
+      ],
+      "target_label": [
+        3794,
+        899,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "composition",
+      "source": "GameEngine",
+      "target": "HappyHour",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "1",
+      "source_port": [
+        1650,
+        588
+      ],
+      "source_stub": [
+        1478,
+        588
+      ],
+      "source_side": "R",
+      "target_port": [
+        3785,
+        1660
+      ],
+      "target_stub": [
+        3385,
+        1632
+      ],
+      "target_side": "T",
+      "points": [
+        [
+          1650,
+          588
+        ],
+        [
+          1680,
+          588
+        ],
+        [
+          1680,
+          1434
+        ],
+        [
+          3785,
+          1434
+        ],
+        [
+          3785,
+          1660
+        ]
+      ],
+      "source_label": [
+        1654,
+        547,
+        16,
+        22
+      ],
+      "target_label": [
+        3753,
+        1634,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "composition",
+      "source": "GameEngine",
+      "target": "Menu",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "1",
+      "source_port": [
+        1650,
+        399
+      ],
+      "source_stub": [
+        1478,
+        399
+      ],
+      "source_side": "R",
+      "target_port": [
+        3600,
+        577
+      ],
+      "target_stub": [
+        3172,
+        577
+      ],
+      "target_side": "L",
+      "points": [
+        [
+          1650,
+          399
+        ],
+        [
+          1860,
+          399
+        ],
+        [
+          1860,
+          690
+        ],
+        [
+          3572,
+          690
+        ],
+        [
+          3572,
+          577
+        ],
+        [
+          3600,
+          577
+        ]
+      ],
+      "source_label": [
+        1654,
+        358,
+        16,
+        22
+      ],
+      "target_label": [
+        3580,
+        536,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "composition",
+      "source": "GameEngine",
+      "target": "Host",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "1",
+      "source_port": [
+        1228,
+        712
+      ],
+      "source_stub": [
+        1028,
+        740
+      ],
+      "source_side": "B",
+      "target_port": [
+        300,
+        1500
+      ],
+      "target_stub": [
+        300,
+        1472
+      ],
+      "target_side": "T",
+      "points": [
+        [
+          1228,
+          712
+        ],
+        [
+          1228,
+          762
+        ],
+        [
+          760,
+          762
+        ],
+        [
+          760,
+          1472
+        ],
+        [
+          300,
+          1472
+        ],
+        [
+          300,
+          1500
+        ]
+      ],
+      "source_label": [
+        1196,
+        716,
+        16,
+        22
+      ],
+      "target_label": [
+        268,
+        1474,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "composition",
+      "source": "GameEngine",
+      "target": "Waiter",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "1",
+      "source_port": [
+        1422,
+        712
+      ],
+      "source_stub": [
+        1222,
+        740
+      ],
+      "source_side": "B",
+      "target_port": [
+        298,
+        1250
+      ],
+      "target_stub": [
+        298,
+        1222
+      ],
+      "target_side": "T",
+      "points": [
+        [
+          1422,
+          712
+        ],
+        [
+          1422,
+          1156
+        ],
+        [
+          724,
+          1156
+        ],
+        [
+          724,
+          1222
+        ],
+        [
+          298,
+          1222
+        ],
+        [
+          298,
+          1250
+        ]
+      ],
+      "source_label": [
+        1390,
+        716,
+        16,
+        22
+      ],
+      "target_label": [
+        266,
+        1224,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "composition",
+      "source": "GameEngine",
+      "target": "Chef",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "1",
+      "source_port": [
+        1132,
+        712
+      ],
+      "source_stub": [
+        932,
+        740
+      ],
+      "source_side": "B",
+      "target_port": [
+        255,
+        1710
+      ],
+      "target_stub": [
+        255,
+        1682
+      ],
+      "target_side": "T",
+      "points": [
+        [
+          1132,
+          712
+        ],
+        [
+          1132,
+          1120
+        ],
+        [
+          796,
+          1120
+        ],
+        [
+          796,
+          1682
+        ],
+        [
+          255,
+          1682
+        ],
+        [
+          255,
+          1710
+        ]
+      ],
+      "source_label": [
+        1100,
+        716,
+        16,
+        22
+      ],
+      "target_label": [
+        223,
+        1684,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "composition",
+      "source": "GameEngine",
+      "target": "Cashier",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "1",
+      "source_port": [
+        1325,
+        712
+      ],
+      "source_stub": [
+        1125,
+        740
+      ],
+      "source_side": "B",
+      "target_port": [
+        238,
+        1920
+      ],
+      "target_stub": [
+        238,
+        1892
+      ],
+      "target_side": "T",
+      "points": [
+        [
+          1325,
+          712
+        ],
+        [
+          1325,
+          1084
+        ],
+        [
+          832,
+          1084
+        ],
+        [
+          832,
+          1892
+        ],
+        [
+          238,
+          1892
+        ],
+        [
+          238,
+          1920
+        ]
+      ],
+      "source_label": [
+        1293,
+        716,
+        16,
+        22
+      ],
+      "target_label": [
+        206,
+        1894,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "composition",
+      "source": "GameEngine",
+      "target": "Table",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "2",
+      "source_port": [
+        1650,
+        493
+      ],
+      "source_stub": [
+        1478,
+        493
+      ],
+      "source_side": "R",
+      "target_port": [
+        2850,
+        850
+      ],
+      "target_stub": [
+        2422,
+        815
+      ],
+      "target_side": "L",
+      "points": [
+        [
+          1650,
+          493
+        ],
+        [
+          1802,
+          493
+        ],
+        [
+          1802,
+          850
+        ],
+        [
+          2850,
+          850
+        ]
+      ],
+      "source_label": [
+        1654,
+        452,
+        16,
+        22
+      ],
+      "target_label": [
+        2830,
+        809,
+        16,
+        22
+      ]
+    },
+    {
+      "kind": "composition",
+      "source": "GameEngine",
+      "target": "Customer",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "0..6",
+      "source_port": [
+        1650,
+        304
+      ],
+      "source_stub": [
+        1478,
+        304
+      ],
+      "source_side": "R",
+      "target_port": [
+        2030,
+        345
+      ],
+      "target_stub": [
+        1602,
+        345
+      ],
+      "target_side": "L",
+      "points": [
+        [
+          1650,
+          304
+        ],
+        [
+          1802,
+          304
+        ],
+        [
+          1802,
+          345
+        ],
+        [
+          2030,
+          345
+        ]
+      ],
+      "source_label": [
+        1654,
+        263,
+        16,
+        22
+      ],
+      "target_label": [
+        1994,
+        304,
+        32,
+        22
+      ]
+    },
+    {
+      "kind": "association",
+      "source": "GameEngine",
+      "target": "Receipt",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "0..5",
+      "source_port": [
+        1518,
+        712
+      ],
+      "source_stub": [
+        1318,
+        740
+      ],
+      "source_side": "B",
+      "target_port": [
+        1760,
+        1450
+      ],
+      "target_stub": [
+        1560,
+        1422
+      ],
+      "target_side": "T",
+      "points": [
+        [
+          1518,
+          712
+        ],
+        [
+          1518,
+          740
+        ],
+        [
+          1760,
+          740
+        ],
+        [
+          1760,
+          1450
+        ]
+      ],
+      "source_label": [
+        1486,
+        716,
+        16,
+        22
+      ],
+      "target_label": [
+        1712,
+        1406,
+        32,
+        22
+      ]
+    },
+    {
+      "kind": "association",
+      "source": "Table",
+      "target": "Customer",
+      "sourceMultiplicity": "0..1",
+      "targetMultiplicity": "0..1",
+      "source_port": [
+        2850,
+        750
+      ],
+      "source_stub": [
+        2422,
+        783
+      ],
+      "source_side": "L",
+      "target_port": [
+        2680,
+        413
+      ],
+      "target_stub": [
+        2308,
+        413
+      ],
+      "target_side": "R",
+      "points": [
+        [
+          2850,
+          750
+        ],
+        [
+          2740,
+          750
+        ],
+        [
+          2740,
+          413
+        ],
+        [
+          2680,
+          413
+        ]
+      ],
+      "source_label": [
+        2814,
+        709,
+        32,
+        22
+      ],
+      "target_label": [
+        2684,
+        372,
+        32,
+        22
+      ]
+    },
+    {
+      "kind": "composition",
+      "source": "Customer",
+      "target": "Order",
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "0..1",
+      "source_port": [
+        2680,
+        312
+      ],
+      "source_stub": [
+        2308,
+        312
+      ],
+      "source_side": "R",
+      "target_port": [
+        2850,
+        301
+      ],
+      "target_stub": [
+        2422,
+        301
+      ],
+      "target_side": "L",
+      "points": [
+        [
+          2680,
+          312
+        ],
+        [
+          2822,
+          312
+        ],
+        [
+          2822,
+          301
+        ],
+        [
+          2850,
+          301
+        ]
+      ],
+      "source_label": [
+        2684,
+        271,
+        16,
+        22
+      ],
+      "target_label": [
+        2814,
+        260,
+        32,
+        22
+      ]
+    },
+    {
+      "kind": "dependency",
+      "source": "Customer",
+      "target": "PricingPolicy",
+      "source_port": [
+        2680,
+        514
+      ],
+      "source_stub": [
+        2308,
+        514
+      ],
+      "source_side": "R",
+      "target_port": [
+        3830,
+        1300
+      ],
+      "target_stub": [
+        3430,
+        1272
+      ],
+      "target_side": "T",
+      "points": [
+        [
+          2680,
+          514
+        ],
+        [
+          2708,
+          514
+        ],
+        [
+          2708,
+          980
+        ],
+        [
+          3424,
+          980
+        ],
+        [
+          3424,
+          1272
+        ],
+        [
+          3830,
+          1272
+        ],
+        [
+          3830,
+          1300
+        ]
+      ]
+    },
+    {
+      "kind": "dependency",
+      "source": "Waiter",
+      "target": "Customer",
+      "source_port": [
+        700,
+        1300
+      ],
+      "source_stub": [
+        482,
+        1222
+      ],
+      "source_side": "R",
+      "target_port": [
+        2030,
+        453
+      ],
+      "target_stub": [
+        1602,
+        481
+      ],
+      "target_side": "L",
+      "points": [
+        [
+          700,
+          1300
+        ],
+        [
+          980,
+          1300
+        ],
+        [
+          980,
+          1184
+        ],
+        [
+          1720,
+          1184
+        ],
+        [
+          1720,
+          453
+        ],
+        [
+          2030,
+          453
+        ]
+      ]
+    },
+    {
+      "kind": "dependency",
+      "source": "Chef",
+      "target": "Order",
+      "target_port": [
+        2850,
+        393
+      ],
+      "target_stub": [
+        2422,
+        393
+      ],
+      "target_side": "L",
+      "source_port": [
+        430,
+        1742
+      ],
+      "source_stub": [
+        458,
+        1742
+      ],
+      "source_side": "R",
+      "points": [
+        [
+          430,
+          1742
+        ],
+        [
+          940,
+          1742
+        ],
+        [
+          940,
+          820
+        ],
+        [
+          2790,
+          820
+        ],
+        [
+          2790,
+          393
+        ],
+        [
+          2850,
+          393
+        ]
+      ]
+    },
+    {
+      "kind": "dependency",
+      "source": "Cashier",
+      "target": "Customer",
+      "source_port": [
+        362,
+        1920
+      ],
+      "source_stub": [
+        362,
+        1892
+      ],
+      "source_side": "T",
+      "target_port": [
+        2110,
+        646
+      ],
+      "target_stub": [
+        1781,
+        674
+      ],
+      "target_side": "B",
+      "points": [
+        [
+          362,
+          1920
+        ],
+        [
+          362,
+          1790
+        ],
+        [
+          904,
+          1790
+        ],
+        [
+          904,
+          900
+        ],
+        [
+          2110,
+          900
+        ],
+        [
+          2110,
+          646
+        ]
+      ]
+    },
+    {
+      "kind": "generalization",
+      "source": "RegularCustomer",
+      "target": "Customer",
+      "target_port": [
+        2297,
+        646
+      ],
+      "target_stub": [
+        1897,
+        674
+      ],
+      "target_side": "B",
+      "source_port": [
+        2175,
+        1050
+      ],
+      "source_stub": [
+        1775,
+        1022
+      ],
+      "source_side": "T",
+      "points": [
+        [
+          2175,
+          1050
+        ],
+        [
+          2175,
+          730
+        ],
+        [
+          2297,
+          730
+        ],
+        [
+          2297,
+          646
+        ]
+      ]
+    },
+    {
+      "kind": "generalization",
+      "source": "VIPCustomer",
+      "target": "Customer",
+      "target_port": [
+        2413,
+        646
+      ],
+      "target_stub": [
+        2013,
+        674
+      ],
+      "target_side": "B",
+      "source_port": [
+        2650,
+        1050
+      ],
+      "source_stub": [
+        2250,
+        1022
+      ],
+      "source_side": "T",
+      "points": [
+        [
+          2650,
+          1050
+        ],
+        [
+          2650,
+          730
+        ],
+        [
+          2413,
+          730
+        ],
+        [
+          2413,
+          646
+        ]
+      ]
+    },
+    {
+      "kind": "generalization",
+      "source": "CriticCustomer",
+      "target": "Customer",
+      "target_port": [
+        2529,
+        646
+      ],
+      "target_stub": [
+        2129,
+        674
+      ],
+      "target_side": "B",
+      "source_port": [
+        3125,
+        1050
+      ],
+      "source_stub": [
+        2725,
+        1022
+      ],
+      "source_side": "T",
+      "points": [
+        [
+          3125,
+          1050
+        ],
+        [
+          3125,
+          1022
+        ],
+        [
+          2529,
+          1022
+        ],
+        [
+          2529,
+          646
+        ]
+      ]
+    },
+    {
+      "kind": "realization",
+      "source": "MenuItem",
+      "target": "Dish",
+      "target_port": [
+        3705,
+        306
+      ],
+      "target_stub": [
+        3305,
+        334
+      ],
+      "target_side": "B",
+      "source_port": [
+        3615,
+        850
+      ],
+      "source_stub": [
+        3215,
+        822
+      ],
+      "source_side": "T",
+      "points": [
+        [
+          3615,
+          850
+        ],
+        [
+          3615,
+          822
+        ],
+        [
+          3530,
+          822
+        ],
+        [
+          3530,
+          400
+        ],
+        [
+          3705,
+          400
+        ],
+        [
+          3705,
+          306
+        ]
+      ]
+    },
+    {
+      "kind": "realization",
+      "source": "ComboMeal",
+      "target": "Dish",
+      "target_port": [
+        3845,
+        306
+      ],
+      "target_stub": [
+        3445,
+        334
+      ],
+      "target_side": "B",
+      "source_port": [
+        4130,
+        850
+      ],
+      "source_stub": [
+        3730,
+        822
+      ],
+      "source_side": "T",
+      "points": [
+        [
+          4130,
+          850
+        ],
+        [
+          4130,
+          334
+        ],
+        [
+          3845,
+          334
+        ],
+        [
+          3845,
+          306
+        ]
+      ]
+    },
+    {
+      "kind": "realization",
+      "source": "HappyHour",
+      "target": "PricingPolicy",
+      "source_port": [
+        3935,
+        1660
+      ],
+      "source_stub": [
+        3535,
+        1632
+      ],
+      "source_side": "T",
+      "target_port": [
+        3830,
+        1410
+      ],
+      "target_stub": [
+        3430,
+        1438
+      ],
+      "target_side": "B",
+      "points": [
+        [
+          3935,
+          1660
+        ],
+        [
+          3935,
+          1438
+        ],
+        [
+          3830,
+          1438
+        ],
+        [
+          3830,
+          1410
+        ]
+      ]
+    },
+    {
+      "source": "GameEngine",
+      "target": "Order",
+      "kind": "association",
+      "source_side": "R",
+      "target_side": "R",
+      "points": [
+        [
+          1650,
+          352
+        ],
+        [
+          1740,
+          352
+        ],
+        [
+          1740,
+          90
+        ],
+        [
+          3400,
+          90
+        ],
+        [
+          3400,
+          255
+        ],
+        [
+          3330,
+          255
+        ]
+      ],
+      "sourceMultiplicity": "1",
+      "targetMultiplicity": "0..6",
+      "source_port": [
+        1650,
+        352
+      ],
+      "target_port": [
+        3330,
+        255
+      ],
+      "source_label": [
+        1654,
+        311,
+        16,
+        22
+      ],
+      "target_label": [
+        3334,
+        214,
+        32,
+        22
+      ]
+    }
+  ],
+  "headings": [
+    [
+      "CLI AND TURN CONTROL",
+      80,
+      130,
+      1570
+    ],
+    [
+      "CUSTOMERS AND ORDERS",
+      1780,
+      130,
+      1350
+    ],
+    [
+      "MENU AND MEALS",
+      3440,
+      130,
+      940
+    ],
+    [
+      "PRICING",
+      3540,
+      1240,
+      840
+    ],
+    [
+      "STAFF",
+      80,
+      1190,
+      620
+    ],
+    [
+      "RESULTS AND SNAPSHOTS",
+      1000,
+      1190,
+      600
+    ],
+    [
+      "ENUMS AND UTILITIES",
+      80,
+      2240,
+      4300
+    ]
+  ]
+}
