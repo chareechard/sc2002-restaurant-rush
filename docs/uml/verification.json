@@ -92,8 +92,17 @@
     ]
   },
   "artifact_sha256": {
+    "Restaurant_Rush.vpp": "625ca2c9b82fbbd59b2617369f0b09f6c6abc79abfdb2ce9b94e17301302b52a",
     "model-xml/project.xml": "cfb4a9bf75e900618ae27aaba497b9373c90e3aa87a82bdbf54a87a67bac0703",
-    "model-xml/data.zip": "dd9ff3561c9c77a747b71ad8c6791ef00c74973ed23eefecac32d0d6fc828b6d"
+    "model-xml/data.zip": "dd9ff3561c9c77a747b71ad8c6791ef00c74973ed23eefecac32d0d6fc828b6d",
+    "stage-3-class.svg": "f4e7a809f8da93b32ebeded9c71d6cf5c6a201dbcf70df791c94c7795cd6c84a",
+    "stage-3-class.png": "615f7c57961e78a25120f1f8f6e9d3423d29aac816924f40536da0fe9e621d33",
+    "classes-core.svg": "d94b9153b0f9391c5cba401a3b8731631d05a1a366b5ad4bda6985b99a5d2213",
+    "classes-core.png": "54a155f9b503ca18c05043fa6bc53f66c24f497c48d891876041862e61bd9d8e",
+    "classes-policies.svg": "33b635322253eeea6c923088734a5d0cf063f9488ac88af739cb8d20e7c25a58",
+    "classes-policies.png": "bedf05c085e3207bc6ea204bc7588b80eca59b6332e220d117cfe56158850622",
+    "classes-lifecycle.svg": "d80d91e343df8a6813c25ba165b56149b1538d0d88e032e46297dc582ad33a71",
+    "classes-lifecycle.png": "35a40d578ae318f1a26a95a3e7e79f0cda784b6ff8398631b541cca104a9c22f"
   },
   "verified_constructors": [
     "protected Customer(int id, int arrivalTurn)"
