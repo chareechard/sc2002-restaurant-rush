@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "date_singapore": "2026-11-14",
+  "source_commit": "f41ce70e652bf7a34a5a0b740b300e1e5d4ad01b",
+  "tool": "Visual Paradigm Standard 18.0 (academic license), public Open API",
+  "native_project_reopened": false,
+  "native_sqlite_quick_check": "ok",
+  "modeled_type_count": 30,
+  "diagrams": [
+    {
+      "name": "Stage 3 class view core",
+      "class_shapes": 10,
+      "connectors": 10
+    },
+    {
+      "name": "Stage 3 class view policies",
+      "class_shapes": 16,
+      "connectors": 19
+    },
+    {
+      "name": "Stage 3 class view lifecycle",
+      "class_shapes": 11,
+      "connectors": 14
+    },
+    {
+      "name": "Stage 3 complete class diagram",
+      "class_shapes": 30,
+      "connectors": 41
+    },
+    {
+      "name": "VIP scenario A: arrival, pricing and preparation",
+      "class_shapes": 0,
+      "connectors": 46
+    },
+    {
+      "name": "VIP scenario B: service choice, payment and result",
+      "class_shapes": 0,
+      "connectors": 47
+    },
+    {
+      "name": "Stage 3 VIP service choice - complete sequence",
+      "class_shapes": 0,
+      "connectors": 34
+    }
+  ],
+  "verified_selected_members": {
+    "fields": 62,
+    "methods": 84,
+    "enum_literals": 21
+  },
+  "game_checks": 181,
+  "ordinary_final_value_classes": [
+    "MenuItem",
+    "Receipt",
+    "GameStats",
+    "ComboMeal",
+    "CustomerView",
+    "OrderView",
+    "TableView"
+  ],
+  "record_stereotypes": 0,
+  "course_cleanup": "Scanner/PrintStream console, nullable Receipt, double average with hasAverageSatisfaction, ordinary immutable value classes.",
+  "no_overlapping_class_shapes": true,
+  "png_pixels": {
+    "stage-3-class": [
+      4832,
+      4289
+    ],
+    "stage-3-sequence": [
+      3806,
+      5336
+    ],
+    "classes-core": [
+      2376,
+      2126
+    ],
+    "classes-policies": [
+      3426,
+      2276
+    ],
+    "classes-lifecycle": [
+      3136,
+      2326
+    ],
+    "sequence": [
+      4241,
+      4015
+    ],
+    "sequence_001": [
+      4241,
+      5127
+    ]
+  },
+  "artifact_sha256": {
+    "model-xml/project.xml": "cfb4a9bf75e900618ae27aaba497b9373c90e3aa87a82bdbf54a87a67bac0703",
+    "model-xml/data.zip": "dd9ff3561c9c77a747b71ad8c6791ef00c74973ed23eefecac32d0d6fc828b6d"
+  },
+  "verified_constructors": [
+    "protected Customer(int id, int arrivalTurn)"
+  ],
+  "sequence_native_endpoints_resolved": true,
+  "source_branch": "work/stage-3",
+  "source_files_sha256": "2fc330319cde8c5d86c12a732f8ac33131b0381949e5e0768ff5cb177e534d92",
+  "native_gui_review": {
+    "status": "pending",
+    "reason": "Structured provenance refresh; Visual Paradigm GUI reopen was not performed."
+  },
+  "verification_status": "Historical snapshot sanitized during history cleanup; use the cleaned branch tip for current verification.",
+  "member_descriptor": "model-xml/project.xml",
+  "validation_command": "python tools/verify-uml.py",
+  "provenance_refresh": {
+    "method": "Structured SQLite field updates and compaction; matching XML annotations refreshed.",
+    "model_rows_preserved_after_annotation_normalization": true,
+    "graphics": "Stage 1/2 SVG subtitles synchronized; PNG and PDF views regenerated. Other diagram geometry retained. No fresh native GUI export claimed."
+  },
+  "source_signatures_checked_against_compiled_java": true,
+  "text_hashes": "LF normalized"
+}
