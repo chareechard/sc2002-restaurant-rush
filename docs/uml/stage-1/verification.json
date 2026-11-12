@@ -1,7 +1,6 @@
 {
   "schema_version": 2,
   "date_singapore": "2026-10-29",
-  "branch": "codex/wesley-stage-1",
   "source_commit": "991700154456e333083d8f2201f5504f6e519e4f",
   "tool": "Visual Paradigm Standard 18.0 (academic license), public Open API",
   "native_project_reopened": true,
@@ -56,5 +55,15 @@
     "pages": 1,
     "source": "Native Visual Paradigm SVG, rendered with ReportLab and svglib",
     "visual_review": "Rendered PDF inspected; no clipped members, missing glyphs or overlapping class boxes. Abstract and bold notation preserved."
+  },
+  "independent_current_repository_check": {
+    "date_singapore": "2026-11-12",
+    "commit": "c0dfdbd5a3e39134ebf2cd5435cadea38001cf05",
+    "scope": "All tracked src/main files matched the original checkpoint byte-for-byte; selected model members were checked against compiled target code. This does not replace the original historical record or assert a new native-model visual review.",
+    "game_checks": 106,
+    "selected_model_types": 21,
+    "selected_fields": 50,
+    "selected_methods_or_operations": 50,
+    "enum_literals": 20
   }
 }
