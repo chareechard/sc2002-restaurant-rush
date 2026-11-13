@@ -1,0 +1,262 @@
+RESTAURANT RUSH - Stage 3 | Base setting | Offline Java
+Win after 18 turns: >=4 paid, >=$45.00 revenue, >=60 average paid satisfaction.
+Salad $9.00 (1 preparation units)
+Burger $15.00 (1 preparation units)
+Pasta $18.00 (2 preparation units)
+Salad + Pasta Combo $24.30 (3 preparation units)
+Commands use numeric ids (e.g. seat 1 1, order 1, cook 1, serve 1). Type help or status.
+Start turn 1 [happy | wait]>
+=== TURN 1/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=1
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1]
+T1: free
+T2: free
+C1 Regular | satisfaction=100 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C1 arrives (Regular, satisfaction 100).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> End of input: remaining choices default to wait; all 18 turns still run.
+Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=1
+Start turn 2 [happy | wait]>
+=== TURN 2/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=2
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1]
+T1: free
+T2: free
+C1 Regular | satisfaction=92 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=2
+Start turn 3 [happy | wait]>
+=== TURN 3/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=3
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1]
+T1: free
+T2: free
+C1 Regular | satisfaction=84 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=3
+Start turn 4 [happy | wait]>
+=== TURN 4/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=4
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1, C2]
+T1: free
+T2: free
+C1 Regular | satisfaction=76 | WAITING
+C2 VIP | satisfaction=100 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C2 arrives (VIP, satisfaction 100).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=4
+Start turn 5 [happy | wait]>
+=== TURN 5/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=5
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1, C2]
+T1: free
+T2: free
+C1 Regular | satisfaction=68 | WAITING
+C2 VIP | satisfaction=95 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=5
+Start turn 6 [happy | wait]>
+=== TURN 6/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=6
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1, C2]
+T1: free
+T2: free
+C1 Regular | satisfaction=60 | WAITING
+C2 VIP | satisfaction=90 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=6
+Start turn 7 [happy | wait]>
+=== TURN 7/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=7
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1, C2, C3]
+T1: free
+T2: free
+C1 Regular | satisfaction=52 | WAITING
+C2 VIP | satisfaction=85 | WAITING
+C3 Critic | satisfaction=100 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C3 arrives (Critic, satisfaction 100).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=7
+Start turn 8 [happy | wait]>
+=== TURN 8/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=8
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1, C2, C3]
+T1: free
+T2: free
+C1 Regular | satisfaction=44 | WAITING
+C2 VIP | satisfaction=80 | WAITING
+C3 Critic | satisfaction=88 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=8
+Start turn 9 [happy | wait]>
+=== TURN 9/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=9
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1, C2, C3]
+T1: free
+T2: free
+C1 Regular | satisfaction=36 | WAITING
+C2 VIP | satisfaction=75 | WAITING
+C3 Critic | satisfaction=76 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=9
+Start turn 10 [happy | wait]>
+=== TURN 10/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=10
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1, C2, C3, C4]
+T1: free
+T2: free
+C1 Regular | satisfaction=28 | WAITING
+C2 VIP | satisfaction=70 | WAITING
+C3 Critic | satisfaction=64 | WAITING
+C4 Regular | satisfaction=100 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C4 arrives (Regular, satisfaction 100).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=10
+Start turn 11 [happy | wait]>
+=== TURN 11/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=11
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1, C2, C3, C4]
+T1: free
+T2: free
+C1 Regular | satisfaction=20 | WAITING
+C2 VIP | satisfaction=65 | WAITING
+C3 Critic | satisfaction=52 | WAITING
+C4 Regular | satisfaction=92 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=11
+Start turn 12 [happy | wait]>
+=== TURN 12/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=12
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1, C2, C3, C4]
+T1: free
+T2: free
+C1 Regular | satisfaction=12 | WAITING
+C2 VIP | satisfaction=60 | WAITING
+C3 Critic | satisfaction=40 | WAITING
+C4 Regular | satisfaction=84 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=12
+Start turn 13 [happy | wait]>
+=== TURN 13/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=13
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1, C2, C3, C4, C5]
+T1: free
+T2: free
+C1 Regular | satisfaction=4 | WAITING
+C2 VIP | satisfaction=55 | WAITING
+C3 Critic | satisfaction=28 | WAITING
+C4 Regular | satisfaction=76 | WAITING
+C5 Regular | satisfaction=100 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C5 arrives (Regular, satisfaction 100).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> C1 leaves unhappy; any unserved order is CANCELLED.
+Served=0 | Paid=0 | Unhappy=1 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=13
+Start turn 14 [happy | wait]>
+=== TURN 14/18 ===
+Served=0 | Paid=0 | Unhappy=1 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=14
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C2, C3, C4, C5]
+T1: free
+T2: free
+C1 Regular | satisfaction=0 | LEFT
+C2 VIP | satisfaction=50 | WAITING
+C3 Critic | satisfaction=16 | WAITING
+C4 Regular | satisfaction=68 | WAITING
+C5 Regular | satisfaction=92 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=1 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=14
+Start turn 15 [happy | wait]>
+=== TURN 15/18 ===
+Served=0 | Paid=0 | Unhappy=1 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=15
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C2, C3, C4, C5]
+T1: free
+T2: free
+C1 Regular | satisfaction=0 | LEFT
+C2 VIP | satisfaction=45 | WAITING
+C3 Critic | satisfaction=4 | WAITING
+C4 Regular | satisfaction=60 | WAITING
+C5 Regular | satisfaction=84 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> C3 leaves unhappy; any unserved order is CANCELLED.
+Served=0 | Paid=0 | Unhappy=2 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=15
+Start turn 16 [happy | wait]>
+=== TURN 16/18 ===
+Served=0 | Paid=0 | Unhappy=2 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=16
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C2, C4, C5, C6]
+T1: free
+T2: free
+C1 Regular | satisfaction=0 | LEFT
+C2 VIP | satisfaction=40 | WAITING
+C3 Critic | satisfaction=0 | LEFT
+C4 Regular | satisfaction=52 | WAITING
+C5 Regular | satisfaction=76 | WAITING
+C6 Regular | satisfaction=100 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C6 arrives (Regular, satisfaction 100).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=2 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=16
+Start turn 17 [happy | wait]>
+=== TURN 17/18 ===
+Served=0 | Paid=0 | Unhappy=2 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=17
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C2, C4, C5, C6]
+T1: free
+T2: free
+C1 Regular | satisfaction=0 | LEFT
+C2 VIP | satisfaction=35 | WAITING
+C3 Critic | satisfaction=0 | LEFT
+C4 Regular | satisfaction=44 | WAITING
+C5 Regular | satisfaction=68 | WAITING
+C6 Regular | satisfaction=92 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=2 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=17
+Start turn 18 [happy | wait]>
+=== TURN 18/18 ===
+Served=0 | Paid=0 | Unhappy=2 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=18
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C2, C4, C5, C6]
+T1: free
+T2: free
+C1 Regular | satisfaction=0 | LEFT
+C2 VIP | satisfaction=30 | WAITING
+C3 Critic | satisfaction=0 | LEFT
+C4 Regular | satisfaction=36 | WAITING
+C5 Regular | satisfaction=60 | WAITING
+C6 Regular | satisfaction=84 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Served=0 | Paid=0 | Unhappy=2 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=18
+
+RESULT: DEFEAT
+Served=0 | Paid=0 | Unhappy=2 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=18

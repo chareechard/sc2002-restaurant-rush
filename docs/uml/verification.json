@@ -92,7 +92,7 @@
     ]
   },
   "artifact_sha256": {
-    "Restaurant_Rush.vpp": "625ca2c9b82fbbd59b2617369f0b09f6c6abc79abfdb2ce9b94e17301302b52a",
+    "Restaurant_Rush.vpp": "c509b5e086c935d9367fa0ea66499311623195f9f7eaa39b86c636f1a6323e99",
     "model-xml/project.xml": "cfb4a9bf75e900618ae27aaba497b9373c90e3aa87a82bdbf54a87a67bac0703",
     "model-xml/data.zip": "dd9ff3561c9c77a747b71ad8c6791ef00c74973ed23eefecac32d0d6fc828b6d",
     "stage-3-class.svg": "f4e7a809f8da93b32ebeded9c71d6cf5c6a201dbcf70df791c94c7795cd6c84a",
@@ -120,7 +120,7 @@
     "status": "pending",
     "reason": "Structured provenance refresh; Visual Paradigm GUI reopen was not performed."
   },
-  "verification_status": "Historical snapshot sanitized during history cleanup; use the cleaned branch tip for current verification.",
+  "verification_status": "automated checks passed; native GUI reopen pending",
   "member_descriptor": "model-xml/project.xml",
   "validation_command": "python tools/verify-uml.py",
   "provenance_refresh": {
@@ -129,5 +129,30 @@
     "graphics": "Stage 1/2 SVG subtitles synchronized; PNG and PDF views regenerated. Other diagram geometry retained. No fresh native GUI export claimed."
   },
   "source_signatures_checked_against_compiled_java": true,
+  "current_repository_validation": {
+    "date_singapore": "2026-11-14",
+    "source_commit": "f41ce70e652bf7a34a5a0b740b300e1e5d4ad01b",
+    "selected_members": {
+      "types": 30,
+      "fields": 62,
+      "operations": 85,
+      "enum_literals": 21
+    },
+    "native_export_members": {
+      "types": 30,
+      "fields": 62,
+      "operations": 85,
+      "enum_literals": 21
+    },
+    "native_storage": {
+      "Restaurant_Rush.vpp": {
+        "MODEL_ELEMENT": 1031,
+        "DIAGRAM": 7,
+        "DIAGRAM_ELEMENT": 459
+      }
+    },
+    "geometry": null,
+    "scope": "Pinned Java signatures, native XML, SQLite quick_check, available layout checks and artifact checksums. Native GUI reopen not performed."
+  },
   "text_hashes": "LF normalized"
 }

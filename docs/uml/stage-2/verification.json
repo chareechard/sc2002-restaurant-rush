@@ -34,7 +34,7 @@
     ]
   },
   "artifact_sha256": {
-    "Restaurant_Rush_Stage2.vpp": "80d98f32e6627a42bde660e9de65d0765d62d23a2758d06ea105f5ad95c483f1",
+    "Restaurant_Rush_Stage2.vpp": "dcfa2f610b0655cc331a5b421f7304fdf3166f82f4d84c72620164626bab8f5d",
     "class-diagram.svg": "eef35faa5b27d5f47a3d3297eafb1622ed3b42233040ad0eff545cd3ba39e55f",
     "class-diagram.png": "2bd7b0b9a96c0881431a4c0c602a0a815eb40acc6e241d4d2860614732717aaa",
     "model-xml/project.xml": "13617a4bdbf0e5fd770aa7435d39ae32f72c0a754e2dabe06d7cf09d3cd50ca8",
@@ -61,7 +61,7 @@
     "status": "pending",
     "reason": "Structured provenance refresh; Visual Paradigm GUI reopen was not performed."
   },
-  "verification_status": "Historical snapshot sanitized during history cleanup; use the cleaned branch tip for current verification.",
+  "verification_status": "automated checks passed; native GUI reopen pending",
   "member_descriptor": "source/stage2-model.xml",
   "validation_command": "python tools/verify-uml.py",
   "provenance_refresh": {
@@ -70,5 +70,30 @@
     "graphics": "Stage 1/2 SVG subtitles synchronized; PNG and PDF views regenerated. Other diagram geometry retained. No fresh native GUI export claimed."
   },
   "source_signatures_checked_against_compiled_java": true,
+  "current_repository_validation": {
+    "date_singapore": "2026-11-14",
+    "source_commit": "c6e3c3f9ffe7e79e6dae1c2bb8b9436df7ec2b33",
+    "selected_members": {
+      "types": 23,
+      "fields": 50,
+      "operations": 58,
+      "enum_literals": 20
+    },
+    "native_export_members": {
+      "types": 23,
+      "fields": 50,
+      "operations": 58,
+      "enum_literals": 20
+    },
+    "native_storage": {
+      "Restaurant_Rush_Stage2.vpp": {
+        "MODEL_ELEMENT": 517,
+        "DIAGRAM": 1,
+        "DIAGRAM_ELEMENT": 65
+      }
+    },
+    "geometry": null,
+    "scope": "Pinned Java signatures, native XML, SQLite quick_check, available layout checks and artifact checksums. Native GUI reopen not performed."
+  },
   "text_hashes": "LF normalized"
 }
