@@ -61,7 +61,7 @@
     "status": "pending",
     "reason": "Structured provenance refresh; Visual Paradigm GUI reopen was not performed."
   },
-  "verification_status": "Historical snapshot sanitized during history cleanup; use the cleaned branch tip for current verification.",
+  "verification_status": "automated checks passed; native GUI reopen pending",
   "member_descriptor": "source/stage2-model.xml",
   "validation_command": "python tools/verify-uml.py",
   "provenance_refresh": {
@@ -70,5 +70,30 @@
     "graphics": "Stage 1/2 SVG subtitles synchronized; PNG and PDF views regenerated. Other diagram geometry retained. No fresh native GUI export claimed."
   },
   "source_signatures_checked_against_compiled_java": true,
+  "current_repository_validation": {
+    "date_singapore": "2026-11-14",
+    "source_commit": "c6e3c3f9ffe7e79e6dae1c2bb8b9436df7ec2b33",
+    "selected_members": {
+      "types": 23,
+      "fields": 50,
+      "operations": 58,
+      "enum_literals": 20
+    },
+    "native_export_members": {
+      "types": 23,
+      "fields": 50,
+      "operations": 58,
+      "enum_literals": 20
+    },
+    "native_storage": {
+      "Restaurant_Rush_Stage2.vpp": {
+        "MODEL_ELEMENT": 517,
+        "DIAGRAM": 1,
+        "DIAGRAM_ELEMENT": 65
+      }
+    },
+    "geometry": null,
+    "scope": "Pinned Java signatures, native XML, SQLite quick_check, available layout checks and artifact checksums. Native GUI reopen not performed."
+  },
   "text_hashes": "LF normalized"
 }
