@@ -86,5 +86,19 @@
       "unchanged_classes_checked": 9,
       "differences": []
     }
+  },
+  "independent_current_repository_check": {
+    "date_singapore": "2026-11-13",
+    "commit": "060290e3a6c0de0df790bcc7404d7561fac378a6",
+    "game_checks": 181,
+    "source_model": "source/model.xml",
+    "selected_model_types": 31,
+    "selected_fields": 62,
+    "selected_operations_including_constructors": 76,
+    "enum_literals": 21,
+    "source_layout_relationships": 28,
+    "source_layout_labels_checked": 36,
+    "artifact_sha256_entries_checked": 13,
+    "scope": "Compiled selected-member check and source-layout validation only; historical source_commit and original artifacts remain unchanged. This does not constitute a new Visual Paradigm visual or sequence-diagram review."
   }
 }

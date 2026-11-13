@@ -2,7 +2,7 @@
 
 ## Current course cleanup
 
-On 29 October 2026, source checkpoint `8344815` implements both cleanup rounds using Chapters 1-9. The current suite passes **181 checks**. It uses ordinary data classes, copied lists, Scanner/PrintStream, traditional switches and direct exception checks. Cashier returns Receipt or null; paid averages use a double plus hasAverageSatisfaction(). The three stdin replay outcomes are unchanged. The native models and exports were reviewed against these types. [Full changes and teammate pull instructions](course-cleanup.md).
+On 29 October 2026, source checkpoint `8344815` implements both cleanup rounds using Chapters 1-9. The current suite passes **181 checks**. It uses ordinary data classes, copied lists, Scanner/PrintStream, traditional switches and direct exception checks. Cashier returns Receipt or null; paid averages use a double plus hasAverageSatisfaction(). The three stdin replay outcomes are unchanged. The native models and exports were reviewed against these types. See the [submission verification checklist](submission-readiness.md).
 
 The dated reviews below describe earlier checkpoints; their 155/177 counts and old record/Optional wording are historical.
 

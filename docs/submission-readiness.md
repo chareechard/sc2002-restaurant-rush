@@ -4,8 +4,8 @@ This checklist records work still to verify; it is not a claim of submission or 
 
 ## Stage snapshots and diagrams
 
-- [ ] Review the runnable Stage 1, Stage 2 and final Stage 3 versions, then create and verify the required `stage-1`, `stage-2` and `stage-3` Git tags. Git tags are repository references and are not created by merging this pull request.
-- [ ] Add accurate Stage 1-to-2 and Stage 2-to-3 comparisons and corresponding links to the project README.
+- [x] Test and tag the runnable `stage-1`, `stage-2` and `stage-3` versions. The tags were verified in the repository on 13 November 2026.
+- [x] Add Stage 1-to-2 and Stage 2-to-3 comparisons and tag comparison links to the project README.
 - [ ] Verify the three class diagrams and the selected Stage 2 or Stage 3 sequence diagram against the code they represent.
 - [ ] Revalidate any edited Visual Paradigm model and its PDF, PNG, SVG and XML exports; refresh the associated verification hashes.
 
