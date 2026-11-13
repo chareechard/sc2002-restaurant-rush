@@ -1,0 +1,356 @@
+RESTAURANT RUSH - Stage 3 | Base setting | Offline Java
+Win after 18 turns: >=4 paid, >=$45.00 revenue, >=60 average paid satisfaction.
+Salad $9.00 (1 preparation units)
+Burger $15.00 (1 preparation units)
+Pasta $18.00 (2 preparation units)
+Salad + Pasta Combo $24.30 (3 preparation units)
+Commands use numeric ids (e.g. seat 1 1, order 1, cook 1, serve 1). Type help or status.
+Start turn 1 [happy | wait]>
+=== TURN 1/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=1
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: [C1]
+T1: free
+T2: free
+C1 Regular | satisfaction=100 | WAITING
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C1 arrives (Regular, satisfaction 100).
+Host [seat C T | wait]> Host seats C1 at T1.
+Waiter [seat C T | order C | serve O | wait]> C1 chooses Pasta; O1 bill locked at $18.00.
+Chef [cook O | wait]> Chef advances O1 to 1/2 units: PREPARING.
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=1
+Start turn 2 [happy | wait]>
+=== TURN 2/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=2
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: []
+T1: C1
+T2: free
+C1 Regular | satisfaction=92 | WAITING_FOR_FOOD
+O1 for C1 | Pasta | 1/2 | PREPARING | locked bill $18.00
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Chef advances O1 to 2/2 units: READY.
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=2
+Start turn 3 [happy | wait]>
+=== TURN 3/18 ===
+Served=0 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=3
+Happy Hour: 0 active turn(s) including this turn; activation available at the start of a turn
+Waiting queue: []
+T1: C1
+T2: free
+C1 Regular | satisfaction=84 | WAITING_FOR_FOOD
+O1 for C1 | Pasta | 2/2 | READY | locked bill $18.00
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Waiter serves O1: SERVED. Customer begins eating.
+Chef [cook O | wait]> Served=1 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=3
+Start turn 4 [happy | wait]>
+=== TURN 4/18 ===
+Served=1 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=4
+Happy Hour: 2 active turn(s) including this turn; activation used
+Waiting queue: [C2]
+T1: C1
+T2: free
+C1 Regular | satisfaction=84 | EATING
+C2 VIP | satisfaction=100 | WAITING
+O1 for C1 | Pasta | 2/2 | SERVED | locked bill $18.00
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C2 arrives (VIP, satisfaction 100).
+Happy Hour: 2 active turn(s) including this one; waiting customers recover up to 15 satisfaction.
+Host [seat C T | wait]> Host seats C2 at T2.
+Waiter [seat C T | order C | serve O | wait]> C2 chooses Burger; O2 bill locked at $10.80.
+Chef [cook O | wait]> Chef advances O2 to 1/1 units: READY.
+C1 finishes eating: READY_TO_PAY; earliest payment next turn.
+Served=1 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=4
+Start turn 5 [happy | wait]>
+=== TURN 5/18 ===
+Served=1 | Paid=0 | Unhappy=0 | Revenue=$0.00 | Average paid satisfaction=N/A | Turns=5
+Happy Hour: 1 active turn(s) including this turn; activation used
+Waiting queue: []
+T1: C1
+T2: C2
+C1 Regular | satisfaction=84 | READY_TO_PAY
+C2 VIP | satisfaction=100 | WAITING_FOR_FOOD
+O1 for C1 | Pasta | 2/2 | SERVED | locked bill $18.00
+O2 for C2 | Burger | 1/1 | READY | locked bill $10.80
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Happy Hour: 1 active turn(s) including this one; waiting customers recover up to 15 satisfaction.
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Cashier collects $18.00 from C1: PAID; table freed.
+Served=1 | Paid=1 | Unhappy=0 | Revenue=$18.00 | Average paid satisfaction=84.00 | Turns=5
+Start turn 6 [happy | wait]>
+=== TURN 6/18 ===
+Served=1 | Paid=1 | Unhappy=0 | Revenue=$18.00 | Average paid satisfaction=84.00 | Turns=6
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: []
+T1: free
+T2: C2
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | WAITING_FOR_FOOD
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | READY | locked bill $10.80
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Waiter serves O2: SERVED. Customer begins eating.
+Chef [cook O | wait]> Served=2 | Paid=1 | Unhappy=0 | Revenue=$18.00 | Average paid satisfaction=84.00 | Turns=6
+Start turn 7 [happy | wait]>
+=== TURN 7/18 ===
+Served=2 | Paid=1 | Unhappy=0 | Revenue=$18.00 | Average paid satisfaction=84.00 | Turns=7
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: [C3]
+T1: free
+T2: C2
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | EATING
+C3 Critic | satisfaction=100 | WAITING
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | SERVED | locked bill $10.80
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C3 arrives (Critic, satisfaction 100).
+Host [seat C T | wait]> Host seats C3 at T1.
+Waiter [seat C T | order C | serve O | wait]> C3 chooses Pasta; O3 bill locked at $18.00.
+Chef [cook O | wait]> Chef advances O3 to 1/2 units: PREPARING.
+C2 finishes eating: READY_TO_PAY; earliest payment next turn.
+Served=2 | Paid=1 | Unhappy=0 | Revenue=$18.00 | Average paid satisfaction=84.00 | Turns=7
+Start turn 8 [happy | wait]>
+=== TURN 8/18 ===
+Served=2 | Paid=1 | Unhappy=0 | Revenue=$18.00 | Average paid satisfaction=84.00 | Turns=8
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: []
+T1: C3
+T2: C2
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | READY_TO_PAY
+C3 Critic | satisfaction=88 | WAITING_FOR_FOOD
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | SERVED | locked bill $10.80
+O3 for C3 | Pasta | 1/2 | PREPARING | locked bill $18.00
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Chef advances O3 to 2/2 units: READY.
+Cashier collects $10.80 from C2: PAID; table freed.
+Served=2 | Paid=2 | Unhappy=0 | Revenue=$28.80 | Average paid satisfaction=89.50 | Turns=8
+Start turn 9 [happy | wait]>
+=== TURN 9/18 ===
+Served=2 | Paid=2 | Unhappy=0 | Revenue=$28.80 | Average paid satisfaction=89.50 | Turns=9
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: []
+T1: C3
+T2: free
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | PAID
+C3 Critic | satisfaction=76 | WAITING_FOR_FOOD
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | PAID | locked bill $10.80
+O3 for C3 | Pasta | 2/2 | READY | locked bill $18.00
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Waiter serves O3: SERVED. Customer begins eating.
+Chef [cook O | wait]> Served=3 | Paid=2 | Unhappy=0 | Revenue=$28.80 | Average paid satisfaction=89.50 | Turns=9
+Start turn 10 [happy | wait]>
+=== TURN 10/18 ===
+Served=3 | Paid=2 | Unhappy=0 | Revenue=$28.80 | Average paid satisfaction=89.50 | Turns=10
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: [C4]
+T1: C3
+T2: free
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | PAID
+C3 Critic | satisfaction=76 | EATING
+C4 Regular | satisfaction=100 | WAITING
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | PAID | locked bill $10.80
+O3 for C3 | Pasta | 2/2 | SERVED | locked bill $18.00
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C4 arrives (Regular, satisfaction 100).
+Host [seat C T | wait]> Host seats C4 at T2.
+Waiter [seat C T | order C | serve O | wait]> C4 chooses Salad + Pasta Combo; O4 bill locked at $24.30.
+Chef [cook O | wait]> Chef advances O4 to 1/3 units: PREPARING.
+C3 finishes eating: READY_TO_PAY; earliest payment next turn.
+Served=3 | Paid=2 | Unhappy=0 | Revenue=$28.80 | Average paid satisfaction=89.50 | Turns=10
+Start turn 11 [happy | wait]>
+=== TURN 11/18 ===
+Served=3 | Paid=2 | Unhappy=0 | Revenue=$28.80 | Average paid satisfaction=89.50 | Turns=11
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: []
+T1: C3
+T2: C4
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | PAID
+C3 Critic | satisfaction=76 | READY_TO_PAY
+C4 Regular | satisfaction=92 | WAITING_FOR_FOOD
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | PAID | locked bill $10.80
+O3 for C3 | Pasta | 2/2 | SERVED | locked bill $18.00
+O4 for C4 | Salad + Pasta Combo | 1/3 | PREPARING | locked bill $24.30
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Chef advances O4 to 2/3 units: PREPARING.
+Cashier collects $18.00 from C3: PAID; table freed.
+Served=3 | Paid=3 | Unhappy=0 | Revenue=$46.80 | Average paid satisfaction=85.00 | Turns=11
+Start turn 12 [happy | wait]>
+=== TURN 12/18 ===
+Served=3 | Paid=3 | Unhappy=0 | Revenue=$46.80 | Average paid satisfaction=85.00 | Turns=12
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: []
+T1: free
+T2: C4
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | PAID
+C3 Critic | satisfaction=76 | PAID
+C4 Regular | satisfaction=84 | WAITING_FOR_FOOD
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | PAID | locked bill $10.80
+O3 for C3 | Pasta | 2/2 | PAID | locked bill $18.00
+O4 for C4 | Salad + Pasta Combo | 2/3 | PREPARING | locked bill $24.30
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> Chef advances O4 to 3/3 units: READY.
+Served=3 | Paid=3 | Unhappy=0 | Revenue=$46.80 | Average paid satisfaction=85.00 | Turns=12
+Start turn 13 [happy | wait]>
+=== TURN 13/18 ===
+Served=3 | Paid=3 | Unhappy=0 | Revenue=$46.80 | Average paid satisfaction=85.00 | Turns=13
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: [C5]
+T1: free
+T2: C4
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | PAID
+C3 Critic | satisfaction=76 | PAID
+C4 Regular | satisfaction=76 | WAITING_FOR_FOOD
+C5 Regular | satisfaction=100 | WAITING
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | PAID | locked bill $10.80
+O3 for C3 | Pasta | 2/2 | PAID | locked bill $18.00
+O4 for C4 | Salad + Pasta Combo | 3/3 | READY | locked bill $24.30
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C5 arrives (Regular, satisfaction 100).
+Host [seat C T | wait]> Host seats C5 at T1.
+Waiter [seat C T | order C | serve O | wait]> Waiter serves O4: SERVED. Customer begins eating.
+Chef [cook O | wait]> Served=4 | Paid=3 | Unhappy=0 | Revenue=$46.80 | Average paid satisfaction=85.00 | Turns=13
+Start turn 14 [happy | wait]>
+=== TURN 14/18 ===
+Served=4 | Paid=3 | Unhappy=0 | Revenue=$46.80 | Average paid satisfaction=85.00 | Turns=14
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: []
+T1: C5
+T2: C4
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | PAID
+C3 Critic | satisfaction=76 | PAID
+C4 Regular | satisfaction=76 | EATING
+C5 Regular | satisfaction=92 | SEATED
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | PAID | locked bill $10.80
+O3 for C3 | Pasta | 2/2 | PAID | locked bill $18.00
+O4 for C4 | Salad + Pasta Combo | 3/3 | SERVED | locked bill $24.30
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> C5 chooses Burger; O5 bill locked at $15.00.
+Chef [cook O | wait]> Chef advances O5 to 1/1 units: READY.
+C4 finishes eating: READY_TO_PAY; earliest payment next turn.
+Served=4 | Paid=3 | Unhappy=0 | Revenue=$46.80 | Average paid satisfaction=85.00 | Turns=14
+Start turn 15 [happy | wait]>
+=== TURN 15/18 ===
+Served=4 | Paid=3 | Unhappy=0 | Revenue=$46.80 | Average paid satisfaction=85.00 | Turns=15
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: []
+T1: C5
+T2: C4
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | PAID
+C3 Critic | satisfaction=76 | PAID
+C4 Regular | satisfaction=76 | READY_TO_PAY
+C5 Regular | satisfaction=84 | WAITING_FOR_FOOD
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | PAID | locked bill $10.80
+O3 for C3 | Pasta | 2/2 | PAID | locked bill $18.00
+O4 for C4 | Salad + Pasta Combo | 3/3 | SERVED | locked bill $24.30
+O5 for C5 | Burger | 1/1 | READY | locked bill $15.00
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Waiter serves O5: SERVED. Customer begins eating.
+Chef [cook O | wait]> Cashier collects $24.30 from C4: PAID; table freed.
+Served=5 | Paid=4 | Unhappy=0 | Revenue=$71.10 | Average paid satisfaction=82.75 | Turns=15
+Start turn 16 [happy | wait]>
+=== TURN 16/18 ===
+Served=5 | Paid=4 | Unhappy=0 | Revenue=$71.10 | Average paid satisfaction=82.75 | Turns=16
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: [C6]
+T1: C5
+T2: free
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | PAID
+C3 Critic | satisfaction=76 | PAID
+C4 Regular | satisfaction=76 | PAID
+C5 Regular | satisfaction=84 | EATING
+C6 Regular | satisfaction=100 | WAITING
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | PAID | locked bill $10.80
+O3 for C3 | Pasta | 2/2 | PAID | locked bill $18.00
+O4 for C4 | Salad + Pasta Combo | 3/3 | PAID | locked bill $24.30
+O5 for C5 | Burger | 1/1 | SERVED | locked bill $15.00
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+C6 arrives (Regular, satisfaction 100).
+Host [seat C T | wait]> Host seats C6 at T2.
+Waiter [seat C T | order C | serve O | wait]> C6 chooses Salad; O6 bill locked at $9.00.
+Chef [cook O | wait]> Chef advances O6 to 1/1 units: READY.
+C5 finishes eating: READY_TO_PAY; earliest payment next turn.
+Served=5 | Paid=4 | Unhappy=0 | Revenue=$71.10 | Average paid satisfaction=82.75 | Turns=16
+Start turn 17 [happy | wait]>
+=== TURN 17/18 ===
+Served=5 | Paid=4 | Unhappy=0 | Revenue=$71.10 | Average paid satisfaction=82.75 | Turns=17
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: []
+T1: C5
+T2: C6
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | PAID
+C3 Critic | satisfaction=76 | PAID
+C4 Regular | satisfaction=76 | PAID
+C5 Regular | satisfaction=84 | READY_TO_PAY
+C6 Regular | satisfaction=92 | WAITING_FOR_FOOD
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | PAID | locked bill $10.80
+O3 for C3 | Pasta | 2/2 | PAID | locked bill $18.00
+O4 for C4 | Salad + Pasta Combo | 3/3 | PAID | locked bill $24.30
+O5 for C5 | Burger | 1/1 | SERVED | locked bill $15.00
+O6 for C6 | Salad | 1/1 | READY | locked bill $9.00
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Waiter serves O6: SERVED. Customer begins eating.
+Chef [cook O | wait]> Cashier collects $15.00 from C5: PAID; table freed.
+Served=6 | Paid=5 | Unhappy=0 | Revenue=$86.10 | Average paid satisfaction=83.00 | Turns=17
+Start turn 18 [happy | wait]>
+=== TURN 18/18 ===
+Served=6 | Paid=5 | Unhappy=0 | Revenue=$86.10 | Average paid satisfaction=83.00 | Turns=18
+Happy Hour: 0 active turn(s) including this turn; activation used
+Waiting queue: []
+T1: free
+T2: C6
+C1 Regular | satisfaction=84 | PAID
+C2 VIP | satisfaction=95 | PAID
+C3 Critic | satisfaction=76 | PAID
+C4 Regular | satisfaction=76 | PAID
+C5 Regular | satisfaction=84 | PAID
+C6 Regular | satisfaction=92 | EATING
+O1 for C1 | Pasta | 2/2 | PAID | locked bill $18.00
+O2 for C2 | Burger | 1/1 | PAID | locked bill $10.80
+O3 for C3 | Pasta | 2/2 | PAID | locked bill $18.00
+O4 for C4 | Salad + Pasta Combo | 3/3 | PAID | locked bill $24.30
+O5 for C5 | Burger | 1/1 | PAID | locked bill $15.00
+O6 for C6 | Salad | 1/1 | SERVED | locked bill $9.00
+Current phase: HOST
+Host [seat/wait]: available | Waiter [seat/order/serve/wait]: available | Chef [cook/wait]: available | Cashier: automatic (max 1).
+Host [seat C T | wait]> Waiter [seat C T | order C | serve O | wait]> Chef [cook O | wait]> C6 finishes eating: READY_TO_PAY; earliest payment next turn.
+Served=6 | Paid=5 | Unhappy=0 | Revenue=$86.10 | Average paid satisfaction=83.00 | Turns=18
+
+RESULT: VICTORY
+Served=6 | Paid=5 | Unhappy=0 | Revenue=$86.10 | Average paid satisfaction=83.00 | Turns=18
