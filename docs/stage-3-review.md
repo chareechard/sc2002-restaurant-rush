@@ -40,6 +40,6 @@ Native model checks verified all 30 classifier names against the Java source, 41
 
 ## Group completion still required
 
-The briefing requires **three class diagrams: one for each stage**. The three older Stage 3 detail views do not satisfy that requirement. Wesley/Zi Qi supply the Stage 1 diagram, and Richard supplies the Stage 2 diagram, matching their reviewed code. The final group report must include those diagrams, all four members' own reviewed reflections and contributions, and confirmed submission details.
+The briefing requires **three class diagrams: one for each stage**. The three older Stage 3 detail views do not satisfy that requirement. Wesley and Ran Ziqi supply the Stage 1 diagram, and Richard supplies the Stage 2 diagram, matching their reviewed code. The final group report must include those diagrams, all four members' own reviewed reflections and contributions, and confirmed submission details.
 
 This branch remains a group-review draft. The Stage 3 tag and `main` are not moved by the diagram review. Nothing is submitted to NTULearn.
