@@ -2,14 +2,18 @@
 
 This editable diagram represents repository source commit `02f5c5a46320fc3dc5bb4b5507b1dde5c2437bac`. Its production source and tests match `work/stage-1`.
 
-The current artifact is maintained with Visual Paradigm 18.0. It retains the
-reviewed Stage 1 layout and relationships; its member types reflect the course
-cleanup.
+The current PDF is the supplied [Stage 1 class diagram](Restaurant_Rush_Stage1_Wesley_Draft.pdf),
+copied without modification from `Stage_1_Class_Diagram.pdf`. It presents the 21
+Stage 1 types in a revised layout. The existing repository filename is retained
+so links continue to resolve.
 
-Open `Restaurant_Rush_Stage1_Wesley_Draft.vpp` in Visual Paradigm and select
-**Stage 1 - Class Diagram - Wesley Review**. The SVG is derived from the native export with its source subtitle synchronized; PNG and PDF views are regenerated from that SVG. The PDF is rendered
-from that native SVG, preserving UML font styles. Use the SVG or PDF for zooming into class members.
-The project is editable directly; the optional generator is not needed to open it.
+The editable Visual Paradigm 18.0 project and its SVG/PNG views retain the earlier
+layout. They were not regenerated from the supplied PDF. Open
+`Restaurant_Rush_Stage1_Wesley_Draft.vpp` and select
+**Stage 1 - Class Diagram - Wesley Review** to edit that model. The optional
+generator is not needed to open it. The native-layout details and automated
+geometry checks below describe these retained model files; the PDF layout was
+reviewed separately.
 
 ## What changed
 
@@ -102,11 +106,12 @@ diagram-authoring and checking tools. They are excluded from the game build
 and are not needed to play or manually edit the VPP. `model-xml/project.xml`
 and its accompanying `data.zip` are Visual Paradigm's readable model export.
 
-For manual edits, change the native VPP, then export the PDF/PNG/SVG and
-synchronize the descriptor and verification record. Keep the historical Wesley
-filename so existing links continue to work; Wesley and Zi Qi review this shared
-Stage 1 artifact. Save and close Visual Paradigm before committing, and exclude
-lock files and backup copies.
+For native-model edits, change the VPP, then export its PNG/SVG views and
+synchronize the descriptor and verification record. The current supplied PDF is
+maintained separately; do not overwrite it with a native export unless replacing
+that PDF is intended. Keep the existing filenames so links continue to work.
+Save and close Visual Paradigm before committing, and exclude lock files and
+backup copies.
 
 ## Current provenance checks
 

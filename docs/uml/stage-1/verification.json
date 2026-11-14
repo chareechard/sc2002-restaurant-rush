@@ -39,7 +39,7 @@
     "Restaurant_Rush_Stage1_Wesley_Draft.png": "d4d4bfe0c6ff67fa2aa6727bc19a1b69bb4a2daa167b54ad8c3fb81bc7f31db6",
     "model-xml/project.xml": "24e85cf1f6c66e61115ea2a26c69e71653ac8ae5556c478d7e705f7320abc487",
     "model-xml/data.zip": "88229578ffbaf8cbae3176c2170a3e2381058f60d21f98d9a6fee0f3e34b442e",
-    "Restaurant_Rush_Stage1_Wesley_Draft.pdf": "4bfadf584d8f2d8b4c49224b56b02847bfbe7ab3da3e4685efbf987c081a309e"
+    "Restaurant_Rush_Stage1_Wesley_Draft.pdf": "c6b077c38eaaf21808d8867ad6d80e0b5edb5a9b50c1a540d57bd4abe12f3bed"
   },
   "selected_relationships": 19,
   "relationship_breakdown": {
@@ -48,12 +48,13 @@
     "dependency": 3,
     "generalization": 1
   },
-  "pin_only_refresh_preserved_members_relationships_and_bounds": true,
   "pdf": {
     "file": "Restaurant_Rush_Stage1_Wesley_Draft.pdf",
     "pages": 1,
-    "source": "Synchronized SVG rendered as vector PDF with headless Chromium.",
-    "visual_review": "2026-11-14: rendered page inspected after the source subtitle refresh."
+    "source": "User-supplied Stage_1_Class_Diagram.pdf; copied byte-for-byte.",
+    "visual_review": "2026-11-14: supplied page rendered and inspected before replacement.",
+    "same_layout_as_native_exports": false,
+    "verification_scope": "PDF checksum and visual review; native member and geometry checks describe the retained model/SVG/PNG files."
   },
   "source_branch": "work/stage-1",
   "source_files_sha256": "5c44aea3a68d0cfe9e03a2da894ad3b83b6d4fc3f713d48fe07b9e18b72a8c62",
@@ -67,7 +68,7 @@
   "provenance_refresh": {
     "method": "Structured SQLite field updates and compaction; matching XML annotations refreshed.",
     "model_rows_preserved_after_annotation_normalization": true,
-    "graphics": "Stage 1/2 SVG subtitles synchronized; PNG and PDF views regenerated. Other diagram geometry retained. No fresh native GUI export claimed."
+    "graphics": "Native project and SVG/PNG views retained. The current PDF is the user-supplied Stage_1_Class_Diagram.pdf, copied without modification and using a separate layout. No fresh native GUI export claimed."
   },
   "source_signatures_checked_against_compiled_java": true,
   "current_repository_validation": {
