@@ -58,6 +58,13 @@ Customers choose meals deterministically. In Stage 3, a Regular whose ID is divi
 
 The ZIP contains the final-stage files; the working branches can be built with the commands above when available in a Git checkout. Stage 1 and Stage 2 use Waiter and Chef prompts; Stage 3 adds the start and Host decisions. The implementation uses ordinary classes, explicit loops and traditional switches, with immutable Stage 3 views of game state.
 
+## Individual AI chat histories
+
+- [Elson’s chat history](https://github.com/chareechard/sc2002-restaurant-rush/tree/elson/ai-history)
+- [Richard’s chat history](https://github.com/chareechard/sc2002-restaurant-rush/tree/richard/ai-history)
+- [Wesley’s chat history](https://github.com/chareechard/sc2002-restaurant-rush/tree/wesley/ai-history)
+- [Zi Qi’s chat history](https://github.com/chareechard/sc2002-restaurant-rush/tree/zi-qi/ai-history)
+
 ## Stage comparisons
 
 The working branches `work/stage-1`, `work/stage-2` and `work/stage-3` represent the project stages. The ZIP is a file snapshot and does not contain Git branches or history.
