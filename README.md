@@ -63,7 +63,7 @@ The ZIP contains the final-stage files; the working branches can be built with t
 - [Elson’s chat history](https://github.com/chareechard/sc2002-restaurant-rush/tree/elson/ai-history)
 - [Richard’s chat history](https://github.com/chareechard/sc2002-restaurant-rush/tree/richard/ai-history)
 - [Wesley’s chat history](https://github.com/chareechard/sc2002-restaurant-rush/tree/wesley/ai-history)
-- [Zi Qi’s chat history](https://github.com/chareechard/sc2002-restaurant-rush/tree/zi-qi/ai-history)
+- [Ran Ziqi’s chat history](https://github.com/chareechard/sc2002-restaurant-rush/tree/zi-qi/ai-history)
 
 ## Stage comparisons
 
@@ -113,7 +113,7 @@ The working branches provide the stage file lists, including diagram exports and
 
 ## Course project
 
-SC2002 MACS2 Group 3: Tan Yong Han Elson, Tiew Zuo Yuan Richard, Wesley Yiap Wen Le and Zi Qi (official full name to be confirmed). Elson is responsible for Stage 3 integration. The recording, signed declarations and reviewed individual contributions remain outstanding; see the [group information](docs/group.md) and [recording plan](docs/video-script.md). The group report and packaging tools are not included in this ZIP.
+SC2002 MACS2 Group 3: Tan Yong Han Elson, Tiew Zuo Yuan Richard, Wesley Yiap Wen Le and Ran Ziqi. Elson is responsible for Stage 3 integration. The recording, signed declarations and reviewed individual contributions remain outstanding; see the [group information](docs/group.md) and [recording plan](docs/video-script.md). The group report and packaging tools are not included in this ZIP.
 
 No license file is present in the repository. Contact the repository owner for permission to reuse the code.
 
