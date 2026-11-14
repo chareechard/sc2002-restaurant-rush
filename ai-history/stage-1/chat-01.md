@@ -1,4 +1,4 @@
-# Zi Qi — Stage 1
+# Ran Ziqi — Stage 1
 
 Codex chat transcript · Restaurant Rush
 
