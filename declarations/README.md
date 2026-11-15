@@ -1,9 +1,10 @@
-# Official declarations to add before submission
+# Declarations
 
-Use the current forms supplied by the course on NTULearn:
+Each member’s signed Declaration on Use of GAI Assistance is available below.
 
-Add the completed official course declarations, with all required signatories.
+- [Tan Yong Han Elson](GAI_Tan_Yong_Han_Elson.pdf)
+- [Tiew Zuo Yuan Richard](GAI_Tiew_Zuo_Yuan_Richard.pdf)
+- [Wesley Yiap Wen Le](GAI_Wesley_Yiap_Wen_Le.pdf)
+- [Ran Ziqi](GAI_Ran_Ziqi.pdf)
 
-The course forms were not included in the supplied brief. No substitute form, invented signature or false declaration is provided. Add the completed official forms here after the members review the work. Do not commit student identification numbers or signature images unless the group intends to store them in this private repository.
-
-Nothing in this folder has been submitted.
+The separate signed group Declaration of Original Work is still required for submission.

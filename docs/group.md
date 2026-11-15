@@ -13,4 +13,4 @@ No individual coding contribution or presentation responsibility is inferred fro
 
 On 28 October 2026, the owner confirmed that the group has four members, including **Ran Ziqi**. The agreed assignments are Wesley and Ran Ziqi on Stage 1, Richard on Stage 2, and Elson on Stage 3. These are planned responsibilities, not claims of completed individual contributions.
 
-**Submission is on hold at the user's request.** No files have been sent to NTULearn and no course declaration has been signed.
+The [declarations folder](../declarations/README.md) lists the four signed individual GAI forms and the outstanding group Declaration of Original Work.
