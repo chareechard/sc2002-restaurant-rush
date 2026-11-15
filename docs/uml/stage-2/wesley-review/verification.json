@@ -52,12 +52,10 @@
   "artifact_sha256": {
     "model-xml/data.zip": "4db90d95bb380a4981d16d55bcbe1b1a02801aac8883bc1b689b14e3ee07202f",
     "model-xml/project.xml": "c57428a3f58f5fead1cd3f67b80cf3c91881e178038cb22e5e17d9dad847bbdf",
-    "README.md": "384f1a1f8ca14324a0e1d1ce66044a3af3cacb2673bef5e455d7327b1b89991c",
+    "README.md": "a878027daf744925d62ec5eb2bb4395a2d38786097806aa518303bb044f909d7",
     "Restaurant_Rush_Stage2_Class.vpp": "98b39911afacb336a8b95b5dac534559a68714cecbc513fb373acdaa970aafee",
-    "source/ClassDiagramExportPlugin.java": "6e8087ba4c2782f8e65cdfaf81e056bce89ace04fe8ce04f759537cf1922da42",
     "source/layout.json": "ce34e737d02f5acab752de3757fd5d622d4967f24018aacf9a3e543fdb9f3fa9",
     "source/model.xml": "cdc9364a9147c12ab22de192bf83b2957a9079d6279b721bb47136870a12b122",
-    "source/render_svg.py": "4fcba871b706ac092717733618a3863c0efbc54dcd0df48fe5515a8023d30279",
     "source/validate_layout.py": "f326a70a56fce26bb32482800a4e8eba6c872a30a84df8cf59c151bf868aa900",
     "source/VerifyPreviewMembers.java": "b7ae2e6bebcb003cb3f45027ad0da765ebb9ff8159c0d51a46b39bca8ce49d43",
     "Stage_2_Class_Diagram.pdf": "e1c8a5d86367f035ac2129cff0105818f71039c2194ddf7d24eb3d0e2b6038fe",
