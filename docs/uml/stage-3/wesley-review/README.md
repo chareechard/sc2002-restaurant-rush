@@ -12,6 +12,12 @@ compiled Java for this stage: 62 fields, 76 operations
 - [SVG](Stage_3_Class_Diagram.svg)
 - [Editable project](Restaurant_Rush_Stage3_Class.vpp)
 
+## Stage 3 VIP service sequence
+
+[PDF](Restaurant_Rush_Stage3_Sequence_Refined.pdf) · [PNG](Restaurant_Rush_Stage3_Sequence_Refined.png) · [SVG](Restaurant_Rush_Stage3_Sequence_Refined.svg) · [Editable project](Restaurant_Rush_Stage3_Sequence.vpp)
+
+On turn 4, taking C2’s order uses the Waiter’s action. On turn 5, the manager can serve C2 or wait.
+
 ## Consistency across the three stages
 
 All shared classes use the same coordinates and box sizes. Common relationships
