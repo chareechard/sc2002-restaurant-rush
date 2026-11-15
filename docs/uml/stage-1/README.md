@@ -2,18 +2,9 @@
 
 This editable diagram represents repository source commit `02f5c5a46320fc3dc5bb4b5507b1dde5c2437bac`. Its production source and tests match `work/stage-1`.
 
-The current PDF is the supplied [Stage 1 class diagram](Restaurant_Rush_Stage1_Wesley_Draft.pdf),
-copied without modification from `Stage_1_Class_Diagram.pdf`. It presents the 21
-Stage 1 types in a revised layout. The existing repository filename is retained
-so links continue to resolve.
-
-The editable Visual Paradigm 18.0 project and its SVG/PNG views retain the earlier
-layout. They were not regenerated from the supplied PDF. Open
-`Restaurant_Rush_Stage1_Wesley_Draft.vpp` and select
-**Stage 1 - Class Diagram - Wesley Review** to edit that model. The optional
-generator is not needed to open it. The native-layout details and automated
-geometry checks below describe these retained model files; the PDF layout was
-reviewed separately.
+Open the [reviewed class diagram (PDF)](Restaurant_Rush_Stage1_Wesley_Draft.pdf), [SVG](Restaurant_Rush_Stage1_Wesley_Draft.svg) or [PNG](Restaurant_Rush_Stage1_Wesley_Draft.png).
+The [editable Visual Paradigm project](Restaurant_Rush_Stage1_Wesley_Draft.vpp) opens to **Stage 1 - Reviewed Class Diagram**.
+The supplied PDF is the reference for the positions of all 21 classes and the routes of all 19 relationships.
 
 ## What changed
 
@@ -100,19 +91,14 @@ checks, selected-member comparison and artifact hashes. The source model and
 exports must agree with the current code before a diagram change is committed.
 The cleaned code passes 106 checks, with unchanged victory and defeat results.
 
-`source/stage1-model.xml` contains selected members and layout inputs.
-`source/StageDiagramPlugin.java` and `source/VerifyMembers.java` are optional
-diagram-authoring and checking tools. They are excluded from the game build
-and are not needed to play or manually edit the VPP. `model-xml/project.xml`
-and its accompanying `data.zip` are Visual Paradigm's readable model export.
+The reviewed model uses [the member and relationship definitions](source/model.xml) and
+[the diagram layout](source/layout.json). The native generator in
+[ClassDiagramExportPlugin.java](source/ClassDiagramExportPlugin.java) saves and reopens the
+Visual Paradigm project. Its XML export is in [model-xml/](model-xml/).
 
-For native-model edits, change the VPP, then export its PNG/SVG views and
-synchronize the descriptor and verification record. The current supplied PDF is
-maintained separately; do not overwrite it with a native export unless replacing
-that PDF is intended. Keep the existing filenames so links continue to work.
-Save and close Visual Paradigm before committing, and exclude lock files and
-backup copies.
+The SVG was generated with [render_svg.py](source/render_svg.py). The PNG is a
+3400 × 2402 rendering of the supplied PDF. The exported native class bounds and connector
+routes were checked against the reviewed layout, and the SVG positions were checked
+against the PDF. The filenames are shared across the project branches.
 
-## Current provenance checks
-
-See `verification.json` and the repository's `docs/uml/verification-guide.md`. The 2026-11-14 refresh checks current source signatures and native database integrity. Native GUI reopening after this metadata refresh remains pending.
+See [the verification record](verification.json) and [the UML verification guide](../verification-guide.md).
