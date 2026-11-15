@@ -62,6 +62,8 @@ The ZIP contains the final-stage files; the working branches can be built with t
 
 The working branches `work/stage-1`, `work/stage-2` and `work/stage-3` represent the project stages. The ZIP is a file snapshot and does not contain Git branches or history.
 
+Compare the tagged snapshots on GitHub for [Stage 1 to Stage 2](https://github.com/chareechard/sc2002-restaurant-rush/compare/7eb05a965eb2828be761f6df6f6c471dc29c05fb..f131775f141ca363c5812e44c5c59e955b128778) and [Stage 2 to Stage 3](https://github.com/chareechard/sc2002-restaurant-rush/compare/f131775f141ca363c5812e44c5c59e955b128778..3aca25ce7e267230f0a2295002f5cd32d400cfd6).
+
 ### Stage 1 → Stage 2
 
 Compare the Stage 1 and Stage 2 working branches in a Git checkout. Paths below are relative to `src/main/java/rush/` unless otherwise stated.
@@ -85,17 +87,25 @@ The working branches provide the stage file lists, including diagram exports and
 
 ## Video timestamps
 
-**Recording pending.** Replace each placeholder with the actual timestamp in the completed group video.
+[Group presentation (MP4, 15:37)](video/restaurant-rush-group-demo.mp4)
 
-| Segment required by the brief | Timestamp |
+**Presenter guide**
+
+- `00:00` Ran Ziqi introduces the game and the three stages.
+- `01:58` Wesley Yiap Wen Le explains the three UML class diagrams.
+- `05:25` Tiew Zuo Yuan Richard demonstrates Stage 1 and Stage 3 gameplay.
+- `10:21` Tan Yong Han Elson walks through the Stage 3 VIP service decision using the sequence diagram.
+- `13:14` Individual contributions and key learning begin with Richard, followed by Elson at `13:53`, Wesley at `14:28` and Ziqi at `15:05`.
+
+| Segment required by the brief | Where to look in the recording |
 | --- | --- |
-| Game launching from the submitted project | Pending |
-| Meaningful manager choice with constrained staff | Pending |
-| Dish progressing from READY to SERVED to payment | Pending |
-| VIP or Critic behaviour | Pending |
-| Stage 3 feature | Pending |
-| Victory and defeat | Pending |
-| Stage comparisons and diagrams | Pending |
+| Game launching from the submitted project | `05:25` Stage 1 and `07:34` Stage 3. Both games are already running when first shown. The launch command is outside the recording. |
+| Meaningful manager choice with constrained staff | `09:13` Richard explains the trade-off. At `09:40` the Host seats C5 while the Waiter serves C4, leaving C5’s order for later. |
+| Dish progressing from READY to SERVED to payment | `06:02` READY → `06:05` SERVED → `06:36` C1 pays $18. |
+| VIP or Critic behaviour | `07:55` VIP behaviour explained. The VIP arrives at `08:19` and the $10.80 bill is locked at `08:23`. |
+| Stage 3 feature | `07:42` Host introduced. `08:19` Happy Hour shown. |
+| Victory and defeat | `09:59` victory. `10:08` defeat. |
+| Stage tag comparisons and diagrams | `00:53` the three tags are named. Class diagrams appear at `01:58` (Stage 1), `03:33` (Stage 2) and `04:09` (Stage 3). The Stage 3 sequence diagram starts at `10:21`. The two Git diffs are available under [Stage comparisons](#stage-comparisons) and are absent from the recording. |
 
 ## Docs
 
@@ -106,7 +116,7 @@ The working branches provide the stage file lists, including diagram exports and
 
 ## Course project
 
-SC2002 MACS2 Group 3: Tan Yong Han Elson, Tiew Zuo Yuan Richard, Wesley Yiap Wen Le and Ran Ziqi. Elson is responsible for Stage 3 integration. The recording, signed declarations and reviewed individual contributions remain outstanding; see the [group information](docs/group.md) and [recording plan](docs/video-script.md). The group report and packaging tools are not included in this ZIP.
+SC2002 MACS2 Group 3: Tan Yong Han Elson, Tiew Zuo Yuan Richard, Wesley Yiap Wen Le and Ran Ziqi. Elson is responsible for Stage 3 integration. See the [group information](docs/group.md) and [four signed individual GAI declarations](declarations/README.md). The separate signed Declaration of Original Work and team review of individual contributions remain outstanding. The group report and packaging tools are not included in this ZIP.
 
 No license file is present in the repository. Contact the repository owner for permission to reuse the code.
 

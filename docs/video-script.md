@@ -1,6 +1,6 @@
 # Group recording script
 
-Target duration: approximately 15 minutes. This is a recording plan; a group video has not yet been recorded. Choose speakers together so that each member explains code and decisions they understand. Capture a readable terminal and diagrams, with audible narration. Replace this script's planned intervals with measured times after editing the real recording, and add those actual timestamps to the README.
+These were the planned intervals for rehearsal. The [recording, presenter guide and measured timestamps](../README.md#video-timestamps) are in the root README.
 
 | Planned interval | Screen and actions | Explanation to cover |
 | --- | --- | --- |
@@ -27,5 +27,3 @@ Get-Content replays/defeat.txt | java -jar build/restaurant-rush.jar
 ```
 
 The interactive sequence above differs from the Stage 1 example because Stage 3's Host permits seating and ordering on the same turn. Use the Stage 1 working branch in a Git checkout to demonstrate the brief's original turn-6 Pasta payment.
-
-Before submission, save the actual recording as `video/restaurant-rush-group-demo.mp4` or put a stable grader-accessible download link in `video/README.md`. Verify its audio and timestamps. Do not treat this script as the required video.
