@@ -454,4 +454,29 @@
 <text x="2243.0" y="2863" fill="#20364F" font-family="Arial" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">Stage 3 additions: green</text>
 <rect x="3322.5" y="2840" width="32" height="30" fill="white" stroke="#D16D00" stroke-width="2.6"/>
 <text x="3367.5" y="2863" fill="#20364F" font-family="Arial" font-size="17" font-weight="normal" font-style="normal" text-anchor="start">Modified existing class</text>
+<g id="oop-annotations" font-family="Arial, sans-serif">
+<title>Encapsulation, polymorphism and composition</title>
+<path d="M3080 545 L3080 514" fill="none" stroke="#865614" stroke-width="2.5" stroke-dasharray="4 5"/>
+<path d="M2850 545 L3480 545 L3500 565 L3500 660 L2850 660 L2850 545" fill="#fff5dc" stroke="#865614" stroke-width="2"/>
+<path d="M3480 545 L3480 565 L3500 565" fill="none" stroke="#865614" stroke-width="1.5"/>
+<path d="M2014 408 L2030 408" fill="none" stroke="#865614" stroke-width="2.5" stroke-dasharray="4 5"/>
+<path d="M1870 354 L2001 354 L2014 367 L2014 444 L1870 444 L1870 354" fill="#fff5dc" stroke="#865614" stroke-width="2"/>
+<path d="M2001 354 L2001 367 L2014 367" fill="none" stroke="#865614" stroke-width="1.5"/>
+<path d="M684 1164 L724 1164" fill="none" stroke="#865614" stroke-width="2.5" stroke-dasharray="4 5"/>
+<path d="M80 1058 L664 1058 L684 1078 L684 1174 L80 1174 L80 1058" fill="#fff5dc" stroke="#865614" stroke-width="2"/>
+<path d="M664 1058 L664 1078 L684 1078" fill="none" stroke="#865614" stroke-width="1.5"/>
+<text x="2867" y="572" font-size="23" fill="#69410b" font-weight="bold">Encapsulation</text>
+<text x="2867" y="600" font-size="20" fill="#20364f">Order keeps its status and bill private.</text>
+<text x="2867" y="623" font-size="20" fill="#20364f">serve() checks that the order was already READY.</text>
+<text x="2867" y="646" font-size="20" fill="#20364f">The bill is fixed when the order is placed.</text>
+<text x="1880" y="374" font-size="17" fill="#69410b" font-weight="bold">Polymorphism</text>
+<text x="1880" y="393" font-size="15" fill="#20364f">Regular, VIP and</text>
+<text x="1880" y="408" font-size="15" fill="#20364f">Critic override it.</text>
+<text x="1880" y="423" font-size="15" fill="#20364f">Java selects by</text>
+<text x="1880" y="438" font-size="15" fill="#20364f">customer type.</text>
+<text x="97" y="1085" font-size="23" fill="#69410b" font-weight="bold">Composition</text>
+<text x="97" y="1113" font-size="20" fill="#20364f">Each GameEngine creates its own Waiter</text>
+<text x="97" y="1136" font-size="20" fill="#20364f">and keeps it for the game. The filled diamond</text>
+<text x="97" y="1159" font-size="20" fill="#20364f">marks GameEngine as the owner.</text>
+</g>
 </svg>
