@@ -2,8 +2,8 @@
 
 This editable diagram represents repository source commit `02f5c5a46320fc3dc5bb4b5507b1dde5c2437bac`. Its production source and tests match `work/stage-1`.
 
-Open the [reviewed class diagram (PDF)](Restaurant_Rush_Stage1_Wesley_Draft.pdf), [SVG](Restaurant_Rush_Stage1_Wesley_Draft.svg) or [PNG](Restaurant_Rush_Stage1_Wesley_Draft.png).
-The [editable Visual Paradigm project](Restaurant_Rush_Stage1_Wesley_Draft.vpp) opens to **Stage 1 - Reviewed Class Diagram**.
+Open the [reviewed class diagram (PDF)](Stage_1_Class_Diagram.pdf), [SVG](Stage_1_Class_Diagram.svg) or [PNG](Stage_1_Class_Diagram.png).
+The [editable Visual Paradigm project](Restaurant_Rush_Stage1_Class.vpp) opens to **Stage 1 - Reviewed Class Diagram**.
 The supplied PDF is the reference for the positions of all 21 classes and the routes of all 19 relationships.
 
 ## What changed
@@ -70,7 +70,7 @@ ArrayList copies built with loops; they do not expose the backing lists.
 The waiting queue is the derived `waitingQueue()` operation; there is no separate
 queue class. Routine constructors and most accessors are omitted. RuleViolation's
 JDK parent, IllegalArgumentException, is noted rather than drawn as another
-application type. See `verification.json` for the selected member counts.
+application type.
 
 ## Stage colors
 
@@ -83,20 +83,3 @@ application type. See `verification.json` for the selected member counts.
 
 All 21 classes in this Stage 1 diagram are white. The colored legend describes
 the convention for future comparisons and does not introduce later-stage classes.
-
-## Verification and editing
-
-`verification.json` records the represented code checkpoint, native project
-checks, selected-member comparison and artifact hashes. The source model and
-exports must agree with the current code before a diagram change is committed.
-The cleaned code passes 106 checks, with unchanged victory and defeat results.
-
-The reviewed model uses [the member and relationship definitions](source/model.xml) and
-[the diagram layout](source/layout.json). Its Visual Paradigm XML export is in
-[model-xml/](model-xml/).
-
-The PNG is a 3400 × 2402 rendering of the supplied PDF. The exported native class bounds and connector
-routes were checked against the reviewed layout, and the SVG positions were checked
-against the PDF. The filenames are shared across the project branches.
-
-See [the verification record](verification.json) and [the UML verification guide](../verification-guide.md).
