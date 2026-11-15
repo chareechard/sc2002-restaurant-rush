@@ -107,7 +107,7 @@ The working branches provide the stage file lists, including diagram exports and
 ## Docs
 
 - [Design discussion](docs/design.md) and [test notes](docs/test-notes.md)
-- Class diagrams: [Stage 1](docs/uml/stage-1/README.md), [Stage 2](docs/uml/stage-2/README.md) and [Stage 3](docs/uml/stage-3-class.svg)
+- Reviewed class diagrams (PDF) — [Stage 1](docs/uml/stage-1/Restaurant_Rush_Stage1_Wesley_Draft.pdf), [Stage 2](docs/uml/stage-2/wesley-review/Stage_2_Class_Diagram.pdf) and [Stage 3](docs/uml/stage-3/wesley-review/Stage_3_Class_Diagram.pdf)
 - [Stage 3 sequence diagram](docs/uml/stage-3-sequence.svg) and [editable Visual Paradigm project](docs/uml/Restaurant_Rush.vpp)
 - [Replay transcripts](docs/evidence/)
 
