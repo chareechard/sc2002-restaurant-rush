@@ -34,8 +34,8 @@ The sequence traces VIP C2 through arrival, Host seating, ordering, Happy Hour p
 
 Both full replays end after 18 turns with 6 served, 5 paid and $86.10 revenue. C2's bill remains $10.80. See `../replays/victory.txt`, `../replays/delayed-vip.txt`, `evidence/`, and `../src/test/java/rush/AllTests.java` for executable evidence.
 
-## Group completion still required
+## Group report
 
-The briefing requires **three class diagrams: one for each stage**. Wesley and Ran Ziqi supply the Stage 1 diagram, and Richard supplies the Stage 2 diagram, matching their reviewed code. The final group report must include those diagrams, all four members' own reviewed reflections and contributions, and confirmed submission details.
+The [group report (PDF)](../output/pdf/Restaurant_Rush_MACS2_Grp3.pdf) includes the class diagram for each stage, the Stage 3 VIP service sequence and all four individual reflections.
 
-This branch remains a group-review draft. The Stage 3 tag and `main` are not moved by the diagram review. Nothing is submitted to NTULearn.
+See the [submission checklist](submission-readiness.md) for the remaining group tasks.

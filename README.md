@@ -109,6 +109,7 @@ The working branches provide the stage file lists, including diagram exports and
 
 ## Docs
 
+- [Group report (PDF)](output/pdf/Restaurant_Rush_MACS2_Grp3.pdf) — design, replay results and individual reflections
 - [Design discussion](docs/design.md) and [test notes](docs/test-notes.md)
 - Reviewed class diagrams (PDF) — [Stage 1](docs/uml/stage-1/Restaurant_Rush_Stage1_Wesley_Draft.pdf), [Stage 2](docs/uml/stage-2/wesley-review/Stage_2_Class_Diagram.pdf) and [Stage 3](docs/uml/stage-3/wesley-review/Stage_3_Class_Diagram.pdf)
 - [Stage 3 sequence diagram (PDF)](docs/uml/stage-3/wesley-review/Restaurant_Rush_Stage3_Sequence_Refined.pdf) and [editable Visual Paradigm project](docs/uml/stage-3/wesley-review/Restaurant_Rush_Stage3_Sequence.vpp)
@@ -116,7 +117,7 @@ The working branches provide the stage file lists, including diagram exports and
 
 ## Course project
 
-SC2002 MACS2 Group 3: Tan Yong Han Elson, Tiew Zuo Yuan Richard, Wesley Yiap Wen Le and Ran Ziqi. Elson is responsible for Stage 3 integration. See the [group information](docs/group.md) and [four signed individual GAI declarations](declarations/README.md). The separate signed Declaration of Original Work and team review of individual contributions remain outstanding. The group report and packaging tools are not included in this ZIP.
+SC2002 MACS2 Group 3: Tan Yong Han Elson, Tiew Zuo Yuan Richard, Wesley Yiap Wen Le and Ran Ziqi. Elson is responsible for Stage 3 integration. See the [group information](docs/group.md) and [four signed individual GAI declarations](declarations/README.md). The separate signed Declaration of Original Work and team review of individual contributions remain outstanding. Packaging tools are not included in this ZIP.
 
 No license file is present in the repository. Contact the repository owner for permission to reuse the code.
 
