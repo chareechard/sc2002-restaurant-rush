@@ -80,7 +80,7 @@ Compare the Stage 2 and Stage 3 working branches in a Git checkout. Paths below 
 - **Added:** `domain/Dish.java`, `domain/ComboMeal.java` and `domain/PricingPolicy.java` generalize meals and pricing; `game/HappyHour.java` implements the promotion; `staff/Host.java` seats customers; `game/CustomerView.java`, `game/OrderView.java` and `game/TableView.java` provide snapshots.
 - **Changed:** `domain/Customer.java`, `RegularCustomer.java`, `VIPCustomer.java` and `CriticCustomer.java` support dishes, pricing or recovery; `domain/Menu.java`, `MenuItem.java` and `Order.java` support simple and composed dishes; `staff/Waiter.java` passes the pricing policy.
 - **Changed:** `game/GameEngine.java` and `TurnPhase.java` add Host and promotion phases and expose snapshots; `Scenario.java` checks exact victory thresholds. `cli/ConsoleApp.java` and `ConsoleView.java` handle and display the new decisions and state. `domain/Receipt.java`, `game/GameStats.java` and `staff/Cashier.java` also have documentation or formatting changes.
-- **Tests and supporting files:** `src/test/java/rush/AllTests.java`, `replays/victory.txt`, `README.md` and `docs/test-notes.md` are updated for Stage 3. New `replays/delayed-vip.txt` and `docs/evidence/stage-3-*.txt` demonstrate outcomes. The new `docs/design.md`, `docs/group.md`, `docs/stage-3-review.md`, `docs/video-script.md`, and `docs/uml/` Stage 3 artifacts provide design and submission evidence. The verification scripts, `.github/workflows/verify.yml`, `declarations/README.md` and `video/README.md` support testing and submission preparation; `.gitignore` is updated for generated files.
+- **Tests and supporting files:** At the `stage-3` checkpoint, `src/test/java/rush/AllTests.java`, `replays/victory.txt`, `README.md` and `docs/test-notes.md` were updated for the new rules. `replays/delayed-vip.txt` and `docs/evidence/stage-3-*.txt` captured the outcomes. The checkpoint added `docs/design.md`, the Stage 3 diagrams in `docs/uml/`, and group, review and rehearsal notes. It also added the verification scripts, `.github/workflows/verify.yml` and the video and declarations folder READMEs, and updated `.gitignore` for generated files.
 - **Deleted:** `docs/changes/stage-1-wesley.md`, `docs/changes/stage-2-richard.md`, `docs/course-cleanup.md` and `docs/uml/stage-1/source/render_diagram_pdf.py`.
 
 The working branches provide the stage file lists, including diagram exports and model files.
@@ -117,7 +117,7 @@ The working branches provide the stage file lists, including diagram exports and
 
 ## Course project
 
-SC2002 MACS2 Group 3: Tan Yong Han Elson, Tiew Zuo Yuan Richard, Wesley Yiap Wen Le and Ran Ziqi. Elson is responsible for Stage 3 integration. See the [group information](docs/group.md) and [four signed individual GAI declarations](declarations/README.md). The separate signed Declaration of Original Work and team review of individual contributions remain outstanding. Packaging tools are not included in this ZIP.
+SC2002 MACS2 Group 3: Tan Yong Han Elson, Tiew Zuo Yuan Richard, Wesley Yiap Wen Le and Ran Ziqi. Elson is responsible for Stage 3 integration. See the [individual reflections in the group report](output/pdf/Restaurant_Rush_MACS2_Grp3.pdf) and [four signed individual GAI declarations](declarations/README.md). Packaging tools are not included in this ZIP.
 
 No license file is present in the repository. Contact the repository owner for permission to reuse the code.
 
