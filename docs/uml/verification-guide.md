@@ -29,16 +29,13 @@ An extracted ZIP alone has no Git objects; use the corresponding repository chec
 
 ## Native projects and exports
 
-The provenance refresh changes source annotations in the VPP databases and XML exports.
-Database compaction removes superseded annotation bytes from unused pages. Model rows,
-relationship definitions, member selections and diagram geometry are preserved after normalizing
-those annotation substitutions. The Stage 1/2 SVG source subtitles are updated, including labels originally stored as glyph outlines.
-Their PNG and vector PDF views are regenerated from those synchronized SVGs. Other graphics retain
-their existing geometry. The modified views are derived artifacts; no fresh native GUI export is claimed.
+The reviewed [Stage 1 class diagram](stage-1/README.md) was rebuilt with Visual Paradigm Standard
+18.0 and reopened through its public API. The native XML was exported after reopening.
+Its class positions and connector routes agree with the supplied PDF. The SVG uses the
+reviewed layout, and the PNG is rendered from that PDF.
 
-The VPP changes were made as structured SQLite field updates, not through the Visual Paradigm GUI.
-Opening each modified VPP in Visual Paradigm and re-exporting its graphics remains a manual check.
-The verification records mark that check as pending; automated storage/signature checks do not claim it occurred.
+The earlier source-provenance refresh synchronized the source annotations and diagram metadata.
+Each stage's verification record identifies its source commit, export checks and native reopening status.
 After native editing, export the associated XML and graphics, refresh checksums and rerun this checker.
 
 These records verify source and artifacts. They do not certify individual contributions or signed declarations.

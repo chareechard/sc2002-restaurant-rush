@@ -19,6 +19,6 @@ The valid branches are `main`, `work/stage-1`, `work/stage-2` and `work/stage-3`
 For reproducible source comparisons, use the full commit IDs in the [UML verification guide](docs/uml/verification-guide.md).
 
 See [test notes](docs/test-notes.md), [course syntax and update instructions](docs/course-cleanup.md),
-the [Stage 1 code guide](docs/stage-1-code-guide.md) and [Stage 1 UML](docs/uml/stage-1/README.md).
+the [Stage 1 code guide](docs/stage-1-code-guide.md) and [reviewed Stage 1 class diagram (PDF)](docs/uml/stage-1/Restaurant_Rush_Stage1_Wesley_Draft.pdf).
 
-Stage 2 also includes the [customer extension deliverables](docs/changes/stage-2-richard.md) and [Stage 2 UML](docs/uml/stage-2/README.md).
+Stage 2 also includes the [customer extension deliverables](docs/changes/stage-2-richard.md) and [reviewed Stage 2 class diagram (PDF)](docs/uml/stage-2/wesley-review/Stage_2_Class_Diagram.pdf).

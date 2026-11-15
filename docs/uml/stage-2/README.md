@@ -1,5 +1,8 @@
 # Stage 2 class diagram - Richard draft
 
+The [reviewed Stage 2 class diagram (PDF)](wesley-review/Stage_2_Class_Diagram.pdf) and its
+[editable model and exports](wesley-review/README.md) are available alongside this draft.
+
 This diagram represents the complete production type set on
 `work/stage-2` at code checkpoint
 `c6e3c3f9ffe7e79e6dae1c2bb8b9436df7ec2b33`. The course cleanup passes
