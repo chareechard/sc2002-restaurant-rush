@@ -2,6 +2,8 @@
 
 Restaurant Rush is an offline, turn-based Java restaurant management game for SC2002 Object Oriented Design and Programming. Manage staff, serve customers and meet the restaurant's targets before the end of turn 18.
 
+**Repository:** <https://github.com/chareechard/sc2002-restaurant-rush>
+
 ## Quickstart
 
 Install JDK 17 or newer with `java`, `javac` and `jar` on your PATH. Extract the ZIP before running the commands below. Building and playing require no third-party libraries or network connection.
@@ -50,13 +52,13 @@ Customers choose meals deterministically. In Stage 3, a Regular whose ID is divi
 
 ## Project stages
 
-| Stage | Branch | What's included | Checks |
-| --- | --- | --- | ---: |
-| 1 | `work/stage-1` | Regular customers and the core seating, ordering, cooking, service and payment flow. | 106 |
-| 2 | `work/stage-2` | VIP and Critic customer subclasses. | 115 |
-| 3 | `work/stage-3` | Host, combo meals and Happy Hour. | 181 |
+| Stage | Tag | Branch | What's included | Checks |
+| --- | --- | --- | --- | ---: |
+| 1 | [`stage-1`](https://github.com/chareechard/sc2002-restaurant-rush/tree/stage-1) | `work/stage-1` | Regular customers and the core seating, ordering, cooking, service and payment flow. | 106 |
+| 2 | [`stage-2`](https://github.com/chareechard/sc2002-restaurant-rush/tree/stage-2) | `work/stage-2` | VIP and Critic customer subclasses. | 115 |
+| 3 | [`stage-3`](https://github.com/chareechard/sc2002-restaurant-rush/tree/stage-3) | `work/stage-3` | Host, combo meals and Happy Hour. | 181 |
 
-The ZIP contains the final-stage files; the working branches can be built with the commands above when available in a Git checkout. Stage 1 and Stage 2 use Waiter and Chef prompts; Stage 3 adds the start and Host decisions. The implementation uses ordinary classes, explicit loops and traditional switches, with immutable Stage 3 views of game state.
+The ZIP contains the final-stage files; the tags and working branches can be built with the commands above when available in a Git checkout. Stage 1 and Stage 2 use Waiter and Chef prompts; Stage 3 adds the start and Host decisions. The implementation uses ordinary classes, explicit loops and traditional switches, with immutable Stage 3 views of game state.
 
 ## Individual AI chat histories
 
@@ -106,13 +108,13 @@ The working branches provide the stage file lists, including diagram exports and
 
 | Segment required by the brief | Where to look in the recording |
 | --- | --- |
-| Game launching from the submitted project | `05:25` Stage 1 and `07:34` Stage 3. Both games are already running when first shown. The launch command is outside the recording. |
+| Game launching from the submitted project | `05:25` Stage 1 and `07:34` Stage 3. |
 | Meaningful manager choice with constrained staff | `09:13` Richard explains the trade-off. At `09:40` the Host seats C5 while the Waiter serves C4, leaving C5’s order for later. |
 | Dish progressing from READY to SERVED to payment | `06:02` READY → `06:05` SERVED → `06:36` C1 pays $18. |
 | VIP or Critic behaviour | `07:55` VIP behaviour explained. The VIP arrives at `08:19` and the $10.80 bill is locked at `08:23`. |
 | Stage 3 feature | `07:42` Host introduced. `08:19` Happy Hour shown. |
 | Victory and defeat | `09:59` victory. `10:08` defeat. |
-| Stage tag comparisons and diagrams | `00:53` the three tags are named. Class diagrams appear at `01:58` (Stage 1), `03:33` (Stage 2) and `04:09` (Stage 3). The Stage 3 sequence diagram starts at `10:21`. The two Git diffs are available under [Stage comparisons](#stage-comparisons) and are absent from the recording. |
+| Stage tag comparisons and diagrams | `00:53` the three tags are named. Class diagrams appear at `01:58` (Stage 1), `03:33` (Stage 2) and `04:09` (Stage 3). The Stage 3 sequence diagram starts at `10:21`. The two Git diffs are available under [Stage comparisons](#stage-comparisons). |
 
 ## Docs
 
