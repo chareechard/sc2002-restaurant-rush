@@ -1,16 +1,22 @@
-# Stage 2 class diagram - aligned baseline
+# Stage 3 class diagram - aligned baseline
 
-Open `Restaurant_Rush_Stage2_Class.vpp` and select **Stage 2 - Reviewed Class Diagram**.
+Open `Restaurant_Rush_Stage3_Class.vpp` and select **Stage 3 - Reviewed Class Diagram**.
 Saved and reopened with Visual Paradigm Standard **18.0 build 20260521**.
-The model contains 23 native class shapes and 21 relationship connectors.
-Source checkpoint: `c6e3c3f9ffe7e79e6dae1c2bb8b9436df7ec2b33`. Displayed signatures were checked against
-compiled Java for this stage: 50 fields, 57 operations
-(including constructors), and 20 enum values.
+The model contains 31 native class shapes and 28 relationship connectors.
+Source checkpoint: `f41ce70e652bf7a34a5a0b740b300e1e5d4ad01b`. Displayed signatures were checked against
+compiled Java for this stage: 62 fields, 76 operations
+(including constructors), and 21 enum values.
 
-- [PDF](Stage_2_Class_Diagram.pdf)
-- [PNG](Stage_2_Class_Diagram.png)
-- [SVG](Stage_2_Class_Diagram.svg)
-- [Editable project](Restaurant_Rush_Stage2_Class.vpp)
+- [PDF](Stage_3_Class_Diagram.pdf)
+- [PNG](Stage_3_Class_Diagram.png)
+- [SVG](Stage_3_Class_Diagram.svg)
+- [Editable project](Restaurant_Rush_Stage3_Class.vpp)
+
+## Stage 3 VIP service sequence
+
+[PDF](Restaurant_Rush_Stage3_Sequence_Refined.pdf) · [PNG](Restaurant_Rush_Stage3_Sequence_Refined.png) · [SVG](Restaurant_Rush_Stage3_Sequence_Refined.svg) · [Editable project](Restaurant_Rush_Stage3_Sequence.vpp)
+
+On turn 4, taking C2’s order uses the Waiter’s action. On turn 5, the manager can serve C2 or wait.
 
 ## Consistency across the three stages
 
@@ -33,22 +39,15 @@ Stage 3 now also retains the baseline RuleViolation utility and GameEngine's Ord
 reference. Its Receipt reference uses the same association notation as Stage 1.
 The Dish/interface relationships in Stage 3 reflect actual source changes.
 
-## Layout and verification
+## Layout
 
 Multiplicity labels clear every connector. Parallel connector segments have at
 least 28 px separation, and other connectors stay at least 24 px from arrowheads.
 The Chef-to-Order dashed dependency passes below the four GameEngine labels
-without being hidden by them. Source descriptors, native editable projects and
+without being hidden by them. The native editable projects and
 PDF/PNG/SVG presentations use the same reviewed geometry.
 
-`source/model.xml` stores the selected model; `source/layout.json` stores geometry.
-`source/validate_layout.py` checks the routes and labels. The VPP can be opened
-and edited in Visual Paradigm. Its XML export is in `model-xml/`.
 Routine constructors/accessors and minor method dependencies are omitted from
 this overview. Parameter names are hidden for long staff signatures while all
 parameter types remain visible; the editable model retains full parameters.
 Production code, tests and replays are unchanged.
-
-## Current provenance checks
-
-See `verification.json` and the repository's `docs/uml/verification-guide.md`. The 2026-11-14 refresh checks current source signatures and native database integrity. Native GUI reopening after this metadata refresh remains pending.
