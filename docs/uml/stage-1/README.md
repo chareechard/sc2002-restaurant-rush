@@ -92,12 +92,10 @@ exports must agree with the current code before a diagram change is committed.
 The cleaned code passes 106 checks, with unchanged victory and defeat results.
 
 The reviewed model uses [the member and relationship definitions](source/model.xml) and
-[the diagram layout](source/layout.json). The native generator in
-[ClassDiagramExportPlugin.java](source/ClassDiagramExportPlugin.java) saves and reopens the
-Visual Paradigm project. Its XML export is in [model-xml/](model-xml/).
+[the diagram layout](source/layout.json). Its Visual Paradigm XML export is in
+[model-xml/](model-xml/).
 
-The SVG was generated with [render_svg.py](source/render_svg.py). The PNG is a
-3400 × 2402 rendering of the supplied PDF. The exported native class bounds and connector
+The PNG is a 3400 × 2402 rendering of the supplied PDF. The exported native class bounds and connector
 routes were checked against the reviewed layout, and the SVG positions were checked
 against the PDF. The filenames are shared across the project branches.
 
