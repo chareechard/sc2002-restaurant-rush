@@ -1,4 +1,4 @@
-# Stage 3 class diagram - aligned baseline
+# Stage 3 class diagram
 
 Open `Restaurant_Rush_Stage3_Class.vpp` and select **Stage 3 - Reviewed Class Diagram**.
 Saved and reopened with Visual Paradigm Standard **18.0 build 20260521**.
@@ -6,6 +6,8 @@ The model contains 31 native class shapes and 28 relationship connectors.
 Source checkpoint: `f41ce70e652bf7a34a5a0b740b300e1e5d4ad01b`. Displayed signatures were checked against
 compiled Java for this stage: 62 fields, 76 operations
 (including constructors), and 21 enum values.
+
+Three callouts highlight encapsulation in `Order`, polymorphism in the customer subclasses, and composition between `GameEngine` and its `Waiter`.
 
 - [PDF](Stage_3_Class_Diagram.pdf)
 - [PNG](Stage_3_Class_Diagram.png)
