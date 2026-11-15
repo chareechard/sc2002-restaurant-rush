@@ -39,10 +39,10 @@
     "Restaurant_Rush_Stage1_Wesley_Draft.png": "eb60e4b9ea058676a65840360a29fca24aec1e73884449eb924be63c0e68a069",
     "model-xml/project.xml": "417bd681e3f4f6c00e9fe3ea05e7a1e73c7733c97323015ae6d233fe96665637",
     "model-xml/data.zip": "88229578ffbaf8cbae3176c2170a3e2381058f60d21f98d9a6fee0f3e34b442e",
-    "Restaurant_Rush_Stage1_Wesley_Draft.pdf": "c6b077c38eaaf21808d8867ad6d80e0b5edb5a9b50c1a540d57bd4abe12f3bed",
+    "Restaurant_Rush_Stage1_Wesley_Draft.pdf": "77605b583f7b2638e43ca0ea3abae4b9e87cb07cc3de2f9a4eea4400fa72cfe5",
     "source/model.xml": "c088cefafee3a8404adf4960ab6fbc9a130dacf31ac1ef971372971eafb84c3a",
     "source/layout.json": "ae8ab94f72590c0e18478ab1f64e9d94b0fd913ab2c0eb02ec89b7bf402b6ef6",
-    "README.md": "f307e21b8a7ac0861abb9bc7a645c7523dc403a00035f02d066780aec242ee38"
+    "README.md": "ceca6971c8781d408244068b7ebc922660f4bac04da3cdde93faaa9694f3f1c4"
   },
   "selected_relationships": 19,
   "relationship_breakdown": {
@@ -54,10 +54,10 @@
   "pdf": {
     "file": "Restaurant_Rush_Stage1_Wesley_Draft.pdf",
     "pages": 1,
-    "source": "User-supplied Stage_1_Class_Diagram.pdf; copied byte-for-byte.",
+    "source": "User-supplied Stage_1_Class_Diagram.pdf with its original page content preserved.",
     "visual_review": "2026-11-15. All 21 class heading positions and 19 connector routes agree with the reviewed layout.",
     "same_layout_as_native_exports": true,
-    "verification_scope": "Supplied PDF checksum, PDF and SVG geometry, exact PNG render, reopened native model and XML export."
+    "verification_scope": "Published PDF checksum, PDF and SVG geometry, PNG appearance, reopened native model and XML export."
   },
   "source_branch": "work/stage-1",
   "source_files_sha256": "5c44aea3a68d0cfe9e03a2da894ad3b83b6d4fc3f713d48fe07b9e18b72a8c62",
@@ -104,7 +104,7 @@
       "minimum_arrowhead_gap": 26.0,
       "issues": []
     },
-    "scope": "Pinned Java signatures, the reopened Visual Paradigm project and its XML export, source layout, PDF and SVG geometry, PNG render and artifact hashes."
+    "scope": "Pinned Java signatures, the reopened Visual Paradigm project and its XML export, source layout, PDF and SVG geometry, PNG appearance and artifact hashes."
   },
   "text_hashes": "LF normalized",
   "reviewed_layout": {

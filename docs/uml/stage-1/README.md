@@ -95,7 +95,7 @@ The reviewed model uses [the member and relationship definitions](source/model.x
 [the diagram layout](source/layout.json). Its Visual Paradigm XML export is in
 [model-xml/](model-xml/).
 
-The PNG is a 3400 × 2402 rendering of the supplied PDF. The exported native class bounds and connector
+The PNG shows the supplied diagram at 3400 × 2402 pixels. The exported native class bounds and connector
 routes were checked against the reviewed layout, and the SVG positions were checked
 against the PDF. The filenames are shared across the project branches.
 
