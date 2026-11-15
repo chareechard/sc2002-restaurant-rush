@@ -18,7 +18,10 @@ The [UML verification guide](uml/verification-guide.md) distinguishes automated 
 ## Human submission material
 
 - [ ] Each member supplies their own full chronological AI conversations and required prompt summaries.
-- [ ] Complete the group report, individual reflections, recording, actual video timestamps and official signed declarations.
+- [x] Add the [recording and its measured timestamps](../README.md#video-timestamps).
+- [x] Include the [four signed individual GAI declarations](../declarations/README.md).
+- [ ] Add the signed group Declaration of Original Work.
+- [ ] Complete the group report and individual reflections.
 - [ ] Confirm individual contribution and review details with the team.
 
 These entries do not claim submission or completed personal contributions. History rewriting and any tag changes require a separate decision.
