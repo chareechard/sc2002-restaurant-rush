@@ -23,9 +23,7 @@ This is a review of the current Stage 3 baseline. After integrating teammates' c
 
 ## Diagram scope
 
-Open `uml/Restaurant_Rush.vpp` in Visual Paradigm Desktop 18.0. Use **Stage 3 complete class diagram** and **Stage 3 VIP service choice - complete sequence** as this stage's primary diagrams. Earlier class detail views and sequence sheets are retained for reference.
-
-The class diagram shows the 30 principal production types, key state and behaviour, inheritance, interface realisation, ownership and multiplicities. Routine getters, generated record methods, JDK types and the small `RuleViolation` validation helper are omitted to keep the diagram readable. Association ends represent object references that need not also appear as duplicate attribute rows.
+The [Stage 3 class diagram](uml/stage-3/wesley-review/Stage_3_Class_Diagram.pdf) shows 31 production types and 28 relationships, including the RuleViolation helper. The [refined VIP service sequence](uml/stage-3/wesley-review/Restaurant_Rush_Stage3_Sequence_Refined.pdf) shows the manager’s turn-5 decision. Both editable projects are in the [Stage 3 diagram folder](uml/stage-3/wesley-review/README.md).
 
 The sequence traces VIP C2 through arrival, Host seating, ordering, Happy Hour pricing, preparation, service, eating and payment, followed by the turn-18 outcome. It uses a turn loop and guarded fragments. Calls for unrelated customers are omitted; those customers follow the full replay. The starting conditions and both outcomes are part of the diagram.
 
@@ -36,10 +34,8 @@ The sequence traces VIP C2 through arrival, Host seating, ordering, Happy Hour p
 
 Both full replays end after 18 turns with 6 served, 5 paid and $86.10 revenue. C2's bill remains $10.80. See `../replays/victory.txt`, `../replays/delayed-vip.txt`, `evidence/`, and `../src/test/java/rush/AllTests.java` for executable evidence.
 
-Native model checks verified all 30 classifier names against the Java source, 41 class relationships, and 34 messages across 12 lifelines and nine guarded fragments in the complete sequence. Missing message endpoints in the 93 older reference-sheet messages were repaired through Visual Paradigm's Open API. The refreshed XML export contains all 127 messages with valid source and target model references. The two new diagrams' saved geometry was unchanged after reopening and repairing the references. All 12 PDF pages were rendered and visually checked, including enlarged diagram details.
-
 ## Group completion still required
 
-The briefing requires **three class diagrams: one for each stage**. The three older Stage 3 detail views do not satisfy that requirement. Wesley and Ran Ziqi supply the Stage 1 diagram, and Richard supplies the Stage 2 diagram, matching their reviewed code. The final group report must include those diagrams, all four members' own reviewed reflections and contributions, and confirmed submission details.
+The briefing requires **three class diagrams: one for each stage**. Wesley and Ran Ziqi supply the Stage 1 diagram, and Richard supplies the Stage 2 diagram, matching their reviewed code. The final group report must include those diagrams, all four members' own reviewed reflections and contributions, and confirmed submission details.
 
 This branch remains a group-review draft. The Stage 3 tag and `main` are not moved by the diagram review. Nothing is submitted to NTULearn.
