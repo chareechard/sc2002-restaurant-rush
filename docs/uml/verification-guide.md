@@ -29,7 +29,7 @@ An extracted ZIP alone has no Git objects; use the corresponding repository chec
 
 ## Native projects and exports
 
-The reviewed [Stage 1 class diagram](stage-1/README.md) was rebuilt with Visual Paradigm Standard
-18.0 and reopened through its public API. The native XML was exported after reopening.
-Its class positions and connector routes agree with the supplied PDF. The SVG uses the
-reviewed layout, and the PNG is rendered from that PDF.
+The reviewed [Stage 1 class diagram](stage-1/README.md) was reopened in Visual Paradigm Standard
+18.0 through its public API. The native XML was exported after reopening.
+Its class positions and connector routes agree with the supplied PDF. The SVG and PNG show the same
+reviewed layout.
