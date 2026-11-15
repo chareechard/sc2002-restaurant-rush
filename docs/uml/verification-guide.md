@@ -34,9 +34,3 @@ The reviewed [Stage 1 class diagram](stage-1/README.md) was rebuilt with Visual 
 18.0 and reopened through its public API. The native XML was exported after reopening.
 Its class positions and connector routes agree with the supplied PDF. The SVG uses the
 reviewed layout, and the PNG is rendered from that PDF.
-
-The earlier source-provenance refresh synchronized the source annotations and diagram metadata.
-Each stage's verification record identifies its source commit, export checks and native reopening status.
-After native editing, export the associated XML and graphics, refresh checksums and rerun this checker.
-
-These records verify source and artifacts. They do not certify individual contributions or signed declarations.
