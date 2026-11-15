@@ -71,7 +71,7 @@ Build directories previously retained obsolete classes and resources. Both build
 
 The engine originally exposed mutable objects inside unmodifiable lists. Direct calls could bypass staff limits or seat a customer without assigning a table. Immutable reporting snapshots closed that path; the current ordinary classes retain that protection. Regression checks confirm retained snapshots do not change when the engine advances. The result predicate was also isolated in Scenario.targetsMet and tested at the exact payment, revenue and satisfaction thresholds, including independent failures of each target.
 
-Class diagrams now separate control and snapshots, customer/menu policies, and entity lifecycles. Enumerations are explicitly labelled, and the customer-order ownership relationship is drawn once. The sequence uses creation messages, actual return values, activation bars and separate calls; notes carry state changes. For example, losePatience returns a boolean, while satisfaction 95 is an effect of the call, not its return value.
+Each stage has one class diagram showing its controller, staff and domain types. Enumerations are explicitly labelled, and the customer-order ownership relationship is drawn once. The sequence uses creation messages, actual return values, activation bars and separate calls; notes carry state changes. For example, losePatience returns a boolean, while satisfaction 95 is an effect of the call, not its return value.
 
 ## Course syntax cleanup on 29 October 2026
 
