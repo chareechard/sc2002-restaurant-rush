@@ -79,7 +79,7 @@ The group requested source using Chapters 1-9, excluding Chapter 10. Ordinary fi
 
 Scanner reads commands and PrintStream prints results. The terminal can supply a saved command file through standard input; the Java program no longer opens replay files or bundles resources. ArrayList construction and manual copies replace list factories. Money formatting uses integer division, remainders and string concatenation; explicit bounds preserve overflow rejection. Paid averages still display two decimal places and N/A when no receipt exists.
 
-The revised suites pass 106 checks for Stage 1, 115 for Stage 2 and 181 for Stage 3. Their saved standard-input runs retain the same gameplay and final results. The stage tags identify the simplified versions. Optional diagram/report authoring utilities remain outside the game source; the cleanup does not claim that every standard-library API is listed in the supplied notes.
+The revised suites pass 106 checks for Stage 1, 115 for Stage 2 and 181 for Stage 3. Their saved standard-input runs retain the same gameplay and final results. The stage tags identify the simplified versions. The review used the supplied course notes as a reference for standard-library usage in the game source.
 
 ## Development reflections
 
