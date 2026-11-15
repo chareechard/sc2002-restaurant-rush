@@ -22,6 +22,3 @@ POSIX shells use `java -jar build/restaurant-rush.jar < replays/victory.txt`.
 
 All these replays last 18 turns. The transcripts in `docs/evidence/` record the corresponding
 stage outcomes. A transcript is supporting evidence; rerun the commands to verify the current checkout.
-
-The [UML verification guide](uml/verification-guide.md) gives reproducible model checks against
-the represented source. Those automated checks do not certify native GUI reopening or human contribution declarations.
