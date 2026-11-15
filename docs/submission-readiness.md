@@ -21,7 +21,7 @@ The [UML verification guide](uml/verification-guide.md) distinguishes automated 
 - [x] Add the [recording and its measured timestamps](../README.md#video-timestamps).
 - [x] Include the [four signed individual GAI declarations](../declarations/README.md).
 - [ ] Add the signed group Declaration of Original Work.
-- [ ] Complete the group report and individual reflections.
+- [x] Include the [group report (PDF)](../output/pdf/Restaurant_Rush_MACS2_Grp3.pdf) with all four individual reflections.
 - [ ] Confirm individual contribution and review details with the team.
 
 These entries do not claim submission or completed personal contributions. History rewriting and any tag changes require a separate decision.
