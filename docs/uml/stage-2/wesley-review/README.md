@@ -42,10 +42,8 @@ without being hidden by them. Source descriptors, native editable projects and
 PDF/PNG/SVG presentations use the same reviewed geometry.
 
 `source/model.xml` stores the selected model; `source/layout.json` stores geometry.
-`source/validate_layout.py` checks the routes and labels, and
-`source/render_svg.py` produces the curated presentation. The optional public API
-generator is `source/ClassDiagramExportPlugin.java`; no generator is required to
-open or edit the VPP. `model-xml/` is the native project export.
+`source/validate_layout.py` checks the routes and labels. The VPP can be opened
+and edited in Visual Paradigm. Its XML export is in `model-xml/`.
 Routine constructors/accessors and minor method dependencies are omitted from
 this overview. Parameter names are hidden for long staff signatures while all
 parameter types remain visible; the editable model retains full parameters.
