@@ -75,7 +75,7 @@
   "provenance_refresh": {
     "method": "Structured SQLite field updates and compaction; matching XML annotations refreshed.",
     "model_rows_preserved_after_annotation_normalization": true,
-    "graphics": "Stage 1/2 SVG subtitles synchronized; PNG and PDF views regenerated. Other diagram geometry retained. No fresh native GUI export claimed."
+    "graphics": "The PNG and PDF views show the updated Stage 1 and Stage 2 SVG subtitles. Other diagram geometry retained. No fresh native GUI export claimed."
   },
   "current_repository_validation": {
     "date_singapore": "2026-11-14",
