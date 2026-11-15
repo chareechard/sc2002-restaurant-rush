@@ -23,10 +23,7 @@ Victory ends at turn 18 with 4 paid customers, $67.50 revenue and 70.25 average 
 Defeat has no payments and N/A average satisfaction. See [test notes](../test-notes.md)
 and the Stage 2 transcripts under `docs/evidence/`.
 
-The [canonical Stage 2 UML](../uml/stage-2/README.md) and
-[additional reviewed diagram](../uml/stage-2/wesley-review/README.md) include native VPPs,
-XML descriptors and PDF/PNG/SVG exports. Their verification records identify the current
-source pins, actual automated checks and any remaining native GUI check.
+The [reviewed Stage 2 class diagram](../uml/stage-2/wesley-review/README.md) includes the editable project, PDF, PNG, SVG and verification record.
 
 Use `work/stage-2` for Stage 2 changes and `main` for final integration. Follow the
 [repository workflow](../course-cleanup.md). Human authorship and review declarations remain for the team to confirm.
