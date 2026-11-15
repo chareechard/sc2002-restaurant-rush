@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "date_singapore": "2026-11-14",
+  "date_singapore": "2026-11-15",
   "source_commit": "02f5c5a46320fc3dc5bb4b5507b1dde5c2437bac",
-  "tool": "Visual Paradigm Standard 18.0 (academic license), public Open API",
-  "native_project_reopened": false,
+  "tool": "Visual Paradigm Standard 18.0 build 20260521, public Open API",
+  "native_project_reopened": true,
   "native_sqlite_quick_check": "ok",
   "modeled_type_count": 21,
   "diagrams": [
     {
-      "name": "Stage 1 - Class Diagram - Wesley Review",
+      "name": "Stage 1 - Reviewed Class Diagram",
       "class_shapes": 21,
       "connectors": 19
     }
@@ -29,17 +29,22 @@
   "no_overlapping_class_shapes": true,
   "png_pixels": {
     "Restaurant_Rush_Stage1_Wesley_Draft": [
-      2325,
-      1822
+      3400,
+      2402
     ]
   },
   "artifact_sha256": {
-    "Restaurant_Rush_Stage1_Wesley_Draft.vpp": "df39914f66a0a4d97663de3f6d74b018982e5089c4dded9ef7db60bb5b8da7a7",
-    "Restaurant_Rush_Stage1_Wesley_Draft.svg": "ba78071a0ca26abc3219cb67f57509b31a733c0d9717bc52ffbadc5a0878b490",
-    "Restaurant_Rush_Stage1_Wesley_Draft.png": "d4d4bfe0c6ff67fa2aa6727bc19a1b69bb4a2daa167b54ad8c3fb81bc7f31db6",
-    "model-xml/project.xml": "24e85cf1f6c66e61115ea2a26c69e71653ac8ae5556c478d7e705f7320abc487",
+    "Restaurant_Rush_Stage1_Wesley_Draft.vpp": "d11ae6b4587d321b12beddeaa70e0df9c73b0cec9ed3a1f41fb2b97d51761dc6",
+    "Restaurant_Rush_Stage1_Wesley_Draft.svg": "fcc4dc8dcb5b91ea1c72fc83ec4db91f3e5e7904260c6e2fc2951008904a8abe",
+    "Restaurant_Rush_Stage1_Wesley_Draft.png": "eb60e4b9ea058676a65840360a29fca24aec1e73884449eb924be63c0e68a069",
+    "model-xml/project.xml": "417bd681e3f4f6c00e9fe3ea05e7a1e73c7733c97323015ae6d233fe96665637",
     "model-xml/data.zip": "88229578ffbaf8cbae3176c2170a3e2381058f60d21f98d9a6fee0f3e34b442e",
-    "Restaurant_Rush_Stage1_Wesley_Draft.pdf": "c6b077c38eaaf21808d8867ad6d80e0b5edb5a9b50c1a540d57bd4abe12f3bed"
+    "Restaurant_Rush_Stage1_Wesley_Draft.pdf": "c6b077c38eaaf21808d8867ad6d80e0b5edb5a9b50c1a540d57bd4abe12f3bed",
+    "source/model.xml": "c088cefafee3a8404adf4960ab6fbc9a130dacf31ac1ef971372971eafb84c3a",
+    "source/layout.json": "ae8ab94f72590c0e18478ab1f64e9d94b0fd913ab2c0eb02ec89b7bf402b6ef6",
+    "source/render_svg.py": "4fcba871b706ac092717733618a3863c0efbc54dcd0df48fe5515a8023d30279",
+    "source/ClassDiagramExportPlugin.java": "6e8087ba4c2782f8e65cdfaf81e056bce89ace04fe8ce04f759537cf1922da42",
+    "README.md": "d61fd87237c0acf5e8edbc57e2c8d14a0f3d9199602e2802235b0557217128ed"
   },
   "selected_relationships": 19,
   "relationship_breakdown": {
@@ -52,27 +57,27 @@
     "file": "Restaurant_Rush_Stage1_Wesley_Draft.pdf",
     "pages": 1,
     "source": "User-supplied Stage_1_Class_Diagram.pdf; copied byte-for-byte.",
-    "visual_review": "2026-11-14: supplied page rendered and inspected before replacement.",
-    "same_layout_as_native_exports": false,
-    "verification_scope": "PDF checksum and visual review; native member and geometry checks describe the retained model/SVG/PNG files."
+    "visual_review": "2026-11-15. All 21 class heading positions and 19 connector routes agree with the reviewed layout.",
+    "same_layout_as_native_exports": true,
+    "verification_scope": "Supplied PDF checksum, PDF and SVG geometry, exact PNG render, reopened native model and XML export."
   },
   "source_branch": "work/stage-1",
   "source_files_sha256": "5c44aea3a68d0cfe9e03a2da894ad3b83b6d4fc3f713d48fe07b9e18b72a8c62",
   "native_gui_review": {
-    "status": "pending",
-    "reason": "Structured provenance refresh; Visual Paradigm GUI reopen was not performed."
+    "status": "native API reopen verified",
+    "method": "Visual Paradigm saved, reopened and exported the editable project through its public API."
   },
-  "verification_status": "automated checks passed; native GUI reopen pending",
-  "member_descriptor": "source/stage1-model.xml",
+  "verification_status": "Native reopen, compiled member checks, geometry and export hashes verified.",
+  "member_descriptor": "source/model.xml",
   "validation_command": "python tools/verify-uml.py",
   "provenance_refresh": {
     "method": "Structured SQLite field updates and compaction; matching XML annotations refreshed.",
     "model_rows_preserved_after_annotation_normalization": true,
-    "graphics": "Native project and SVG/PNG views retained. The current PDF is the user-supplied Stage_1_Class_Diagram.pdf, copied without modification and using a separate layout. No fresh native GUI export claimed."
+    "graphics": "The 2026-11-14 provenance refresh preceded the reviewed Stage 1 export recorded here."
   },
   "source_signatures_checked_against_compiled_java": true,
   "current_repository_validation": {
-    "date_singapore": "2026-11-14",
+    "date_singapore": "2026-11-15",
     "source_commit": "02f5c5a46320fc3dc5bb4b5507b1dde5c2437bac",
     "selected_members": {
       "types": 21,
@@ -88,9 +93,9 @@
     },
     "native_storage": {
       "Restaurant_Rush_Stage1_Wesley_Draft.vpp": {
-        "MODEL_ELEMENT": 510,
+        "MODEL_ELEMENT": 524,
         "DIAGRAM": 1,
-        "DIAGRAM_ELEMENT": 54
+        "DIAGRAM_ELEMENT": 100
       }
     },
     "geometry": {
@@ -101,7 +106,14 @@
       "minimum_arrowhead_gap": 26.0,
       "issues": []
     },
-    "scope": "Pinned Java signatures, native XML, SQLite quick_check, available layout checks and artifact checksums. Native GUI reopen not performed."
+    "scope": "Pinned Java signatures, the reopened Visual Paradigm project and its XML export, source layout, PDF and SVG geometry, PNG render and artifact hashes."
   },
-  "text_hashes": "LF normalized"
+  "text_hashes": "LF normalized",
+  "reviewed_layout": {
+    "class_bounds_checked": 21,
+    "connector_routes_checked": 19,
+    "pdf_class_headings_checked": 21,
+    "pdf_connector_routes_checked": 19,
+    "png_matches_pdf_render": true
+  }
 }
